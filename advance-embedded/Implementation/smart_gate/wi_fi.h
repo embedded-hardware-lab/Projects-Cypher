@@ -1,4 +1,4 @@
-#include <WiFiNINA.h>
+/*//#include <WiFiNINA.h>
 
 char ssid[] = "Galaxy S20";        
 char pass[] = "malaysia"; 
@@ -25,6 +25,6 @@ void wifi_i::connect(){
   Serial.println("You're connected to the network");
   Serial.println();
 }
-
+*\
  
   

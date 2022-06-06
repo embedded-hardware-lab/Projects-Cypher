@@ -30,10 +30,10 @@ const int flamePin=A5; // flame pin guna analog output
 float duration_us, distance_cm;
 
 //gate
-#define STEPPER_PIN_1 2
-#define STEPPER_PIN_2 3
-#define STEPPER_PIN_3 4
-#define STEPPER_PIN_4 5
+#define STEPPER_PIN_1 8
+#define STEPPER_PIN_2 9
+#define STEPPER_PIN_3 10
+#define STEPPER_PIN_4 11
 int step_number = 0;
 
 //lamp 
@@ -76,7 +76,7 @@ pinMode(STEPPER_PIN_4, OUTPUT);
   
 }
 void loop(){
-  //count_people();
+  count_people();
   //temperature();
   //fire();
   //height();

@@ -1,7 +1,7 @@
-#include <ArduinoMqttClient.h>
+//#include <ArduinoMqttClient.h>
 #include "wi_fi.h"
 
-const char topic_gate[]  = "topic_gate";
+/*const char topic_gate[]  = "topic_gate";
 const char topic_number_visitor[]  = "topic_number_visitor";
 const char broker[] = "192.168.2.221";
 wifi_i wifi_1;
@@ -45,5 +45,5 @@ void mqtt::check_update(){
   mqttClient.poll();
 }
   
-
+*\
   

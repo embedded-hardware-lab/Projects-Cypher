@@ -1,4 +1,4 @@
-#include "protothreads.h"
+/*//#include "protothreads.h"
 #include "component.h"
 #include "Mqtt.h"
 
@@ -15,7 +15,7 @@ visitor Visitor;
 void setup(){
     Serial.begin(1200);
     MQtt.receive_handler(handler);
-    MQtt.start_subscribe();
+    MQtt.start_subscribe();   
 
 }
 void loop(){
@@ -124,5 +124,3 @@ void onMqttMessage(int messageSize) {
   Serial.println();
 }
 */
-
-
