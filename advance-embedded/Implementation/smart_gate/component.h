@@ -22,9 +22,9 @@ class counter{
   int sw_pin = 4;
   int btnState;
   int lastButtonPress;
-   int  lastStateCLK;
-    int currentStateCLK;
-     int currentDir;
+  int  lastStateCLK;
+  int currentStateCLK;
+  int currentDir;
   int current_number_visitor = 0;
   int total_number_visitor = 0;
   bool isVisitor();
@@ -35,14 +35,14 @@ class counter{
 class flameDetector{
   public:
   flameDetector();
-  int flame_pin= A5 ;
+  int flame_pin= 5 ;
   bool state = false;
   bool isFlame();
 };
 
 class temperatureDetector{
   public:
-  int temperature_pin= A2;
+  int temperature_pin = A2;
   int temperature;
   bool state = false;
   temperatureDetector();

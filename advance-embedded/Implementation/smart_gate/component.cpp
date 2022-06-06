@@ -7,68 +7,75 @@ gate::gate(){
 }
 
 void gate::set_lock(){
-        //if gate close     
-        analogWrite(led_red_pin, OUTPUT);
+  
 
+  int  start = 0;
 
-        digitalWrite(motor_pin1, 0);
-        digitalWrite(motor_pin2, 0);
-        digitalWrite(motor_pin3, 0);
-        digitalWrite(motor_pin4, 1);
-        delay(2);
-    
-        digitalWrite(motor_pin1, 0);
-        digitalWrite(motor_pin2, 0);
-        digitalWrite(motor_pin3, 1);
-        digitalWrite(motor_pin4, 0);
-        delay(2);
-    
-        digitalWrite(motor_pin1, 0);
-        digitalWrite(motor_pin2, 1);
-        digitalWrite(motor_pin3, 0);
-        digitalWrite(motor_pin4, 0);
-        delay(2);
-    
-        digitalWrite(motor_pin1, 1);
-        digitalWrite(motor_pin2, 0);
-        digitalWrite(motor_pin3, 0);
-        digitalWrite(motor_pin4, 0);
-        delay(2);
+  while( start< 1501){
+    digitalWrite(led_red_pin, 1);
+    digitalWrite(led_green_pin, 0);
 
-   
+    digitalWrite(motor_pin1, 0);
+    digitalWrite(motor_pin2, 0);
+    digitalWrite(motor_pin3, 0);
+    digitalWrite(motor_pin4, 1);
+    delay(2);
+
+    digitalWrite(motor_pin1, 0);
+    digitalWrite(motor_pin2, 0);
+    digitalWrite(motor_pin3, 1);
+    digitalWrite(motor_pin4, 0);
+    delay(2);
+
+    digitalWrite(motor_pin1, 0);
+    digitalWrite(motor_pin2, 1);
+    digitalWrite(motor_pin3, 0);
+    digitalWrite(motor_pin4, 0);
+    delay(2);
+
+    digitalWrite(motor_pin1, 1);
+    digitalWrite(motor_pin2, 0);
+    digitalWrite(motor_pin3, 0);
+    digitalWrite(motor_pin4, 0);
+    delay(2);
+    start++;
+  }
 }
 
 void gate::set_unlock(){
-        //if gate open
-        analogWrite(led_green_pin, OUTPUT);
-       
-
-
-        digitalWrite(motor_pin1, 1);
-        digitalWrite(motor_pin2, 0);
-        digitalWrite(motor_pin3, 0);
-        digitalWrite(motor_pin4, 0);
-        delay(2);
-    
-        digitalWrite(motor_pin1, 0);
-        digitalWrite(motor_pin2, 1);
-        digitalWrite(motor_pin3, 0);
-        digitalWrite(motor_pin4, 0);
-        delay(2);
-    
-        digitalWrite(motor_pin1, 0);
-        digitalWrite(motor_pin2, 0);
-        digitalWrite(motor_pin3, 1);
-        digitalWrite(motor_pin4, 0);
-        delay(2);
-
-        digitalWrite(motor_pin1, 0);
-        digitalWrite(motor_pin2, 0);
-        digitalWrite(motor_pin3, 0);
-        digitalWrite(motor_pin4, 1);
-        delay(2);
-
   
+  
+  int  start = 0;
+
+  while(start< 1501){
+    digitalWrite(led_green_pin, 1);
+    digitalWrite(led_red_pin, 0);
+
+    digitalWrite(motor_pin1, 1);
+    digitalWrite(motor_pin2, 0);
+    digitalWrite(motor_pin3, 0);
+    digitalWrite(motor_pin4, 0);
+    delay(2);
+
+    digitalWrite(motor_pin1, 0);
+    digitalWrite(motor_pin2, 1);
+    digitalWrite(motor_pin3, 0);
+    digitalWrite(motor_pin4, 0);
+    delay(2);
+
+    digitalWrite(motor_pin1, 0);
+    digitalWrite(motor_pin2, 0);
+    digitalWrite(motor_pin3, 1);
+    digitalWrite(motor_pin4, 0);
+    delay(2);
+
+    digitalWrite(motor_pin1, 0);
+    digitalWrite(motor_pin2, 0);
+    digitalWrite(motor_pin3, 0);
+    digitalWrite(motor_pin4, 1);
+    delay(2);
+    start++;
+  }
 }
 
 counter::counter(){
@@ -77,13 +84,14 @@ counter::counter(){
 bool counter::isVisitor(){
     // Read the button state
     int btnState = digitalRead(sw_pin);
+    bool rtn = false;
 
     //If we detect 0 signal, button is pressed
     if (btnState == 0) {
         //if 50ms have passed since last 0 pulse, it means that the
         //button has been pressed, released and pressed again
         if (millis() - lastButtonPress > 50) {
-            return true; 
+            rtn = true; 
         }
 
         // Remember last button press event
@@ -91,46 +99,32 @@ bool counter::isVisitor(){
     }
 
     // Put in a slight delay to help debounce the reading
+    return rtn;
     delay(1);
 }
 int counter::get_number_visitor(){
-    // Remember last CLK state
-    lastStateCLK = currentStateCLK;
-    Serial.print(currentStateCLK);
-   
-  }
+  return current_number_visitor;
+}
 
 bool counter::update_number_visitor(){
-    // Read the current state of CLK
+  bool rtn = false;
+  while(isVisitor()){// takde perubahan orang
     currentStateCLK = digitalRead(clock_pin);
-
-    // If last and current state of CLK are different, then pulse occurred
-    // React to only 1 state change to avoid double count
-    if (currentStateCLK != lastStateCLK && currentStateCLK == 1) {
-
-        // If the DT state is different than the CLK state then
-        // the encoder is rotating CCW so decrement
-        if (digitalRead(data_pin) != currentStateCLK) {
-            total_number_visitor--;
-            currentDir = 0; //anti clock wise
-        }
-        else {
-            // Encoder is rotating CW so increment
-            total_number_visitor++;
-            currentDir = 1; // clock wise
-        }
-
-
-        if (currentDir == 1) {
-            currentDir = 0;
-            return true;
-        }
-        else {
-            return false;
-
-        }
-    }
-
+    if (currentStateCLK != lastStateCLK && currentStateCLK ==1) {
+      if (digitalRead(data_pin) != currentStateCLK) {
+          current_number_visitor--;
+          rtn =  false;
+      }
+      else {
+          // Encoder is rotating CW so increment
+          current_number_visitor++;
+          total_number_visitor++;
+          rtn =  true;
+      }           
+    } 
+    lastStateCLK = currentStateCLK;
+  }    
+    return rtn;
 }
 
 flameDetector::flameDetector(){
@@ -139,21 +133,34 @@ flameDetector::flameDetector(){
 }
 
 bool flameDetector::isFlame(){
-      return analogRead(flame_pin);
+
+  if(digitalRead(flame_pin) == HIGH){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
+
 temperatureDetector::temperatureDetector(){
-
- 
-
 }
 
 int temperatureDetector::get_temperature(){
-    temperature = analogRead(temperature_pin);
-    // read analog volt from sensor and save to variable temp
-    temperature = temperature * 0.48828125;
-    // convert the analog volt to its temperature equivalent
-    return int(temperature);
+
+
+  int Vo;
+  float R1 = 10000; // value of R1 on board
+  float logR2, R2, T;
+  float c1 = 0.001129148, c2 = 0.000234125, c3 = 0.0000000876741; //steinhart-hart coeficients for thermistor
+
+  Vo = analogRead(temperature_pin);
+  R2 = R1 * (1023.0 / (float)Vo - 1.0); //calculate resistance on thermistor
+  logR2 = log(R2);
+  T = (1.0 / (c1 + c2*logR2 + c3*logR2*logR2*logR2)); // temperature in Kelvin
+  T = T - 273.15; //convert Kelvin to Celcius
+
+  return int(T);
 }
 
 highDetector::highDetector(){
