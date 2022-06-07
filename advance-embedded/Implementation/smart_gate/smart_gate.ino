@@ -2,6 +2,10 @@
 #include <ArduinoMqttClient.h>
 #include "component.h"
 
+#define wifi_inidicator A4
+#define broker_inidicator A5
+#define fire_inidicator A3
+
 const char topic_gate[]  = "topic_gate";
 const char topic_new_visitor_number[]  = "topic_new_visitor_number";
 const char topic_new_visitor_high[]  = "topic_new_visitor_high";
@@ -33,33 +37,6 @@ visitor tempVisitor;
 void setup(){
     Serial.begin(9600);
 
-    Serial.print("Attempting to connect to SSID: ");
-    Serial.println(ssid);
-    while (WiFi.begin(ssid, pass) != WL_CONNECTED) {
-      Serial.print(".");
-    delay(5000);
-    }
-    Serial.println("You're connected to the network");
-    Serial.println();
-
-    
-
-    Serial.print("Attempting to connect to the MQTT broker: ");
-    Serial.println(broker);
-      if (!mqttClient.connect(broker, port)) {
-        Serial.print("MQTT connection failed! Error code = ");
-        Serial.println(mqttClient.connectError());
-
-        while (1);
-      }
-  Serial.println("You're connected to the MQTT broker!");
-  Serial.println();
-
-  mqttClient.onMessage(handler);
-  mqttClient.subscribe(topic_gate);
-
-  Serial.println();
-
     pinMode(Gate.led_red_pin,OUTPUT);
     pinMode(Gate.led_green_pin,OUTPUT);
     pinMode(Gate.motor_pin1,OUTPUT);
@@ -73,6 +50,38 @@ void setup(){
     pinMode(HighDetector.echo_pin,INPUT);
     pinMode(TemperatureDetector.temperature_pin,INPUT);
     pinMode(FlameDetector.flame_pin,INPUT);
+    pinMode(broker_inidicator ,OUTPUT);
+    pinMode(wifi_inidicator ,OUTPUT);
+    pinMode(fire_inidicator ,OUTPUT);
+
+    Serial.print("Attempting to connect to SSID: ");
+    Serial.println(ssid);
+    while (WiFi.begin(ssid, pass) != WL_CONNECTED) {
+      Serial.print(".");
+    delay(5000);
+    }
+    digitalWrite(wifi_inidicator, HIGH);
+    Serial.println("You're connected to the network");
+    Serial.println();
+
+    
+
+    Serial.print("Attempting to connect to the MQTT broker: ");
+    Serial.println(broker);
+      if (!mqttClient.connect(broker, port)) {
+        Serial.print("MQTT connection failed! Error code = ");
+        Serial.println(mqttClient.connectError());
+
+        while (1);
+      }
+  digitalWrite(broker_inidicator, HIGH);
+  Serial.println("You're connected to the MQTT broker!");
+  Serial.println();
+
+  mqttClient.onMessage(handler);
+  mqttClient.subscribe(topic_gate);
+  digitalWrite(Gate.led_red_pin,HIGH);
+  Serial.println();
 }
 
 
@@ -106,7 +115,15 @@ void loop(){
     mqttClient.beginMessage(flameS); // publish the state of fire 
     mqttClient.print(FlameDetector.isFlame());
     mqttClient.endMessage(); 
+    digitalWrite(fire_inidicator, HIGH);
   }
+  else{
+    mqttClient.beginMessage(flameS); // publish the state of fire 
+    mqttClient.print(FlameDetector.isFlame());
+    mqttClient.endMessage(); 
+    digitalWrite(fire_inidicator, LOW);
+  }
+  delay(10);
 }
 
 void handler(int messageSize){
