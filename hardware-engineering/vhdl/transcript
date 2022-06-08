@@ -1,17 +1,8 @@
-# Compile of input.vhd failed with 5 errors.
-# 1 compiles, 2 failed with 5 errors.
-# Compile of input.vhd failed with 1 errors.
-# 1 compiles, 2 failed with 1 error.
-# Compile of input.vhd failed with 1 errors.
-# Compile of input.vhd failed with 4 errors.
-# Compile of input.vhd failed with 4 errors.
-# Compile of input.vhd failed with 4 errors.
-# Compile of input.vhd failed with 10 errors.
-# Compile of input.vhd failed with 8 errors.
-# Compile of input.vhd failed with 7 errors.
-# Compile of input.vhd failed with 7 errors.
-# Compile of input.vhd failed with 6 errors.
-# Compile of input.vhd failed with 7 errors.
-# Compile of input.vhd failed with 5 errors.
-# Compile of input.vhd failed with 3 errors.
-# Compile of input.vhd was successful.
+# Error opening D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd
+# Path name 'D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd' doesn't exist.
+# Error opening D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd
+# Path name 'D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd' doesn't exist.
+# Error opening D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd
+# Path name 'D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd' doesn't exist.
+# Error opening D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd
+# Path name 'D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd' doesn't exist.
