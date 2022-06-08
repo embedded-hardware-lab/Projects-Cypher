@@ -1,0 +1,2 @@
+entity test_bench is
+end entity;

@@ -1,0 +1,21 @@
+Library IEEE;
+USE IEEE.Std_logic_1164.all;
+
+entity full_adder_1_bit is
+	port(	A,B,Cin : in std_logic;
+		S,Cout: out std_logic);
+end entity;
+
+architecture data of full_adder_1_bit is
+	signal c0,s0,c1 : std_logic;
+
+	component half_adder_1_bit
+		port(	A,B : in std_logic;
+			S,C : out std_logic);
+	end component;
+
+	begin
+		U1 : half_adder_1_bit port map (A =>A, B=>B, C=>c0, S =>s0);
+		U2 : half_adder_1_bit port map (A =>s0, B=>Cin, C=>c1, S =>S);
+		U3 : Cout <= c0 or c1;
+end architecture;
