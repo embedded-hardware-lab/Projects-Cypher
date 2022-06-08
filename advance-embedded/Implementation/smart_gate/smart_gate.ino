@@ -1,126 +1,140 @@
-/*//#include "protothreads.h"
+#include <WiFiNINA.h>
+#include <ArduinoMqttClient.h>
 #include "component.h"
-#include "Mqtt.h"
 
-void handler();
+#define wifi_inidicator A4
+#define broker_inidicator A5
+#define fire_inidicator A3
 
-mqtt MQtt;
+const char topic_gate[]  = "topic_gate";
+const char topic_new_visitor_number[]  = "topic_new_visitor_number";
+const char topic_new_visitor_high[]  = "topic_new_visitor_high";
+const char topic_new_visitor_temperature[]  = "topic_new_visitor_temperature";
+const char topic_number_visitor[]  = "topic_number_visitor";
+const char flameS[]  = "flameS";
+char msg[]  = "xxxxxx";
+const char broker[] = "192.168.2.221";
+int        port     = 1883;
+
+WiFiClient wifiClient;
+MqttClient mqttClient(wifiClient);
+
+
+char ssid[] = "Im new Joshu";        
+char pass[] = "Ohana123"; 
+
+
+void handler(int messageSize);
+
+
 gate Gate; 
 counter Counter;
 highDetector HighDetector;
 flameDetector FlameDetector;
 temperatureDetector TemperatureDetector;
-visitor Visitor;
+visitor tempVisitor;
 
 void setup(){
-    Serial.begin(1200);
-    MQtt.receive_handler(handler);
-    MQtt.start_subscribe();   
+    Serial.begin(9600);
 
+    pinMode(Gate.led_red_pin,OUTPUT);
+    pinMode(Gate.led_green_pin,OUTPUT);
+    pinMode(Gate.motor_pin1,OUTPUT);
+    pinMode(Gate.motor_pin2,OUTPUT);
+    pinMode(Gate.motor_pin3,OUTPUT);
+    pinMode(Gate.motor_pin4,OUTPUT);
+    pinMode(Counter.clock_pin,INPUT);
+    pinMode(Counter.data_pin,INPUT);
+    pinMode(Counter.sw_pin,INPUT_PULLUP);
+    pinMode(HighDetector.trigger_pin,OUTPUT);
+    pinMode(HighDetector.echo_pin,INPUT);
+    pinMode(TemperatureDetector.temperature_pin,INPUT);
+    pinMode(FlameDetector.flame_pin,INPUT);
+    pinMode(broker_inidicator ,OUTPUT);
+    pinMode(wifi_inidicator ,OUTPUT);
+    pinMode(fire_inidicator ,OUTPUT);
+
+    Serial.print("Attempting to connect to SSID: ");
+    Serial.println(ssid);
+    while (WiFi.begin(ssid, pass) != WL_CONNECTED) {
+      Serial.print(".");
+    delay(5000);
+    }
+    digitalWrite(wifi_inidicator, HIGH);
+    Serial.println("You're connected to the network");
+    Serial.println();
+
+    
+
+    Serial.print("Attempting to connect to the MQTT broker: ");
+    Serial.println(broker);
+      if (!mqttClient.connect(broker, port)) {
+        Serial.print("MQTT connection failed! Error code = ");
+        Serial.println(mqttClient.connectError());
+
+        while (1);
+      }
+  digitalWrite(broker_inidicator, HIGH);
+  Serial.println("You're connected to the MQTT broker!");
+  Serial.println();
+
+  mqttClient.onMessage(handler);
+  mqttClient.subscribe(topic_gate);
+  digitalWrite(Gate.led_red_pin,HIGH);
+  Serial.println();
 }
+
+
 void loop(){
-  MQtt.check_update(); 
-  // check for visitor
-    // if there is visitor
-      // update number
-      // send number of visitor    
-      // get number, temperatur, high
-      // send visitor data
-  // check for fire
+  mqttClient.poll(); 
 
-}
+  if(Counter.update_number_visitor()){  // return true if the number is increase
+  Serial.println("bertambah orang..........................");
+    tempVisitor.number = tempVisitor.number + 1; //set nth number of visitor
+    tempVisitor.high = HighDetector.get_high(); // set visitor high
+    tempVisitor.temperature = TemperatureDetector.get_temperature(); // set visitor temperature
 
-void handler(){
-  // controlling gate
+    mqttClient.beginMessage(topic_new_visitor_number); // publish visitor nth number
+    mqttClient.print(tempVisitor.number);
+    mqttClient.endMessage();
+    
+    mqttClient.beginMessage(topic_new_visitor_temperature);  // publish visitor  temperature
+    mqttClient.print(tempVisitor.temperature);
+    mqttClient.endMessage(); 
 
-}
-/*
-
-// function prototype
-int people_counter_pt(struct pt* pt); // send number of people + high + temperatur
-int gate_controller_pt(struct pt* pt); // open and close gate including led indicator
-int sonsors_pt(struct pt* pt);
-void onMqttMessage(int messageSize);
-
-void people_counter(); 
-void gate_controller(int msg);
-/////////////////////////////////////////////////////////////////
-
-
-
-//mqtt information
-MqttClient mqttClient(wifiClient);
-
-const char broker[] = "192.168.2.221";
-int        port     = 1883;
-const char topic_gate[]  = "topic_gate";
-const char topic_number_visitor[]  = "topic_number_visitor";
-
-const long interval = 8000;
-unsigned long previousMillis = 0;
-int count = 0;
-
-
-
-// thread handler
-pt ptCounter;
-pt ptSensors;
-pt ptGate;
-
-void setup() {
-  Serial.begin(9600);
-
-  // initialize thread handler
-  PT_INIT(&ptCounter);
-  PT_INIT(&ptSensors);
-  PT_INIT(&ptGate);
-
-
-}
-
-void loop() {
-   
-  // run the threads
-  // PT_SCHEDULE(<function_name>(&<thread_handler>));
-  //# PT_SCHEDULE(people_counter_pt(&ptCounter));
-  //# PT_SCHEDULE(gate_controller_pt(&ptGate));
-}
-
-//////////////////////////////////////////////////////////////////
-
-
-int people_counter(struct pt* pt) {
-  PT_BEGIN(pt);
-
-  // Loop forever
-  for(;;) {
-	PT_YIELD(pt);
+    mqttClient.beginMessage(topic_new_visitor_high); // publish visitor high
+    mqttClient.print(tempVisitor.high);
+    mqttClient.endMessage(); 
   }
 
-  PT_END(pt);
-}
+  mqttClient.beginMessage(topic_number_visitor); // publish current number of visitor 
+  mqttClient.print(Counter.get_number_visitor());
+  mqttClient.endMessage(); 
 
-int gate_controller(struct pt* pt) {
-  PT_BEGIN(pt);
-  PT_END(pt);
-}
-
-//////////////////////////////////////////////////////////////////
-
-// receive message
-void onMqttMessage(int messageSize) {
-  // we received a message, print out the topic and contents
-  Serial.println("Received a message with topic '");
-  Serial.print(mqttClient.messageTopic());
-  Serial.print("', length ");
-  Serial.print(messageSize);
-  Serial.println(" bytes:");
-
-  // use the Stream interface to print the contents
-  while (mqttClient.available()) {
-    Serial.print((char)mqttClient.read());
+  if(FlameDetector.isFlame()){ // if there is fire
+    mqttClient.beginMessage(flameS); // publish the state of fire 
+    mqttClient.print(FlameDetector.isFlame());
+    mqttClient.endMessage(); 
+    digitalWrite(fire_inidicator, HIGH);
   }
-  Serial.println();
-  Serial.println();
+  else{
+    mqttClient.beginMessage(flameS); // publish the state of fire 
+    mqttClient.print(FlameDetector.isFlame());
+    mqttClient.endMessage(); 
+    digitalWrite(fire_inidicator, LOW);
+  }
+  delay(10);
 }
-*/
+
+void handler(int messageSize){
+  Serial.println(mqttClient.messageTopic());
+  for (int i = 0 ; mqttClient.available(); i++) {
+    msg[i] = (char)mqttClient.read();
+  }
+  if( msg[0] == 'l' ){
+    Gate.set_lock();
+  }
+  if( msg[0] == 'u' ){
+    Gate.set_unlock();
+  }
+}

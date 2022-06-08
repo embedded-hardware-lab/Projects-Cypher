@@ -1,0 +1,6 @@
+# Compile of half_adder_1_bit.vhd was successful.
+# Compile of full_adder_1_bit.vhd was successful.
+# Compile of full_adder_4_bit.vhd was successful.
+# Compile of adder_subtractor_4_bit.vhd was successful.
+# Compile of adder_subtractor_4_bit_TB.vhd was successful.
+# 5 compiles, 0 failed with no errors.

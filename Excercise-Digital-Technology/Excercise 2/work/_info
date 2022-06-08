@@ -1,0 +1,212 @@
+m255
+K4
+z2
+!s11e vcom 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/21.1
+Eadder_subtractor_4_bit
+Z0 w1654677134
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 81
+Z3 dD:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2
+Z4 8D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/adder_subtractor_4_bit.vhd
+Z5 FD:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/adder_subtractor_4_bit.vhd
+l0
+L4 1
+VQ7kKPK<bPVlgBXIfWWDIM3
+!s100 S?[a3^eSC;SCEVjooX>I52
+Z6 OV;C;2021.1;73
+32
+Z7 !s110 1654677187
+!i10b 1
+Z8 !s108 1654677187.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/adder_subtractor_4_bit.vhd|
+Z10 !s107 D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/adder_subtractor_4_bit.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Adata
+R1
+R2
+DEx4 work 22 adder_subtractor_4_bit 0 22 Q7kKPK<bPVlgBXIfWWDIM3
+!i122 81
+l21
+L12 19
+V1U>hC^0@nFMl@S^WIN1KO1
+!s100 FZBhSXFC958HPRC8Q]`K]3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadder_subtractor_4_bit_tb
+Z13 w1654677184
+!i122 82
+R3
+Z14 8D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/adder_subtractor_4_bit_TB.vhd
+Z15 FD:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/adder_subtractor_4_bit_TB.vhd
+l0
+L1 1
+VEg3k_2>34T6mQDnP?9E]11
+!s100 Y@;3lEDng3V>=G>KLhKdZ3
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/adder_subtractor_4_bit_TB.vhd|
+Z17 !s107 D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/adder_subtractor_4_bit_TB.vhd|
+!i113 1
+R11
+R12
+Adata
+Z18 DEx4 work 25 adder_subtractor_4_bit_tb 0 22 Eg3k_2>34T6mQDnP?9E]11
+!i122 82
+l20
+L4 29
+V6bTNd3_3D@KDhCQ[OLN]X2
+!s100 E@b66Bem1bV]c6<lY][JW2
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Efull_adder_1_bit
+Z19 w1654676890
+R1
+R2
+!i122 79
+R3
+Z20 8D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/full_adder_1_bit.vhd
+Z21 FD:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/full_adder_1_bit.vhd
+l0
+L4 1
+VBOl0JFlec:>R7SKi87J:72
+!s100 oTTlc4koh3[7ncb3ViDRj1
+R6
+32
+R7
+!i10b 1
+Z22 !s108 1654677186.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/full_adder_1_bit.vhd|
+Z24 !s107 D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/full_adder_1_bit.vhd|
+!i113 1
+R11
+R12
+Adata
+R1
+R2
+DEx4 work 16 full_adder_1_bit 0 22 BOl0JFlec:>R7SKi87J:72
+!i122 79
+l17
+L9 13
+VNdGPCOOQ>KGG<6Q:f=MFk3
+!s100 _ej`HBdjZ:>EgoH8zI5?R3
+R6
+32
+R7
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Efull_adder_4_bit
+Z25 w1654677157
+R1
+R2
+!i122 80
+R3
+Z26 8D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/full_adder_4_bit.vhd
+Z27 FD:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/full_adder_4_bit.vhd
+l0
+L4 1
+Vh@5d?MKnVQL3lX8FZ8K@81
+!s100 Wg?=;3Dz3lVUJdOB^l<TC0
+R6
+32
+R7
+!i10b 1
+R8
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/full_adder_4_bit.vhd|
+Z29 !s107 D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/full_adder_4_bit.vhd|
+!i113 1
+R11
+R12
+Adata
+R1
+R2
+DEx4 work 16 full_adder_4_bit 0 22 h@5d?MKnVQL3lX8FZ8K@81
+!i122 80
+l20
+L13 13
+VRGUFnnAbBDCAN1aR3coT>1
+!s100 <B_F[f:2S@N;Z^DB8m^a]0
+R6
+32
+R7
+!i10b 1
+R8
+R28
+R29
+!i113 1
+R11
+R12
+Ehalf_adder_1_bit
+Z30 w1654676846
+R1
+R2
+!i122 78
+R3
+Z31 8D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/half_adder_1_bit.vhd
+Z32 FD:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/half_adder_1_bit.vhd
+l0
+L5 1
+V?g@Y;No`];aO]LiMzRdjQ3
+!s100 M<a0ge7hE=dR0OLi79[hQ2
+R6
+32
+Z33 !s110 1654677186
+!i10b 1
+R22
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/half_adder_1_bit.vhd|
+Z35 !s107 D:/OneDrive/HSHL/Semester 6/Hardware Engineering/Hardware enginering lab/Excercise 2/half_adder_1_bit.vhd|
+!i113 1
+R11
+R12
+Adata
+R1
+R2
+DEx4 work 16 half_adder_1_bit 0 22 ?g@Y;No`];aO]LiMzRdjQ3
+!i122 78
+l11
+L10 5
+VZ<`SeP0<a@a584Mj3KHhK0
+!s100 @U:V^D2fA;OXH<aQJ=joH1
+R6
+32
+R33
+!i10b 1
+R22
+R34
+R35
+!i113 1
+R11
+R12
