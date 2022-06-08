@@ -67,7 +67,7 @@ architecture behaviour of parkingLot is
 				when full =>	if input="00000111"then
 						led<='0';
 						elsif input = "00000010" then
-							counter <= counter  - "00000001";
+							counter_s<= not( not counter_s  and "00000001");
  						end if;
 			end case;
 		end process;
