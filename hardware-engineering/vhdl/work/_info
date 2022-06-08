@@ -1,7 +1,7 @@
 m255
 K4
 z2
-!s11e MIXED_VERSIONS
+!s11e vcom 2021.1 2021.02, Feb  3 2021
 13
 !s112 1.1
 !i10d 8192
@@ -9,44 +9,48 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_pro/21.1
-Eparkinglot
-Z0 w1654209131
-Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 12
-Z3 dD:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl
-Z4 8D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd
-Z5 FD:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd
+Eparkinglotsystem
+Z0 w1654707162
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z5 dD:/Documents/GitHub/Projects-Cypher/hardware-engineering/vhdl
+Z6 8D:/Documents/GitHub/Projects-Cypher/hardware-engineering/vhdl/parking_lot.vhd
+Z7 FD:/Documents/GitHub/Projects-Cypher/hardware-engineering/vhdl/parking_lot.vhd
 l0
-L4 1
-Vlb:;P8coW2M?ik;EFGdeO3
-!s100 dbVCFU8Tf4TRM2M[k;@J[0
-Z6 OV;C;2021.1;73
+L5 1
+V0_2a>ETM2ShJC=hzHg^CD0
+!s100 R1<KQ4<ASW7aCCMjc8ZnT1
+Z8 OV;C;2021.1;73
 32
-Z7 !s110 1654209136
+Z9 !s110 1654707165
 !i10b 1
-Z8 !s108 1654209136.000000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd|
-!s107 D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd|
+Z10 !s108 1654707165.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/hardware-engineering/vhdl/parking_lot.vhd|
+!s107 D:/Documents/GitHub/Projects-Cypher/hardware-engineering/vhdl/parking_lot.vhd|
 !i113 1
-Z10 o-work work -2002 -explicit
-Z11 tExplicit 1 CvgOpt 0
-Abehaviour
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
 R1
 R2
-DEx4 work 10 parkinglot 0 22 lb:;P8coW2M?ik;EFGdeO3
-!i122 12
-l13
-L8 68
-VnU[WAY_TPh?GhhR^258;21
-!s100 `He8V14gi>bGR2ZLHhIN;0
-R6
-32
-R7
-!i10b 1
+R3
+R4
+DEx4 work 16 parkinglotsystem 0 22 0_2a>ETM2ShJC=hzHg^CD0
+!i122 0
+l26
+L15 108
+V]CY3nan@E=2>1mDzU3IJP0
+!s100 1?hDAj;37UQKRPJ[9_VGS1
 R8
+32
 R9
-Z12 !s107 D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/input.vhd|
-!i113 1
+!i10b 1
 R10
 R11
+Z14 !s107 D:/Documents/GitHub/Projects-Cypher/hardware-engineering/vhdl/parking_lot.vhd|
+!i113 1
+R12
+R13
