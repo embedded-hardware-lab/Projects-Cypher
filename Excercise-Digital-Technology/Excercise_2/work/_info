@@ -1,0 +1,216 @@
+m255
+K4
+z2
+!s11e vcom 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/21.1
+Eadder_subtractor_4_bit
+Z0 w1654795372
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+Z3 dD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2
+Z4 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd
+Z5 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd
+l0
+L4 1
+VQ7kKPK<bPVlgBXIfWWDIM3
+!s100 S?[a3^eSC;SCEVjooX>I52
+Z6 OV;C;2021.1;73
+32
+Z7 !s110 1654796133
+!i10b 1
+Z8 !s108 1654796133.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd|
+Z10 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Adata
+R1
+R2
+DEx4 work 22 adder_subtractor_4_bit 0 22 Q7kKPK<bPVlgBXIfWWDIM3
+!i122 11
+l21
+L12 19
+V1U>hC^0@nFMl@S^WIN1KO1
+!s100 FZBhSXFC958HPRC8Q]`K]3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadder_subtractor_4_bit_tb
+Z13 w1654795749
+R1
+R2
+!i122 12
+R3
+Z14 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_2.vhd
+Z15 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_2.vhd
+l0
+L4 1
+V5SRhTTPW^1XDVUmVIM:c93
+!s100 o2naef8DM:`cU7aUizXPn0
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_2.vhd|
+Z17 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_2.vhd|
+!i113 1
+R11
+R12
+Adata
+R1
+R2
+Z18 DEx4 work 25 adder_subtractor_4_bit_tb 0 22 5SRhTTPW^1XDVUmVIM:c93
+!i122 12
+l23
+Z19 L7 29
+Z20 V7d0IG>DIH49AR9cmf2M1W1
+Z21 !s100 ?U4jgP>;MOYU89;Z9^Zn71
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Efull_adder_1_bit
+Z22 w1654795164
+R1
+R2
+!i122 9
+R3
+Z23 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd
+Z24 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd
+l0
+L5 1
+VEEP=WJefQ]HMU[k1`MVOM0
+!s100 TQMWJm>hB^fF>8gG<YglP3
+R6
+32
+Z25 !s110 1654796132
+!i10b 1
+Z26 !s108 1654796132.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd|
+Z28 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd|
+!i113 1
+R11
+R12
+Adata
+R1
+R2
+DEx4 work 16 full_adder_1_bit 0 22 EEP=WJefQ]HMU[k1`MVOM0
+!i122 9
+l18
+L10 13
+VZJSB<07TGzKM<UCo^JXH53
+!s100 kb^N4[jUVWJ6HaG87aBzL1
+R6
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R11
+R12
+Efull_adder_4_bit
+Z29 w1654795261
+R1
+R2
+!i122 10
+R3
+Z30 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd
+Z31 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd
+l0
+L4 1
+Vh@5d?MKnVQL3lX8FZ8K@81
+!s100 Wg?=;3Dz3lVUJdOB^l<TC0
+R6
+32
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd|
+Z33 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd|
+!i113 1
+R11
+R12
+Adata
+R1
+R2
+DEx4 work 16 full_adder_4_bit 0 22 h@5d?MKnVQL3lX8FZ8K@81
+!i122 10
+l20
+L13 13
+VRGUFnnAbBDCAN1aR3coT>1
+!s100 <B_F[f:2S@N;Z^DB8m^a]0
+R6
+32
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Ehalf_adder_1_bit
+Z34 w1654795130
+R1
+R2
+!i122 8
+R3
+Z35 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd
+Z36 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd
+l0
+L5 1
+V?g@Y;No`];aO]LiMzRdjQ3
+!s100 M<a0ge7hE=dR0OLi79[hQ2
+R6
+32
+R25
+!i10b 1
+R26
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd|
+Z38 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd|
+!i113 1
+R11
+R12
+Adata
+R1
+R2
+DEx4 work 16 half_adder_1_bit 0 22 ?g@Y;No`];aO]LiMzRdjQ3
+!i122 8
+l11
+L10 5
+VZ<`SeP0<a@a584Mj3KHhK0
+!s100 @U:V^D2fA;OXH<aQJ=joH1
+R6
+32
+R25
+!i10b 1
+R26
+R37
+R38
+!i113 1
+R11
+R12

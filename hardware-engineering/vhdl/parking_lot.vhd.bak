@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity parkingLotSystem is
  	port (	rst, clk: in std_logic;
-		input : in std_logic_vector(3 downto 0); 
+		input : in std_logic_vector(7 downto 0); 
 		
 		counter : out std_logic_vector(7 downto 0); 
 		gate, led : out std_logic;
@@ -37,9 +37,9 @@ architecture behavioral of parkingLotSystem is
 		sysInput: process(current_state, input,space_state)
 		begin
  			case current_state is
-				when idle => 	if input = "0001" then
+				when idle => 	if input = "00000001" then
 							next_state <= display;
-						elsif input = "0010" then
+						elsif input = "00000010" then
 							next_state <= display;
 						else 
 							next_state <= idle;
@@ -59,7 +59,7 @@ architecture behavioral of parkingLotSystem is
 						end if;
 
 	
-				when full => 	if input = "0010" then
+				when full => 	if input = "00000010" then
 							next_state <= display;
 						else 
 							next_state <= full;
@@ -93,14 +93,14 @@ architecture behavioral of parkingLotSystem is
 		carCounter : process(current_state, input, clk)
 			begin
 				case current_state is
-					when idle => 	if ( input="0001" and clk = '0' and clk'event  )  then		-- car enter
+					when idle => 	if ( input="00000001" and clk = '0' and clk'event  )  then		-- car enter
 								counter_s <= counter_s + '1' ;   -- counting up
-							elsif (input="0010"  and clk = '0' and clk'event  )  then		-- car leave
+							elsif (input="00000010"  and clk = '0' and clk'event  )  then		-- car leave
 								counter_s <= counter_s - '1' ;   -- counting down
 							end if;
 					when display =>	counter_s <= counter_s ;	
 
-					when full => 	if input="0010"  then		-- car leave
+					when full => 	if input="00000010"  then		-- car leave
 								counter_s <= counter_s - '1' after 100 ps;   -- counting down
 							end if;
 				end case;
@@ -108,7 +108,7 @@ architecture behavioral of parkingLotSystem is
 		
 		space_checker : process(counter_s)
 			begin
-			if counter_s < "1101"  then
+			if counter_s < "00001101"  then
 				space_state <= '1';
 			else 
 				space_state <= '0';
