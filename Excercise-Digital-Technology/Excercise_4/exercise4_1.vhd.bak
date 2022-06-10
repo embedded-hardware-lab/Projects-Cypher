@@ -39,7 +39,7 @@ architecture behavioural of counter_4_bit is
 					rst => RESET );
 
 	clk1 :  D_flip_flop port map (	D => d1,
-					Clk => counter_clock),
+					Clk => counter_clock,
 					Q => q_internal(1),
 					Q_not => qn_internal(1),
 					rst => RESET );

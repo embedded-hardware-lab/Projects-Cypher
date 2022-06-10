@@ -22,7 +22,7 @@ architecture behavioural of counter_4_bit is
 	begin
 
 
-	counterUP : process(CLK, EN)
+	counterClock : process(CLK, EN)
 
 		begin
 			if (CLK = '1' and CLK'event ) then

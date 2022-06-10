@@ -8,7 +8,7 @@ architecture behavioural of counterUpDown_4_bit is
 	signal q_internal : bit_vector(3 downto 0) ;
 	signal qn_internal: bit_vector(3 downto 0);
 	signal d0, d1, d2, d3 : bit;
-	signal flip_flop_clock : bit;
+	signal counter_clock : bit;
 	signal c : bit_vector(3 downto 0);
 
 	component D_flip_flop is 
@@ -28,31 +28,31 @@ architecture behavioural of counterUpDown_4_bit is
 		begin
 			if (CLK = '1' and CLK'event ) then
 				if EN = '1' then
-					flip_flop_clock <= not flip_flop_clock;
+					counter_clock <= not counter_clock;
 				end if;
 			end if;
 	end process;
 
 	clk0 :  D_flip_flop port map (	D => d0, 
-					Clk =>  flip_flop_clock,
+					Clk =>  counter_clock,
 					Q => q_internal(0),
 					Q_not => qn_internal(0),
 					rst => RESET );
 
 	clk1 :  D_flip_flop port map (	D => d1,
-					Clk => flip_flop_clock,
+					Clk => counter_clock,
 					Q => q_internal(1),
 					Q_not => qn_internal(1),
 					rst => RESET );
 
 	clk2 :  D_flip_flop port map (	D => d2 , 
-					Clk => flip_flop_clock,
+					Clk => counter_clock,
 					Q => q_internal(2),
 					Q_not => qn_internal(2),
 					rst => RESET );
 
 	clk3 :  D_flip_flop port map (	D => d3,
-					Clk => flip_flop_clock,
+					Clk => counter_clock,
 					Q => q_internal(3),
 					Q_not => qn_internal(3),
 					rst => RESET );

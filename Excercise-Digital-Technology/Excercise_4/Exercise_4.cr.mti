@@ -58,21 +58,23 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Compiling entity multiplexer_4_1_TB
 -- Compiling architecture behavioural of multiplexer_4_1_TB
 
+} {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_1.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity counterUpDown_4_bit
+-- Compiling architecture behavioural of counterUpDown_4_bit
+
 } {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise4_2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise4_2.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Compiling entity counter_4_bit_TB
 -- Compiling architecture behavioural of counter_4_bit_TB
 
-} {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_1.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_1.vhd
+} {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_2.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
-** Error (suppressible): D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_1.vhd(2): (vcom-1491) Empty source files.
-
-} {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_2.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_2.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
--- Loading package STANDARD
-** Error (suppressible): D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_2.vhd(2): (vcom-1491) Empty source files.
+-- Compiling entity counterUpDown_4_bit_TB
+-- Compiling architecture behavioural of counterUpDown_4_bit_TB
 
 } {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_3.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_3.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021

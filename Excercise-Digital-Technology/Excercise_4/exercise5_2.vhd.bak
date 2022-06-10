@@ -25,7 +25,7 @@ architecture behavioural of counterUpDown_4_bit_TB is
 
 
 	RESET_TB <= '0';
-	EN_TB <= '1', '0' after 15 ns;
+	EN_TB <= '1';
 	upDown_TB <= '1' , '0' after 6 ns;  -- 1 for up
 
 	
@@ -33,6 +33,18 @@ architecture behavioural of counterUpDown_4_bit_TB is
 		begin
    			CLK_TB <= not CLK_TB after 0.5 ns;
 	end process;
+
+
+
+
+
+
+
+
+
+
+
+
 
 end architecture;
 
