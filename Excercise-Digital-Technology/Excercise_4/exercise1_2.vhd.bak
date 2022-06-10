@@ -1,23 +1,21 @@
-Library IEEE;
-USE IEEE.Std_logic_1164.all;
-
 entity D_flip_flop_TB is
 end D_flip_flop_TB;
 
 architecture data of D_flip_flop_TB is
 
 	component D_flip_flop
-      		port(	Q : out std_logic;    
-      			Clk :in std_logic; 
-			Q_not : out std_logic; 
-      			D :in  std_logic    
+      		port(	Q : out bit;    
+      			Clk :in bit; 
+			Q_not : out bit; 
+      			D :in  bit;
+			rst : in bit   
    		);
 	end component;
 
-	signal Q_TB: std_logic;
-	signal Clk_TB: std_logic := '0';
-	signal D_TB: std_logic:= '0';
-	signal Q_not_TB: std_logic;
+	signal Q_TB: bit;
+	signal Clk_TB: bit := '0';
+	signal D_TB: bit:= '0';
+	signal Q_not_TB: bit;
 
 	begin
 	DUT1: D_flip_flop port map(	Q=>Q_TB,

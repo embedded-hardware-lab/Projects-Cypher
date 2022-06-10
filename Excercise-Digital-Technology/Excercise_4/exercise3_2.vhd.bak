@@ -22,10 +22,10 @@ architecture behavioural of multiplexer_4_1_TB is
 	
 	selectTest : process(input_TB,input_select_TB)
 		begin
-		input_select_TB(0)<= not input_select_TB(0) after 0.5 ns;
-		input_select_TB(1) <=not input_select_TB(1) after 1.0 ns;
-
-
+		input_select_TB <= "00" after 0.5 ns;
+		input_select_TB <= "01" after 1.0 ns;
+		input_select_TB <= "10" after 1.5 ns;
+		input_select_TB <= "11" after 2.0 ns;
 	end process;
 
 	inputTest : process(input_TB,input_select_TB)

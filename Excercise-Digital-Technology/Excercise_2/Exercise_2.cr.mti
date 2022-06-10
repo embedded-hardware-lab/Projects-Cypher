@@ -1,41 +1,31 @@
 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
 -- Compiling entity full_adder_1_bit
 -- Compiling architecture data of full_adder_1_bit
 
 } {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
 -- Compiling entity full_adder_4_bit
 -- Compiling architecture data of full_adder_4_bit
 
 } {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
 -- Compiling entity adder_subtractor_4_bit
 -- Compiling architecture data of adder_subtractor_4_bit
-
-} {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_2.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity adder_subtractor_4_bit_TB
--- Compiling architecture data of adder_subtractor_4_bit_TB
 
 } {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
 -- Compiling entity half_adder_1_bit
 -- Compiling architecture data of half_adder_1_bit
+
+} {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity adder_subtractor_4_bit_TB
+-- Compiling architecture data of adder_subtractor_4_bit_TB
 
 } {} {}}

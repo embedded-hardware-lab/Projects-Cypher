@@ -5,22 +5,22 @@ end entity;
 architecture behavioural of counter_4_bit_TB is
 
 	component counter_4_bit is 
-		port ( 	CLK, RESET, EN: in bit;
+		port ( 	CLK, RST, EN: in bit;
 			counter: out bit_vector(3 downto 0));
 	end component;
 
-	signal CLK_TB, RESET_TB, EN_TB:  bit;
+	signal CLK_TB, RST_TB, EN_TB:  bit;
 	signal counter_TB:  bit_vector(3 downto 0);
 
 	begin 
 	
 	counter1 : counter_4_bit port map( 	CLK => CLK_TB, 
-						RESET => RESET_TB, 
+						RST => RST_TB, 
 						EN => EN_TB,
 						counter => counter_TB);
 
 	EN_TB <= '1' after 2 ns;
-	RESET_TB <= '1' after 20 ns;
+	RST_TB <= '1' after 20 ns;
 	
 	clck : process(CLK_TB)
 		begin

@@ -1,3 +1,7 @@
+
+Library IEEE;
+USE IEEE.Std_logic_1164.all;
+
 entity full_adder_1_bit is
 	port(	A,B,Cin : in bit;
 		S,Cout: out bit);

@@ -11,8 +11,7 @@ architecture behavioral of shift_register_8_bit is
 
 	component D_flip_flop
 		port(
-      			Q : out bit; 
-			Q_not : out bit;    
+      			Q : out bit;    
       			Clk :in bit;   
       			D :in  bit ;
 			rst : in bit   

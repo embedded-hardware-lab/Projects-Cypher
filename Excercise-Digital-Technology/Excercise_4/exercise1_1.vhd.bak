@@ -1,24 +1,28 @@
-Library IEEE;
-USE IEEE.Std_logic_1164.all;
-
 entity D_flip_flop is 
-   port(	Q : out std_logic; 
-		Q_not : out std_logic;    
-      		Clk :in std_logic;   
-      		D :in  std_logic    
+   port(	Q : out bit; 
+		Q_not : out bit;    
+      		Clk :in bit;   
+      		D :in  bit ;
+		rst : in bit  
    	);
 end D_flip_flop;
 
 architecture Behavioral of D_flip_flop is  
-	signal q_s: std_logic;
+	signal q_s: bit;
 
 	begin  
- 		process(Clk)
+ 		clock : process(Clk)
  			begin 
     				if(Clk = '1' and Clk'event) then
    					q_s <= D; 
     				end if;       
  		end process;
+		reset : process(rst)
+			begin 
+    				if rst = '1' then
+   					q_s <= '0'; 
+    				end if;  
+		end process;
 		Q <= q_s;  
 		Q_not <= not q_s;
 end Behavioral;

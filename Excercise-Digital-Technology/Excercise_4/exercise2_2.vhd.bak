@@ -9,7 +9,7 @@ architecture behavioural of clock_divider_TB is
 
 	component clock_divider is
 		port (	CLK_main : in bit;					
-			CLK_N : out bit_vector(7 downto 0);
+			CLK_N : out bit_vector(7 downto 0),
 			reset : in bit);	
 	end component;
 

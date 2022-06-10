@@ -1,3 +1,6 @@
+Library IEEE;
+USE IEEE.Std_logic_1164.all;
+
 entity full_adder_4_bit is
 	port(	A : in bit_vector(3 downto 0); 
 		B : in bit_vector(3 downto 0); 
