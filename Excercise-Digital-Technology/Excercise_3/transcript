@@ -1,13 +1,21 @@
-# Compile of Question_1.1.vhd was successful.
-# Compile of Question_1.vhd was successful.
-# Compile of Question_2.1.vhd was successful.
-# Compile of Question_2.2.vhd was successful.
-# Compile of Question_2.3.vhd was successful.
-# Compile of Question_2.vhd was successful.
-# Compile of Question_3.vhd failed with 1 errors.
-# Compile of Question_4.vhd failed with 1 errors.
-# Compile of exercise1.vhd was successful.
-# Compile of exercise2.vhd was successful.
-# Compile of exercise3.vhd was successful.
-# Compile of exercise4_1.vhd was successful.
-# 12 compiles, 2 failed with 2 errors.
+vsim work.led_7segment
+# vsim work.led_7segment 
+# Start time: 16:46:25 on Jun 12,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.led_7segment(behavioral)
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 2 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 2 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 2 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 2 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+add wave -position insertpoint  \
+sim:/led_7segment/input \
+sim:/led_7segment/LED_out
+run
+run
+force -freeze sim:/led_7segment/input 0001 0
+run
