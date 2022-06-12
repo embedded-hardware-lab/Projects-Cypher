@@ -10,24 +10,24 @@ z2
 cModel Technology
 dC:/intelFPGA_pro/21.1
 Eadder_display
-Z0 w1654858324
+Z0 w1655026764
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 70
-Z3 dC:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise
-Z4 8C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.vhd
-Z5 FC:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.vhd
+!i122 77
+Z3 dD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3
+Z4 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_2.vhd
+Z5 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_2.vhd
 l0
 L6 1
 VdM^A^OZddiFO]gQbPVF`61
 !s100 jkc^49EE@SZNP1BTH>?A^3
 Z6 OV;C;2021.1;73
 32
-Z7 !s110 1654858332
+Z7 !s110 1655028204
 !i10b 1
-Z8 !s108 1654858331.000000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.vhd|
-Z10 !s107 C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.vhd|
+Z8 !s108 1655028204.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_2.vhd|
+Z10 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_2.vhd|
 !i113 1
 Z11 o-work work -2002 -explicit
 Z12 tExplicit 1 CvgOpt 0
@@ -35,7 +35,7 @@ Abehavioral
 R1
 R2
 DEx4 work 13 adder_display 0 22 dM^A^OZddiFO]gQbPVF`61
-!i122 70
+!i122 77
 l29
 L13 29
 VXL;3a@2]OY>0E>S;nAKLH2
@@ -50,150 +50,173 @@ R10
 !i113 1
 R11
 R12
-Efull_adder_1_bit
-Z13 w1654856256
-R1
-R2
-!i122 59
+Eadder_subtractor_4_bit
+Z13 w1654808351
+!i122 81
 R3
-Z14 8C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
-Z15 FC:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+Z14 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd
+Z15 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd
 l0
-L4 1
-V`G=C0BF9zZzDFH;m@`T7z3
-!s100 mEThezo101h=zdkb7K_bQ2
+L1 1
+VGSa[5PiE:P3W?58=XVRJf1
+!s100 o5:<K8e1E6BYnDIWRWY272
 R6
 32
-Z16 !s110 1654856266
+Z16 !s110 1655028205
 !i10b 1
-Z17 !s108 1654856266.000000
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd|
-Z19 !s107 C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd|
+Z17 !s108 1655028205.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd|
+!s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd|
 !i113 1
 R11
 R12
 Adata
-R1
-R2
-DEx4 work 16 full_adder_1_bit 0 22 `G=C0BF9zZzDFH;m@`T7z3
-!i122 59
-l17
-L9 13
-V6IJ<X]7So>agFNj;K^?^E3
-!s100 HK105hFPU>7NOn_9;j^N;1
+DEx4 work 22 adder_subtractor_4_bit 0 22 GSa[5PiE:P3W?58=XVRJf1
+!i122 81
+l21
+L9 22
+VAeXQUB;XVHa1:ElP?2@<41
+!s100 m:EJh=;njWE^@eF9?26333
 R6
 32
 R16
 !i10b 1
 R17
 R18
-R19
+Z19 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise4_1.vhd|
+!i113 1
+R11
+R12
+Efull_adder_1_bit
+Z20 w1654808126
+!i122 79
+R3
+Z21 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd
+Z22 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd
+l0
+L1 1
+VBf<h<6Ek3:939:k[:a0>V3
+!s100 4j@BEAjbRCCK9WUhP^BXX1
+R6
+32
+R16
+!i10b 1
+R17
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd|
+Z24 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise2.vhd|
+!i113 1
+R11
+R12
+Adata
+DEx4 work 16 full_adder_1_bit 0 22 Bf<h<6Ek3:939:k[:a0>V3
+!i122 79
+l14
+L6 13
+V7h`jU`j1nFKaLKiJ:9zk41
+!s100 En:<^`n@BTljZ_T_8X4TV1
+R6
+32
+R16
+!i10b 1
+R17
+R23
+R24
 !i113 1
 R11
 R12
 Efull_adder_4_bit
-Z20 w1654856222
-Z21 DPx4 ieee 20 numeric_bit_unsigned 0 22 fQPIgHhiDaHPI@GGmF4c92
-R1
-R2
-!i122 58
+Z25 w1654808135
+!i122 80
 R3
-Z22 8C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.1.vhd
-Z23 FC:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.1.vhd
+Z26 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd
+Z27 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd
 l0
-L5 1
-VFkUD;g^O9VR9Lceae?4S53
-!s100 @ZEzN3Roi]@zQ=X<EZ[3_2
+L1 1
+Vgh=5lG0^CKO]V;Hj1ihV53
+!s100 jmSNa[A>lhKH3`b4gY1=K1
 R6
 32
-Z24 !s110 1654856227
+R16
 !i10b 1
-Z25 !s108 1654856227.000000
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.1.vhd|
-Z27 !s107 C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.1.vhd|
+R17
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd|
+Z29 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise3.vhd|
 !i113 1
 R11
 R12
 Adata
-R21
-R1
-R2
-DEx4 work 16 full_adder_4_bit 0 22 FkUD;g^O9VR9Lceae?4S53
-!i122 58
-l22
-L14 14
-VQjQ<2FQ;=LKK05IoNWDLK2
-!s100 g9zGn]F[OCz;QDi>fL]Zj3
+DEx4 work 16 full_adder_4_bit 0 22 gh=5lG0^CKO]V;Hj1ihV53
+!i122 80
+l17
+L10 13
+Vm`IE^;`ljGkR?nH4U@cIf3
+!s100 Vgg:PYjDfhgVj``bV@bV92
 R6
 32
-R24
+R16
 !i10b 1
-R25
-R26
-R27
+R17
+R28
+R29
 !i113 1
 R11
 R12
 Ehalf_adder_1_bit
-Z28 w1654859386
-R1
-R2
-!i122 71
+Z30 w1654808118
+!i122 78
 R3
-Z29 8C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.3.vhd
-Z30 FC:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.3.vhd
+Z31 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd
+Z32 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd
 l0
-L5 1
-V^ck^jK5JJ7:MA6SNAdhYU0
-!s100 UB8S=@V7V2GVmhMBiAJfQ3
+L1 1
+V01VWf>e]A3J924KOJHVZ41
+!s100 =J3^U=6]H@H?DIP>lT:g93
 R6
 32
-Z31 !s110 1654859392
+R16
 !i10b 1
-Z32 !s108 1654859392.000000
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.3.vhd|
-!s107 C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.3.vhd|
+R17
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd|
+Z34 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_2/exercise1.vhd|
 !i113 1
 R11
 R12
 Adata
-R1
-R2
-DEx4 work 16 half_adder_1_bit 0 22 ^ck^jK5JJ7:MA6SNAdhYU0
-!i122 71
-l11
-L10 5
-VZ<`SeP0<a@a584Mj3KHhK0
-!s100 @U:V^D2fA;OXH<aQJ=joH1
+DEx4 work 16 half_adder_1_bit 0 22 01VWf>e]A3J924KOJHVZ41
+!i122 78
+l7
+L6 5
+ViUUcmeBaMYbhT<MKRI[=c3
+!s100 fYac1;i9_bLBSe8=T3hW@2
 R6
 32
-R31
+R16
 !i10b 1
-R32
+R17
 R33
-Z34 !s107 C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.3.vhd|
+R34
 !i113 1
 R11
 R12
 Eled_7segment
-Z35 w1654855077
+R0
 R1
 R2
-!i122 48
+!i122 73
 R3
-Z36 8C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_1.vhd
-Z37 FC:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_1.vhd
+Z35 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_1.vhd
+Z36 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_1.vhd
 l0
 L5 1
 V;e]cm15ELU2BPQ:61faPU1
 !s100 CD>fRMiJTQ6K^J9V=JO4^3
 R6
 32
-!s110 1654855082
+Z37 !s110 1655028203
 !i10b 1
-Z38 !s108 1654855082.000000
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_1.vhd|
-Z40 !s107 C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_1.vhd|
+Z38 !s108 1655028203.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_1.vhd|
+Z40 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_1.vhd|
 !i113 1
 R11
 R12
@@ -201,14 +224,14 @@ Abehavioral
 R1
 R2
 DEx4 work 12 led_7segment 0 22 ;e]cm15ELU2BPQ:61faPU1
-!i122 48
+!i122 73
 l11
 L10 34
 VhbCHE6LYSlNY]:mCZ`=;e0
 !s100 f9F=KGV[PNb;FZV^O]Ild0
 R6
 32
-!s110 1654855083
+R37
 !i10b 1
 R38
 R39
@@ -217,24 +240,24 @@ R40
 R11
 R12
 Eled_7segment_tb
-Z41 w1654785907
+R0
 R1
 R2
-!i122 36
+!i122 72
 R3
-Z42 8C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_1.1.vhd
-Z43 FC:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_1.1.vhd
+Z41 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_1.1.vhd
+Z42 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_1.1.vhd
 l0
 L5 1
 VSMOKAA5NNNRE8ezHk2^dX1
 !s100 dn^F6U>fH5_[X6JMJ4z1J3
 R6
 32
-Z44 !s110 1654791164
+R37
 !i10b 1
-Z45 !s108 1654791164.000000
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_1.1.vhd|
-Z47 !s107 C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_1.1.vhd|
+Z43 !s108 1655028202.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_1.1.vhd|
+Z45 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Question_1.1.vhd|
 !i113 1
 R11
 R12
@@ -242,18 +265,18 @@ Abehavior
 R1
 R2
 DEx4 work 15 led_7segment_tb 0 22 SMOKAA5NNNRE8ezHk2^dX1
-!i122 36
+!i122 72
 l21
 L8 49
 VE;7X:hI?g9__SiNfdnRn31
 !s100 TA0DCRCTe4Ylh@B[EOU<P0
 R6
 32
-R44
+R37
 !i10b 1
+R43
+R44
 R45
-R46
-R47
 !i113 1
 R11
 R12
