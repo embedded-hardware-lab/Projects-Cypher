@@ -1,0 +1,566 @@
+# Compile of Question_1.vhd was successful.
+# Compile of Question_2.1.vhd failed with 12 errors.
+# Compile of Question_2.1.vhd failed with 4 errors.
+# Compile of Question_2.1.vhd failed with 12 errors.
+# Compile of Question_2.1.vhd failed with 4 errors.
+# Compile of Question_2.2.vhd was successful.
+# Compile of Question_2.1.vhd failed with 12 errors.
+# Compile of Question_2.1.vhd failed with 12 errors.
+# Compile of Question_2.2.vhd failed with 6 errors.
+# Compile of Question_2.2.vhd was successful.
+# Compile of Question_2.1.vhd was successful.
+# Compile of Question_2.2.vhd was successful.
+# Compile of Question_2.vhd was successful.
+vsim work.adder_display(behavioral)
+# vsim work.adder_display(behavioral) 
+# Start time: 12:22:57 on Jun 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_display(behavioral)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading work.full_adder_4_bit(data)
+# Loading work.full_adder_1_bit(data)
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# Loading work.led_7segment(behavioral)
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U1/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c1(0).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U2/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c1(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U3/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c1(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U4/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c1(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(3), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c1(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(2), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c1(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c1(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c1(0).
+add wave -position insertpoint  \
+sim:/adder_display/Aa \
+sim:/adder_display/Bb \
+sim:/adder_display/Ccin \
+sim:/adder_display/output \
+sim:/adder_display/c0 \
+sim:/adder_display/garbage \
+sim:/adder_display/c1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: iqbal  Hostname: LAPTOP-0P42RHU8  ProcessID: 13988
+#           Attempting to use alternate WLF file "./wlftvf3re1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvf3re1
+force -freeze sim:/adder_display/Aa 0000 0
+force -freeze sim:/adder_display/Bb 0000 0
+run
+force -freeze sim:/adder_display/Aa 0001 0
+run
+
+
+force -freeze sim:/adder_display/Bb 0000 0
+run
+force -freeze sim:/adder_display/Bb 0001 0
+run
+force -freeze sim:/adder_display/Aa 0001 0
+force -freeze sim:/adder_display/Bb 0001 0
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# End time: 12:30:24 on Jun 10,2022, Elapsed time: 0:07:27
+# Errors: 2, Warnings: 34
+# Compile of Question_2.vhd was successful.
+vsim work.adder_display(behavioral)
+# vsim work.adder_display(behavioral) 
+# Start time: 12:31:49 on Jun 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_display(behavioral)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading work.full_adder_4_bit(data)
+# Loading work.full_adder_1_bit(data)
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# Loading work.led_7segment(behavioral)
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U1/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(0).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U2/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U3/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U4/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(3), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(2), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(0).
+add wave -position insertpoint  \
+sim:/adder_display/Aa \
+sim:/adder_display/Bb \
+sim:/adder_display/Ccin \
+sim:/adder_display/output \
+sim:/adder_display/c0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: iqbal  Hostname: LAPTOP-0P42RHU8  ProcessID: 13988
+#           Attempting to use alternate WLF file "./wlftb6h54q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb6h54q
+force -freeze sim:/adder_display/Aa 0000 0
+force -freeze sim:/adder_display/Bb 0000 0
+run
+force -freeze sim:/adder_display/Aa 0001 0
+force -freeze sim:/adder_display/Bb 0010 0
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# End time: 12:34:06 on Jun 10,2022, Elapsed time: 0:02:17
+# Errors: 2, Warnings: 20
+# Compile of Question_2.vhd was successful.
+# Compile of Question_2.vhd was successful.
+vsim work.adder_display(behavioral)
+# vsim work.adder_display(behavioral) 
+# Start time: 12:45:42 on Jun 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_display(behavioral)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading work.full_adder_4_bit(data)
+# Loading work.full_adder_1_bit(data)
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# Loading work.led_7segment(behavioral)
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U1/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(0).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U2/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U3/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U4/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(3), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(2), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(0).
+add wave -position insertpoint  \
+sim:/adder_display/Aa \
+sim:/adder_display/Bb \
+sim:/adder_display/Ccin \
+sim:/adder_display/output \
+sim:/adder_display/c0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: iqbal  Hostname: LAPTOP-0P42RHU8  ProcessID: 13988
+#           Attempting to use alternate WLF file "./wlft68gm5d".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft68gm5d
+force -freeze sim:/adder_display/Aa 0000 0
+force -freeze sim:/adder_display/Bb 0000 0
+run
+force -freeze sim:/adder_display/Aa 0001 0
+force -freeze sim:/adder_display/Bb 0000 0
+run
+force -freeze sim:/adder_display/Aa 0001 0
+force -freeze sim:/adder_display/Bb 0000 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/adder_display/Bb 1111 0
+# Compile of Question_2.vhd was successful.
+# ** Error: Acs sdne.
+# b
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+run
+run
+run
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# End time: 12:48:41 on Jun 10,2022, Elapsed time: 0:02:59
+# Errors: 4, Warnings: 22
+# Compile of Question_2.vhd failed with 2 errors.
+# Compile of Question_2.vhd was successful.
+# Compile of Question_2.vhd failed with 3 errors.
+# Compile of Question_2.vhd failed with 3 errors.
+# Compile of Question_2.vhd failed with 5 errors.
+# Compile of Question_2.vhd was successful.
+# Load canceled
+vsim work.adder_display(behavioral)
+# vsim work.adder_display(behavioral) 
+# Start time: 12:55:19 on Jun 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_display(behavioral)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading work.full_adder_4_bit(data)
+# Loading work.full_adder_1_bit(data)
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# Loading work.led_7segment(behavioral)
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U1/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(0).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U2/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U3/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U4/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(3), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(2), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(0).
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# i
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# End time: 12:55:57 on Jun 10,2022, Elapsed time: 0:00:38
+# Errors: 2, Warnings: 23
+vsim work.led_7segment(behavioral)
+# vsim work.led_7segment(behavioral) 
+# Start time: 12:56:06 on Jun 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.led_7segment(behavioral)
+add wave -position insertpoint  \
+sim:/led_7segment/input \
+sim:/led_7segment/LED_out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: iqbal  Hostname: LAPTOP-0P42RHU8  ProcessID: 13988
+#           Attempting to use alternate WLF file "./wlft7mdfb5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7mdfb5
+force -freeze sim:/led_7segment/input 0001 0
+run
+force -freeze sim:/led_7segment/input 0000 0
+run
+quit -sim
+# ** Error: Acs sdne.
+#  ≈Ãde sm/e_sget
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 2
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# End time: 12:59:50 on Jun 10,2022, Elapsed time: 0:03:44
+# Errors: 2, Warnings: 3
+vsim work.adder_display(behavioral)
+# vsim work.adder_display(behavioral) 
+# Start time: 12:59:53 on Jun 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_display(behavioral)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading work.full_adder_4_bit(data)
+# Loading work.full_adder_1_bit(data)
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_display/U1/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# Loading work.led_7segment(behavioral)
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U1/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(0).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U2/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U3/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/U4/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(3), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(2), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /adder_display/U1/S(0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adder_display/c0(0).
+add wave -position insertpoint  \
+sim:/adder_display/Aa \
+sim:/adder_display/Bb \
+sim:/adder_display/Ccin \
+sim:/adder_display/output \
+sim:/adder_display/c0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: iqbal  Hostname: LAPTOP-0P42RHU8  ProcessID: 13988
+#           Attempting to use alternate WLF file "./wlft5fnmsr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5fnmsr
+force -freeze sim:/adder_display/Aa 0000 0
+force -freeze sim:/adder_display/Bb 0000 0
+run
+force -freeze sim:/adder_display/Aa 0001 0
+force -freeze sim:/adder_display/Bb 0000 0
+run
+quit -sim
+# ** Error: Acs sdne.
+# d
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# d
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# End time: 13:01:43 on Jun 10,2022, Elapsed time: 0:01:50
+# Errors: 2, Warnings: 19
+vsim work.full_adder_4_bit(data)
+# vsim work.full_adder_4_bit(data) 
+# Start time: 13:02:02 on Jun 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading work.full_adder_4_bit(data)
+# Loading work.full_adder_1_bit(data)
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_4_bit/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_4_bit/U1 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_4_bit/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_4_bit/U2 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_4_bit/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_4_bit/U3 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U1 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_4_bit/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-3473) Component instance "U2 : half_adder_1_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_4_bit/U4 File: C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Question_2.2.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /full_adder_4_bit/U1/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /full_adder_4_bit/S(0).
+# ** Warning: (vsim-8684) No drivers exist on out port /full_adder_4_bit/U2/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /full_adder_4_bit/S(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /full_adder_4_bit/U3/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /full_adder_4_bit/S(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /full_adder_4_bit/U4/S, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /full_adder_4_bit/S(3).
+add wave -position insertpoint  \
+sim:/full_adder_4_bit/A \
+sim:/full_adder_4_bit/B \
+sim:/full_adder_4_bit/Cin \
+sim:/full_adder_4_bit/S \
+sim:/full_adder_4_bit/Cout \
+sim:/full_adder_4_bit/c0 \
+sim:/full_adder_4_bit/c1 \
+sim:/full_adder_4_bit/c2
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: iqbal  Hostname: LAPTOP-0P42RHU8  ProcessID: 13988
+#           Attempting to use alternate WLF file "./wlftjih8ty".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjih8ty
+run
+force -freeze sim:/full_adder_4_bit/A 0001 0
+force -freeze sim:/full_adder_4_bit/B 0000 0
+run
+quit -sim
+# ** Error: Acs sdne.
+# tBì  
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# tBì  
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# End time: 13:03:43 on Jun 10,2022, Elapsed time: 0:01:41
+# Errors: 2, Warnings: 15
+# Compile of Question_2.3.vhd was successful.
+vsim work.adder_display(behavioral)
+# vsim work.adder_display(behavioral) 
+# Start time: 13:10:04 on Jun 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_display(behavioral)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading work.full_adder_4_bit(data)
+# Loading work.full_adder_1_bit(data)
+# Loading work.half_adder_1_bit(data)
+# Loading work.led_7segment(behavioral)
+add wave -position insertpoint  \
+sim:/adder_display/Aa \
+sim:/adder_display/Bb \
+sim:/adder_display/Ccin \
+sim:/adder_display/output \
+sim:/adder_display/c0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: iqbal  Hostname: LAPTOP-0P42RHU8  ProcessID: 13988
+#           Attempting to use alternate WLF file "./wlftqhectg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqhectg
+run
+force -freeze sim:/adder_display/Aa 0001 0
+force -freeze sim:/adder_display/Bb 0000 0
+run
+add wave -position insertpoint  \
+sim:/adder_display/Aa
+force -freeze sim:/adder_display/Aa 0010 0
+run
+force -freeze sim:/adder_display/Bb 0001 0
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# b
+#        Unable to replace existing ini file (C:/Users/iqbal/Documents/Semester 6/Hardware Engineering/Vhdl_exercise/Exercise_3.mpf).  File can not be renamed.
+# End time: 13:16:18 on Jun 10,2022, Elapsed time: 0:06:14
+# Errors: 2, Warnings: 5
