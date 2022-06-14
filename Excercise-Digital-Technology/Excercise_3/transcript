@@ -19,3 +19,14 @@ run
 run
 force -freeze sim:/led_7segment/input 0001 0
 run
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Exercise_3.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_3/Exercise_3.mpf).  File can not be renamed.
+# End time: 16:59:32 on Jun 12,2022, Elapsed time: 0:13:07
+# Errors: 3, Warnings: 1
