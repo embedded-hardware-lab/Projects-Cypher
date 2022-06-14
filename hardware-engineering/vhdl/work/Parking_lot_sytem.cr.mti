@@ -1,0 +1,43 @@
+D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/bcd_7segment.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/bcd_7segment.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bcd_to_7seg_display
+-- Compiling architecture logic of bcd_to_7seg_display
+
+} {} {}} D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/bcd_7segmentdigit.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/bcd_7segmentdigit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity binary_to_bcd_digit
+-- Compiling architecture logic of binary_to_bcd_digit
+
+} {} {}} D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/7_segment2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/7_segment2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity seven_segments
+-- Compiling architecture logic of seven_segments
+
+} {} {}} D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/7_segment.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/7_segment.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity seven_segments
+-- Compiling architecture logic of seven_segments
+
+} {} {}} D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/binary_bcd.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Project_X/Projects-Cypher/hardware-engineering/vhdl/work/binary_bcd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity binary_to_bcd
+-- Compiling architecture logic of binary_to_bcd
+
+} {} {}}
