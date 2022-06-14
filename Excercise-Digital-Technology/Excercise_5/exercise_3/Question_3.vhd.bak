@@ -19,11 +19,11 @@ process (CLK)
 begin
 if(CLK'event and CLK ='1') then
 if (WE='1') then
-RAMT(conv_integer(unsigned(ADDR))) <= DATA_IN;
+RAMT(to_integer(unsigned(ADDR))) <= DATA_IN;
 end if;
 end if;
 end process;
-DATA_OUT <= RAMT(conv_integer(unsigned(ADDR)));
+DATA_OUT <= RAMT(to_integer(unsigned(ADDR)));
 end behavioral;
 
 

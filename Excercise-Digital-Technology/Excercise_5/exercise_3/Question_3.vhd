@@ -6,12 +6,12 @@ entity RAM is
 	port( 	CLK :in std_logic;
 	      	WE: in std_logic;
 		ADDR: in std_logic_vector(3 downto 0);
-		DATA_IN:in std_logic;
-		DATA_OUT:out std_logic);
+		DATA_IN:in std_logic_vector(3 downto 0);
+		DATA_OUT:out std_logic_vector(3 downto 0));
 end RAM;
 
 architecture behavioral of RAM is
-type ram_type is array (15 downto 0) of std_logic;
+type ram_type is array (15 downto 0) of std_logic_vector(3 downto 0);
 signal RAMT:ram_type;
 
 begin

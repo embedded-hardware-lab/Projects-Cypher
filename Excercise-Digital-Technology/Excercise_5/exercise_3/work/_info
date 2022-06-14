@@ -1,0 +1,140 @@
+m255
+K4
+z2
+!s11e vcom 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/21.1
+Eram
+Z0 w1655201602
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+Z4 dD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3
+Z5 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_3.vhd
+Z6 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_3.vhd
+l0
+L5 1
+Vk2NEHgech_RHCnl:kF9bc0
+!s100 C=GgClf6Jl5dQQ[c`?XfL0
+Z7 OV;C;2021.1;73
+32
+Z8 !s110 1655203989
+!i10b 1
+Z9 !s108 1655203988.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_3.vhd|
+Z11 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_3.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+DEx4 work 3 ram 0 22 k2NEHgech_RHCnl:kF9bc0
+!i122 11
+l17
+L13 15
+VS0<d<B`8g1MR9G:zenT7B3
+!s100 MLeNAeQX92@kfbJ3kZMZJ1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eram_tb
+Z14 w1655206982
+R1
+R2
+R3
+!i122 25
+R4
+Z15 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question 3.1.vhd
+Z16 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question 3.1.vhd
+l0
+L5 1
+VUnK90iVR>SoBTbU94@Ek_1
+!s100 [@X;05hTU>NK7iH5>[2_n0
+R7
+32
+Z17 !s110 1655206990
+!i10b 1
+Z18 !s108 1655206989.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question 3.1.vhd|
+Z20 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question 3.1.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 6 ram_tb 0 22 UnK90iVR>SoBTbU94@Ek_1
+!i122 25
+l31
+L8 40
+VVA@MfQ[_Z2B^dKSQk@TgS3
+!s100 Zgb9ze5BEjf;cGej[`[Cj0
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Erom
+Z21 w1655209631
+R1
+R2
+R3
+!i122 42
+R4
+Z22 8D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_4.vhd
+Z23 FD:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_4.vhd
+l0
+L5 1
+Vl9]czQagX>2?[BU2R>;im2
+!s100 A_GDXi1FFFUPD:adz3mX:2
+R7
+32
+!s110 1655209649
+!i10b 1
+!s108 1655209649.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_4.vhd|
+Z25 !s107 D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_4.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 3 rom 0 22 QbPYi:RkSM6o@PDhR=`lh2
+!i122 41
+l24
+L13 21
+VhEcM0662@7:b5`M;:^EPH0
+!s100 Fj<dia0U3ZVPYPTR:SJJS0
+R7
+32
+!s110 1655209477
+!i10b 1
+!s108 1655209477.000000
+R24
+R25
+!i113 1
+R12
+R13
