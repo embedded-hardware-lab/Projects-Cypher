@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use IEEE.Numeric_Std.all;
 
 entity ROM is 
-	port( 	CLK :in std_logic;
+	port( 	CLK:in std_logic;
 		ADDR: in std_logic_vector(3 downto 0);
 		DATA_OUT:out std_logic);
 end ROM;
@@ -29,6 +29,9 @@ DATA_OUT <= ROMT(to_integer(unsigned(ADDR)));
 end if;
 end process;
 
+ADDR <= "0100";
+DATA_OUT <= "1000";
+		
 
 end behavioral;
 

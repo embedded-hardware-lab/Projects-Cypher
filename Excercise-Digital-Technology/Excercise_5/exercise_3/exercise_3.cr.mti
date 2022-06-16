@@ -1,4 +1,19 @@
-D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_3.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_3.vhd
+D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise3_2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise3_2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity multiplexer_4_1_TB
+-- Compiling architecture behavioural of multiplexer_4_1_TB
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question 3.1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question 3.1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RAM_tb
+-- Compiling architecture behavioral of RAM_tb
+
+} {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_3.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_3.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -6,5 +21,23 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity RAM
 -- Compiling architecture behavioral of RAM
+
+} {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question4.1.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question4.1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ROM_tb
+-- Compiling architecture behavioral of ROM_tb
+
+} {} {}} D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_4.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_5/exercise_3/Question_4.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ROM
+-- Compiling architecture behavioral of ROM
 
 } {} {}}
