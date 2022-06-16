@@ -1,0 +1,89 @@
+C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise1_4.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise1_4.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity shift_register_8_bit
+-- Compiling architecture behavioral of shift_register_8_bit
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise3_2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise3_2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity multiplexer_4_1_TB
+-- Compiling architecture behavioural of multiplexer_4_1_TB
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise4_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise4_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity counter_4_bit
+-- Compiling architecture behavioural of counter_4_bit
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise4_2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise4_2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity counter_4_bit_TB
+-- Compiling architecture behavioural of counter_4_bit_TB
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity counterUpDown_4_bit
+-- Compiling architecture behavioural of counterUpDown_4_bit
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity counterUpDown_4_bit_TB
+-- Compiling architecture behavioural of counterUpDown_4_bit_TB
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_3.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_3.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity counterUpDown_4_bit_display
+-- Compiling architecture behavioural of counterUpDown_4_bit_display
+** Error: C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_3.vhd(15): (vcom-1294) Declaration with designator "counterUpDown_4_bit" already exists in this region.
+** =====> Prior declaration of "counterUpDown_4_bit" is at C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_3.vhd(9).
+** Error: C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_3.vhd(32): near "port": syntax error
+** Note: C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise5_3.vhd(36): VHDL Compiler exiting
+
+} {6.0 7.0 8.0 9.0} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise3_1_2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise3_1_2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity multiplexer_4_1_s
+-- Compiling architecture behavioural of multiplexer_4_1_s
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise1_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise1_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity D_flip_flop
+-- Compiling architecture Behavioral of D_flip_flop
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise1_2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise1_2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity D_flip_flop_TB
+-- Compiling architecture data of D_flip_flop_TB
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise2_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise2_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity clock_divider
+-- Compiling architecture behavioural of clock_divider
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise1_3.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise1_3.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity D_flip_flop_8_bit
+-- Compiling architecture behavioral of D_flip_flop_8_bit
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise2_2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise2_2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity clock_divider_TB
+-- Compiling architecture behavioural of clock_divider_TB
+
+} {} {}} C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise3_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/iqbal/Documents/GitHub/Projects-Cypher/Excercise-Digital-Technology/Excercise_4/exercise3_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity multiplexer_4_1
+-- Compiling architecture behavioural of multiplexer_4_1
+
+} {} {}}
