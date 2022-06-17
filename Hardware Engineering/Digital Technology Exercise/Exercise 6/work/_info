@@ -11,7 +11,7 @@ cModel Technology
 dC:/intelFPGA_pro/21.1
 Eclock_divider
 Z0 w1654842489
-!i122 14
+!i122 29
 Z1 dD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6
 Z2 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 2/Q2_1.vhd
 Z3 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 2/Q2_1.vhd
@@ -21,21 +21,21 @@ VgnQWc709Z3UL;jZP6I0122
 !s100 `geBi;aOdoe[[eM;@W0Od2
 Z4 OV;C;2021.1;73
 32
-Z5 !s110 1655466823
+Z5 !s110 1655478305
 !i10b 1
-Z6 !s108 1655466823.000000
+Z6 !s108 1655478305.000000
 Z7 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 2/Q2_1.vhd|
 Z8 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 2/Q2_1.vhd|
 !i113 1
 Z9 o-work work -2002 -explicit
 Z10 tExplicit 1 CvgOpt 0
 Abehavioural
-Z11 DEx4 work 13 clock_divider 0 22 gnQWc709Z3UL;jZP6I0122
-!i122 14
+DEx4 work 13 clock_divider 0 22 gnQWc709Z3UL;jZP6I0122
+!i122 29
 l21
-Z12 L7 70
-Z13 VUVUQOZQ0PBfWHKCGnRNSS1
-Z14 !s100 BHI_;URG`UF]O7RiPCJc63
+L7 70
+VUVUQOZQ0PBfWHKCGnRNSS1
+!s100 BHI_;URG`UF]O7RiPCJc63
 R4
 32
 R5
@@ -46,90 +46,205 @@ R8
 !i113 1
 R9
 R10
-Ed_flip_flop
-Z15 w1654841938
-!i122 12
+Ecounter
+Z11 w1655477704
+!i122 30
 R1
-Z16 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd
-Z17 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd
+Z12 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/Q3_1.vhd
+Z13 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/Q3_1.vhd
+l0
+L2 1
+V<oeoA=aBjR5D>aB]J3]`X0
+!s100 fK=HFd@dSCb^IWkPf94:S1
+R4
+32
+R5
+!i10b 1
+R6
+Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/Q3_1.vhd|
+Z15 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/Q3_1.vhd|
+!i113 1
+R9
+R10
+Abehavioural
+DEx4 work 7 counter 0 22 <oeoA=aBjR5D>aB]J3]`X0
+!i122 30
+l39
+Z16 L10 46
+VT<^5lPBM@43_3]0DVMlib0
+!s100 <GBaB]9?iV4E;GSTL:M9i2
+R4
+32
+R5
+!i10b 1
+R6
+R14
+R15
+!i113 1
+R9
+R10
+Ecounterupdown_4_bit
+Z17 w1654872688
+!i122 32
+R1
+Z18 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 5/Q5_1.vhd
+Z19 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 5/Q5_1.vhd
+l0
+L1 1
+Vi:KWzAAdga4ak@HLIfD;P0
+!s100 >7L]<T7Ua7B=ZGJP@Xl1L1
+R4
+32
+R5
+!i10b 1
+R6
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 5/Q5_1.vhd|
+Z21 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 5/Q5_1.vhd|
+!i113 1
+R9
+R10
+Abehavioural
+Z22 DEx4 work 19 counterupdown_4_bit 0 22 i:KWzAAdga4ak@HLIfD;P0
+!i122 32
+l23
+Z23 L7 74
+Z24 VB^7mVzV_078[X6?iJ`i?32
+Z25 !s100 `:<[<a1c6>kjT59^_VA7_3
+R4
+32
+R5
+!i10b 1
+R6
+R20
+R21
+!i113 1
+R9
+R10
+Ed_flip_flop
+Z26 w1654841938
+!i122 27
+R1
+Z27 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd
+Z28 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd
 l0
 L1 1
 Vk:G4C?`LR>S`44AjO6LA62
 !s100 1gMM:3G6G_4kbXVJ8_4]L2
 R4
 32
-R5
+Z29 !s110 1655478304
 !i10b 1
-R6
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd|
-Z19 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd|
+Z30 !s108 1655478304.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd|
+Z32 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd|
 !i113 1
 R9
 R10
 Abehavioral
 DEx4 work 11 d_flip_flop 0 22 k:G4C?`LR>S`44AjO6LA62
-!i122 12
+!i122 27
 l13
 L10 14
 VHNzDl;9N>HocjHW1czIE73
 !s100 EimWJkHW[PLJfj0U]_eQh1
 R4
 32
-R5
+R29
 !i10b 1
-R6
-R18
-R19
+R30
+R31
+R32
 !i113 1
 R9
 R10
 Efpgademo2
-Z20 w1655414821
-Z21 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z22 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 11
+Z33 w1655414821
+Z34 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z35 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 26
 R1
-Z23 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd
-Z24 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd
+Z36 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd
+Z37 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd
 l0
 L32 1
 V?GOCd=h0F4gINXN]iQ9ib2
 !s100 Dc[RzG[nJK4RAkMcW_PE40
 R4
 32
-R5
+R29
 !i10b 1
-R6
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd|
-Z26 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd|
+R30
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd|
+Z39 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd|
 !i113 1
 R9
 R10
 Abehavioral
-R21
-R22
+R34
+R35
 DEx4 work 9 fpgademo2 0 22 ?GOCd=h0F4gINXN]iQ9ib2
-!i122 11
+!i122 26
 l39
 L37 6
 V;id30JG@<TQD18bK[4kEB1
 !s100 A0L1KAT5o_=LD4RSi;:@53
 R4
 32
+R29
+!i10b 1
+R30
+R38
+R39
+!i113 1
+R9
+R10
+Eled_7segment
+Z40 w1655478294
+R34
+R35
+!i122 31
+R1
+Z41 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 3/Question 1/Q1_1.vhd
+Z42 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 3/Question 1/Q1_1.vhd
+l0
+L5 1
+V;e]cm15ELU2BPQ:61faPU1
+!s100 CD>fRMiJTQ6K^J9V=JO4^3
+R4
+32
 R5
 !i10b 1
 R6
-R25
-R26
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 3/Question 1/Q1_1.vhd|
+Z44 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 3/Question 1/Q1_1.vhd|
+!i113 1
+R9
+R10
+Abehavioral
+R34
+R35
+DEx4 work 12 led_7segment 0 22 ;e]cm15ELU2BPQ:61faPU1
+!i122 31
+l11
+R16
+VzFaEC1ck;e?Sg15ikBb;z2
+!s100 WNCf6=5U<GGhiS`oB4IE90
+R4
+32
+R5
+!i10b 1
+R6
+R43
+R44
 !i113 1
 R9
 R10
 Erunning_light_8_bit
-Z27 w1655466609
-!i122 13
+Z45 w1655466609
+!i122 28
 R1
-Z28 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd
-Z29 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd
+Z46 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd
+Z47 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd
 l0
 L1 1
 V8Q[X3QL=n?P_o:JhPnO0S3
@@ -139,14 +254,14 @@ R4
 R5
 !i10b 1
 R6
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd|
-Z31 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd|
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd|
+Z49 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd|
 !i113 1
 R9
 R10
 Abehavioural
 DEx4 work 19 running_light_8_bit 0 22 8Q[X3QL=n?P_o:JhPnO0S3
-!i122 13
+!i122 28
 l19
 L9 18
 VEX]@Q1abTJ9oG[cC6Ce=X2
@@ -156,8 +271,8 @@ R4
 R5
 !i10b 1
 R6
-R30
-R31
+R48
+R49
 !i113 1
 R9
 R10
