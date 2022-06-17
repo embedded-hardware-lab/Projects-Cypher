@@ -16,7 +16,7 @@ architecture behavioural of counterUpDown_4_bit_display is
 	component LED_7segment is
 		Port ( 	input : in bit_vector (3 downto 0);
 			LED_out : out bit_vector (6 downto 0));
-	end component;
+	end LED_7segment;
 	
 
   
