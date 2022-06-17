@@ -13,15 +13,15 @@ const char topic_new_visitor_temperature[]  = "topic_new_visitor_temperature";
 const char topic_number_visitor[]  = "topic_number_visitor";
 const char flameS[]  = "flameS";
 char msg[]  = "xxxxxx";
-const char broker[] = "192.168.2.221";
+const char broker[] = "192.168.45.167";
 int        port     = 1883;
 
 WiFiClient wifiClient;
 MqttClient mqttClient(wifiClient);
 
 
-char ssid[] = "Im new Joshu";        
-char pass[] = "Ohana123"; 
+char ssid[] = "Galaxy s20";        
+char pass[] = "malaysia"; 
 
 
 void handler(int messageSize);
