@@ -59,7 +59,7 @@ architecture behavioral of parkingLotSystem is
 		digit1 : LED_7segment port map (	input => bcd_1,
 							LED_out => digit1port);
 
-		state_memory: process(clk, rst)
+		state_memory: process(clk, rst, next_state, current_state)
  		begin
  			if rst = '1' then
  				current_state <= idle;
@@ -69,7 +69,7 @@ architecture behavioral of parkingLotSystem is
  		end process;
 
 
-		sysInput: process(current_state, input,space_state)
+		sysInput: process(current_state, input,space_state, next_state, ready)
 		begin
  			case current_state is
 				when idle => 	if input = "0001" then
@@ -104,7 +104,7 @@ architecture behavioral of parkingLotSystem is
 
 
 
-		ledProcess : process(current_state)
+		ledProcess : process(current_state, led_s)
 		begin
 			case current_state is
 				when idle => led_s <= '1';	
@@ -114,7 +114,7 @@ architecture behavioral of parkingLotSystem is
 				when full => led_s <= '0';	
 			end case;
 		end process;
-		gateProcess : process(current_state)
+		gateProcess : process(current_state, gate_s)
 			begin
 				case current_state is
 					when idle => gate_s <= '1';	
@@ -125,23 +125,28 @@ architecture behavioral of parkingLotSystem is
 				end case;
 		end process;
 
-		carCounter : process(current_state, input, clk)
+		carCounter : process(current_state, input, clk, counter_s)
 			begin
-				case current_state is
-					when idle => 	if ( input="0001" and clk = '0' and clk'event  )  then		-- car enter
-								counter_s <= counter_s + '1' ;   -- counting up
-							elsif (input="0010"  and clk = '0' and clk'event  )  then		-- car leave
-								counter_s <= counter_s - '1' ;   -- counting down
-							end if;
-					when display =>	counter_s <= counter_s ;	
+				if  (clk = '0' and clk'event ) then 
 
-					when full => 	if input="0010"  then		-- car leave
-								counter_s <= counter_s - '1' after 100 ps;   -- counting down
-							end if;
-				end case;
+					case current_state is
+						when idle => 	if (input="0001")  then		-- car enter
+									counter_s <= counter_s + '1' ;   -- counting up
+								elsif (input="0010")  then		-- car leave
+									counter_s <= counter_s - '1' ;   -- counting down
+								end if;
+						when display =>	counter_s <= counter_s ;	
+
+						when full => 	if input="0010"  then		-- car leave
+									counter_s <= counter_s - '1' after 100 ps;   -- counting down
+								end if;
+				end case;		
+
+				end if;
+
 		end process;
 		
-		space_checker : process(counter_s)
+		space_checker : process(counter_s, space_state)
 			begin
 			if counter_s < "1101"  then
 				space_state <= '1';

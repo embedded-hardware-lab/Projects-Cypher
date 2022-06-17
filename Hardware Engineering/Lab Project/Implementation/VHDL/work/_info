@@ -11,7 +11,7 @@ cModel Technology
 dC:/intelFPGA_pro/21.1
 Eadd3
 Z0 w1655040949
-!i122 39
+!i122 46
 Z1 dD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL
 Z2 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/add3.vhd
 Z3 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/add3.vhd
@@ -21,9 +21,9 @@ VEK^Ki=N]RRJEQSW96DW0A1
 !s100 4boY@UbA6X@o?>OLVBg0E0
 Z4 OV;C;2021.1;73
 32
-Z5 !s110 1655464773
+Z5 !s110 1655465610
 !i10b 1
-Z6 !s108 1655464773.000000
+Z6 !s108 1655465610.000000
 Z7 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/add3.vhd|
 Z8 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/add3.vhd|
 !i113 1
@@ -31,7 +31,7 @@ Z9 o-work work -2002 -explicit
 Z10 tExplicit 1 CvgOpt 0
 Abehavioural
 DEx4 work 4 add3 0 22 EK^Ki=N]RRJEQSW96DW0A1
-!i122 39
+!i122 46
 l24
 L6 40
 VH=<j<QnbF`d^C90mU?P]D0
@@ -51,7 +51,7 @@ Z11 w1655036095
 Z12 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z14 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 41
+!i122 48
 R1
 Z15 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/bcd_8_bit.vhd
 Z16 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/bcd_8_bit.vhd
@@ -74,7 +74,7 @@ R12
 R13
 R14
 DEx4 work 9 bcd_8_bit 0 22 dj1`j8zK5JF2Ah7C[MWm^2
-!i122 41
+!i122 48
 l35
 L12 57
 Vo:Cmj@kUP55QgOQ2d0P<c2
@@ -132,7 +132,7 @@ R9
 R10
 Efull_adder_1_bit
 Z26 w1654808126
-!i122 44
+!i122 51
 R1
 Z27 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q2.vhd
 Z28 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q2.vhd
@@ -142,108 +142,108 @@ VBf<h<6Ek3:939:k[:a0>V3
 !s100 4j@BEAjbRCCK9WUhP^BXX1
 R4
 32
-Z29 !s110 1655464774
+R5
 !i10b 1
-Z30 !s108 1655464774.000000
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q2.vhd|
-Z32 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q2.vhd|
+R6
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q2.vhd|
+Z30 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q2.vhd|
 !i113 1
 R9
 R10
 Adata
 DEx4 work 16 full_adder_1_bit 0 22 Bf<h<6Ek3:939:k[:a0>V3
-!i122 44
+!i122 51
 l14
 L6 13
 V7h`jU`j1nFKaLKiJ:9zk41
 !s100 En:<^`n@BTljZ_T_8X4TV1
 R4
 32
-R29
+R5
 !i10b 1
+R6
+R29
 R30
-R31
-R32
 !i113 1
 R9
 R10
 Efull_adder_4_bit
-Z33 w1654808135
-!i122 43
+Z31 w1654808135
+!i122 50
 R1
-Z34 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd
-Z35 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd
+Z32 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd
+Z33 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd
 l0
 L1 1
 Vgh=5lG0^CKO]V;Hj1ihV53
 !s100 jmSNa[A>lhKH3`b4gY1=K1
 R4
 32
-R29
+R5
 !i10b 1
-R30
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd|
-Z37 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd|
+R6
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd|
+Z35 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd|
 !i113 1
 R9
 R10
 Adata
 DEx4 work 16 full_adder_4_bit 0 22 gh=5lG0^CKO]V;Hj1ihV53
-!i122 43
+!i122 50
 l17
 L10 13
 Vm`IE^;`ljGkR?nH4U@cIf3
 !s100 Vgg:PYjDfhgVj``bV@bV92
 R4
 32
-R29
+R5
 !i10b 1
-R30
-R36
-R37
+R6
+R34
+R35
 !i113 1
 R9
 R10
 Ehalf_adder_1_bit
-Z38 w1654808118
-!i122 45
+Z36 w1654808118
+!i122 52
 R1
-Z39 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd
-Z40 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd
+Z37 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd
+Z38 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd
 l0
 L1 1
 V01VWf>e]A3J924KOJHVZ41
 !s100 =J3^U=6]H@H?DIP>lT:g93
 R4
 32
-R29
+R5
 !i10b 1
-R30
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd|
-Z42 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd|
+R6
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd|
+Z40 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd|
 !i113 1
 R9
 R10
 Adata
-Z43 DEx4 work 16 half_adder_1_bit 0 22 01VWf>e]A3J924KOJHVZ41
-!i122 45
+Z41 DEx4 work 16 half_adder_1_bit 0 22 01VWf>e]A3J924KOJHVZ41
+!i122 52
 l7
 L6 5
-Z44 ViUUcmeBaMYbhT<MKRI[=c3
-Z45 !s100 fYac1;i9_bLBSe8=T3hW@2
+Z42 ViUUcmeBaMYbhT<MKRI[=c3
+Z43 !s100 fYac1;i9_bLBSe8=T3hW@2
 R4
 32
-R29
+R5
 !i10b 1
-R30
-R41
-R42
+R6
+R39
+R40
 !i113 1
 R9
 R10
 Eled_7segment
-Z46 w1655464770
-!i122 40
+Z44 w1655464770
+!i122 47
 R1
 R20
 R21
@@ -263,7 +263,7 @@ R9
 R10
 Alogic
 DEx4 work 12 led_7segment 0 22 8l>mI]:YP5l[IJhd^`5J31
-!i122 40
+!i122 47
 l9
 L8 18
 VPYJ]Kg[2TEI1<[3I15^U83
@@ -279,15 +279,15 @@ R25
 R9
 R10
 Eparkinglotsystem
-Z47 w1655045438
-Z48 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z49 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z45 w1655465607
+Z46 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z47 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R13
 R14
-!i122 42
+!i122 49
 R1
-Z50 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd
-Z51 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd
+Z48 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd
+Z49 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd
 l0
 L6 1
 Vf04CBD088KecMjhgj6JIf0
@@ -297,29 +297,29 @@ R4
 R5
 !i10b 1
 R6
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd|
-Z53 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd|
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd|
+Z51 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd|
 !i113 1
 R9
 R10
 Abehavioral
-R48
-R49
+R46
+R47
 R13
 R14
 DEx4 work 16 parkinglotsystem 0 22 f04CBD088KecMjhgj6JIf0
-!i122 42
+!i122 49
 l51
-L25 141
-V>LND57DoS^z8i5Qi:^3BL1
-!s100 GX1ZQ=1kHTlBn8jkD;_7[1
+L25 146
+VVO?KmAfR`zP?ACCKfNMW92
+!s100 oZmB[EkzTNb;<f>j66F9:3
 R4
 32
 R5
 !i10b 1
 R6
-R52
-R53
+R50
+R51
 !i113 1
 R9
 R10
