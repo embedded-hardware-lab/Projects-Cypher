@@ -1,0 +1,265 @@
+m255
+K4
+z2
+!s11e vcom 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/21.1
+Ebitcounter
+Z0 w1655212933
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z3 dD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5
+Z4 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 2/Q2_1.vhd
+Z5 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 2/Q2_1.vhd
+l0
+L4 1
+V9Z[URzm9_m<ZJ4lzIlk`B0
+!s100 VkIFXBXmMRj<CIZHUdDc]3
+Z6 OV;C;2021.1;73
+32
+Z7 !s110 1655462824
+!i10b 1
+Z8 !s108 1655462824.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 2/Q2_1.vhd|
+Z10 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 2/Q2_1.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+DEx4 work 10 bitcounter 0 22 9Z[URzm9_m<ZJ4lzIlk`B0
+!i122 0
+l14
+L10 107
+V[D67Xhl:bjg1[;1UO?7KV3
+!s100 30O39Zgebadk_ZHM4U;723
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebitcounter_tb
+R0
+R1
+R2
+!i122 1
+R3
+Z13 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 2/Q2_2.vhd
+Z14 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 2/Q2_2.vhd
+l0
+L4 1
+Va5WF=oG@4eY:Hm1o;GY8B0
+!s100 ;>R<=n@f4[;W2ALPVXmZP2
+R6
+32
+R7
+!i10b 1
+R8
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 2/Q2_2.vhd|
+Z16 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 2/Q2_2.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 13 bitcounter_tb 0 22 a5WF=oG@4eY:Hm1o;GY8B0
+!i122 1
+l18
+L7 22
+VaK4LXeBjFzBc^<=P<NXBE0
+!s100 I<Db^B93;CY91UFmP<k=T2
+R6
+32
+R7
+!i10b 1
+R8
+R15
+R16
+!i113 1
+R11
+R12
+Eram
+Z17 w1655201602
+Z18 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 2
+R3
+Z19 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 3/Q3_1.vhd
+Z20 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 3/Q3_1.vhd
+l0
+L5 1
+Vk2NEHgech_RHCnl:kF9bc0
+!s100 C=GgClf6Jl5dQQ[c`?XfL0
+R6
+32
+Z21 !s110 1655462825
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 3/Q3_1.vhd|
+Z23 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 3/Q3_1.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R18
+R1
+R2
+DEx4 work 3 ram 0 22 k2NEHgech_RHCnl:kF9bc0
+!i122 2
+l17
+L13 15
+VS0<d<B`8g1MR9G:zenT7B3
+!s100 MLeNAeQX92@kfbJ3kZMZJ1
+R6
+32
+R21
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Eram_tb
+Z24 w1655207599
+R18
+R1
+R2
+!i122 3
+R3
+Z25 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 3/Q3_2.vhd
+Z26 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 3/Q3_2.vhd
+l0
+L5 1
+VUnK90iVR>SoBTbU94@Ek_1
+!s100 [@X;05hTU>NK7iH5>[2_n0
+R6
+32
+R21
+!i10b 1
+Z27 !s108 1655462825.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 3/Q3_2.vhd|
+Z29 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 3/Q3_2.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R18
+R1
+R2
+DEx4 work 6 ram_tb 0 22 UnK90iVR>SoBTbU94@Ek_1
+!i122 3
+l31
+L8 44
+V>^NdgES@8E_X:;T9jdhJ32
+!s100 336iADWW8eOgaCl<NRBQ?3
+R6
+32
+R21
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R11
+R12
+Erom
+Z30 w1655408161
+R18
+R1
+R2
+!i122 4
+R3
+Z31 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 4/Q4_1.vhd
+Z32 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 4/Q4_1.vhd
+l0
+L5 1
+VJFE;h6a3lej^jd4i[`7`T2
+!s100 [^O@4^lD3X_l1ZYdYDnXJ0
+R6
+32
+R21
+!i10b 1
+R27
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 4/Q4_1.vhd|
+Z34 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 4/Q4_1.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R18
+R1
+R2
+DEx4 work 3 rom 0 22 JFE;h6a3lej^jd4i[`7`T2
+!i122 4
+l24
+L13 22
+VFfZMCUM4aTDnIMaI:a5md2
+!s100 aRc[JcZkLJcCT6Hijn=:V0
+R6
+32
+R21
+!i10b 1
+R27
+R33
+R34
+!i113 1
+R11
+R12
+Erom_tb
+Z35 w1655414581
+R18
+R1
+R2
+!i122 5
+R3
+Z36 8D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 4/Q4_2.vhd
+Z37 FD:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 4/Q4_2.vhd
+l0
+L5 1
+V27cIYV6PLP[XAzT080iW=0
+!s100 O6lAg@:TH@Tbb;W=C90im3
+R6
+32
+R21
+!i10b 1
+R27
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 4/Q4_2.vhd|
+!s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 4/Q4_2.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R18
+R1
+R2
+DEx4 work 6 rom_tb 0 22 27cIYV6PLP[XAzT080iW=0
+!i122 5
+l24
+L8 76
+V;mcC1]_R^Yg6o389fe=3e3
+!s100 K>jXRT09FSLWo6CiZI[8g3
+R6
+32
+R21
+!i10b 1
+R27
+R38
+Z39 !s107 D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 5/Question 4/Q4_2.vhd|
+!i113 1
+R11
+R12
