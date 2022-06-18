@@ -39,7 +39,6 @@ architecture behavioral of parkingLotSystem is
 	signal clk4 : std_logic_vector (7 downto 0);
 	signal clk5 : std_logic_vector (7 downto 0);
 	signal clk6 : std_logic_vector (7 downto 0);
-	signal clk_op : std_logic;
 
 	signal bcd_3 : bit_vector(3 downto 0);
 	signal bcd_2 : bit_vector(3 downto 0);
@@ -117,23 +116,22 @@ architecture behavioral of parkingLotSystem is
 							sel => sel_single_port);
 
 ----------------------------------------------------------------------------------------------------------------   FSM
-		clk_op <= clk2(4);
-		state_memory: process(clk_op, rst, next_state, current_state)
+		state_memory: process(clk, rst, next_state, current_state)
 		
 		--------------------------------------------------------------------------- reset n chang state
  		begin
  			if rst = '1' then
  				current_state <= idle;
- 			elsif (clk_op = '1' and clk_op'event) then
+ 			elsif (clk = '1' and clk'event) then
  				current_state <= next_state;
  			end if;
  		end process;
 	-------------------------------------------------------------------------------- input to change state
 
-		sysInput: process(clk_op, current_state, input,space_state, next_state, ready)
+		sysInput: process(clk, current_state, input,space_state, next_state, ready)
 		begin
 		
-		if (clk_op = '1' and clk_op'event) then
+		if (clk = '1' and clk'event) then
  			case current_state is
 
 				when idle => 	if input = "0001" then	next_state <= display;
@@ -157,9 +155,9 @@ architecture behavioral of parkingLotSystem is
 
 	--------------------------------------------------------------------------------------  output
 
-		ledProcess : process(clk_op, current_state, led_s)
+		ledProcess : process(clk, current_state, led_s)
 		begin
-		if (clk_op = '1' and clk_op'event) then
+		if (clk = '1' and clk'event) then
 			case current_state is
 				when idle => led_s <= '1';	
 	
@@ -170,9 +168,9 @@ architecture behavioral of parkingLotSystem is
 		end if;
 		end process;
 		
-		gateProcess : process(clk_op, current_state, gate_s)
+		gateProcess : process(clk, current_state, gate_s)
 		begin
-		if (clk_op = '1' and clk_op'event) then
+		if (clk = '1' and clk'event) then
 				case current_state is
 					when idle => gate_s <= '1';	
 	
@@ -183,12 +181,12 @@ architecture behavioral of parkingLotSystem is
 		end if;
 		end process;
 
-		carCounter : process(current_state, input, clk_op, counter_s, rst)
+		carCounter : process(current_state, input, clk, counter_s, rst)
 		variable count_mem : std_logic_vector(7 downto 0) := "00000000";
 			begin
 				
 				if (rst = '1') then count_mem := "00000000";
-				elsif  (clk_op = '0' and clk_op'event ) then 
+				elsif  (clk = '0' and clk'event ) then 
 
 					case current_state is
 						when idle => 	--if (rst = '1') then counter_s <= "00000000";
@@ -214,7 +212,7 @@ architecture behavioral of parkingLotSystem is
 		
 		space_checker : process(counter_s, space_state)
 			begin
-			if (clk_op = '1' and clk_op'event) then
+			if (clk = '1' and clk'event) then
 				if counter_s < "11111111"  then space_state <= '1';
 				else space_state <= '0';
 				end if;
@@ -236,7 +234,5 @@ architecture behavioral of parkingLotSystem is
 		digit3port <= digit3port_s ;
 		digit2port <=digit2port_s ;
 		digit1port <= digit1port_s ;
-		
-		
 
 end architecture;
