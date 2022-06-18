@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: parkingLotSystem.prj
 
@@ -260,7 +260,8 @@ WARNING:Xst:1780 - Signal <clk6> is never used or assigned. This unconnected sig
 WARNING:Xst:646 - Signal <clk5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk4<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk3<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <clk2<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk2<6:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk2<2:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Register <led_s> equivalent to <gate_s> has been removed
     Using one-hot encoding for signal <current_state>.
     Found 8-bit register for signal <count_mem>.
@@ -357,8 +358,10 @@ WARNING:Xst:2677 - Node <clkDv3/clk7/q_s> of sequential type is unconnected in b
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block parkingLotSystem, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block parkingLotSystem, actual ratio is 1.
+FlipFlop count_mem_4 has been replicated 1 time(s)
 FlipFlop count_mem_5 has been replicated 1 time(s)
+FlipFlop count_mem_6 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -366,8 +369,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 50
- Flip-Flops                                            : 50
+# Registers                                            : 52
+ Flip-Flops                                            : 52
 
 =========================================================================
 
@@ -396,23 +399,21 @@ Design Statistics
 # IOs                              : 51
 
 Cell Usage :
-# BELS                             : 152
+# BELS                             : 137
 #      GND                         : 1
 #      INV                         : 17
-#      LUT2                        : 8
-#      LUT3                        : 17
-#      LUT3_D                      : 1
-#      LUT3_L                      : 1
-#      LUT4                        : 77
-#      LUT4_D                      : 7
-#      LUT4_L                      : 7
-#      MUXF5                       : 15
+#      LUT2                        : 10
+#      LUT3                        : 16
+#      LUT4                        : 69
+#      LUT4_D                      : 4
+#      LUT4_L                      : 5
+#      MUXF5                       : 14
 #      VCC                         : 1
-# FlipFlops/Latches                : 50
+# FlipFlops/Latches                : 52
 #      FD                          : 1
 #      FD_1                        : 4
 #      FDC                         : 20
-#      FDC_1                       : 9
+#      FDC_1                       : 11
 #      FDP                         : 2
 #      FDR                         : 1
 #      FDS                         : 3
@@ -430,9 +431,9 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                       69  out of   7680     0%  
- Number of Slice Flip Flops:             50  out of  15360     0%  
- Number of 4 input LUTs:                135  out of  15360     0%  
+ Number of Slices:                       57  out of   7680     0%  
+ Number of Slice Flip Flops:             52  out of  15360     0%  
+ Number of 4 input LUTs:                121  out of  15360     0%  
  Number of IOs:                          51
  Number of bonded IOBs:                  51  out of    173    29%  
  Number of GCLKs:                         2  out of      8    25%  
@@ -455,27 +456,27 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clkDv2/clk7/q_s1                   | BUFG                   | 34    |
-clkDv1/clk7/q_s                    | NONE(clkDv2/clk0/q_s)  | 1     |
-clkDv2/clk0/q_s                    | NONE(clkDv2/clk1/q_s)  | 1     |
-clkDv2/clk1/q_s                    | NONE(clkDv2/clk2/q_s)  | 1     |
-clkDv2/clk2/q_s                    | NONE(clkDv2/clk3/q_s)  | 1     |
-clkDv2/clk3/q_s                    | NONE(clkDv2/clk4/q_s)  | 1     |
-clkDv2/clk4/q_s                    | NONE(clkDv2/clk5/q_s)  | 1     |
-clkDv2/clk5/q_s                    | NONE(clkDv2/clk6/q_s)  | 1     |
-clkDv2/clk6/q_s                    | NONE(clkDv2/clk7/q_s)  | 1     |
-clk                                | BUFGP                  | 1     |
-clkDv1/clk0/q_s                    | NONE(clkDv1/clk1/q_s)  | 1     |
-clkDv1/clk1/q_s                    | NONE(clkDv1/clk2/q_s)  | 1     |
-clkDv1/clk2/q_s                    | NONE(clkDv1/clk3/q_s)  | 1     |
-clkDv1/clk3/q_s                    | NONE(clkDv1/clk4/q_s)  | 1     |
-clkDv1/clk4/q_s                    | NONE(clkDv1/clk5/q_s)  | 1     |
-clkDv1/clk5/q_s                    | NONE(clkDv1/clk6/q_s)  | 1     |
-clkDv1/clk6/q_s                    | NONE(clkDv1/clk7/q_s)  | 1     |
------------------------------------+------------------------+-------+
+-----------------------------------+-------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)         | Load  |
+-----------------------------------+-------------------------------+-------+
+clkDv1/clk3/q_s1                   | BUFG                          | 20    |
+clkDv2/clk7/q_s                    | NONE(shifter1/current_state_2)| 17    |
+clkDv1/clk7/q_s                    | NONE(clkDv2/clk0/q_s)         | 1     |
+clkDv2/clk0/q_s                    | NONE(clkDv2/clk1/q_s)         | 1     |
+clkDv2/clk1/q_s                    | NONE(clkDv2/clk2/q_s)         | 1     |
+clkDv2/clk2/q_s                    | NONE(clkDv2/clk3/q_s)         | 1     |
+clkDv2/clk3/q_s                    | NONE(clkDv2/clk4/q_s)         | 1     |
+clkDv2/clk4/q_s                    | NONE(clkDv2/clk5/q_s)         | 1     |
+clkDv2/clk5/q_s                    | NONE(clkDv2/clk6/q_s)         | 1     |
+clkDv2/clk6/q_s                    | NONE(clkDv2/clk7/q_s)         | 1     |
+clk                                | BUFGP                         | 1     |
+clkDv1/clk0/q_s                    | NONE(clkDv1/clk1/q_s)         | 1     |
+clkDv1/clk1/q_s                    | NONE(clkDv1/clk2/q_s)         | 1     |
+clkDv1/clk2/q_s                    | NONE(clkDv1/clk3/q_s)         | 1     |
+clkDv1/clk4/q_s                    | NONE(clkDv1/clk5/q_s)         | 1     |
+clkDv1/clk5/q_s                    | NONE(clkDv1/clk6/q_s)         | 1     |
+clkDv1/clk6/q_s                    | NONE(clkDv1/clk7/q_s)         | 1     |
+-----------------------------------+-------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -483,16 +484,16 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-rst                                | IBUF                   | 31    |
+rst                                | IBUF                   | 33    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 12.006ns (Maximum Frequency: 83.289MHz)
-   Minimum input arrival time before clock: 6.778ns
-   Maximum output required time after clock: 14.992ns
+   Minimum period: 10.348ns (Maximum Frequency: 96.638MHz)
+   Minimum input arrival time before clock: 6.472ns
+   Maximum output required time after clock: 19.092ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -500,33 +501,49 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv2/clk7/q_s1'
-  Clock period: 12.006ns (frequency: 83.289MHz)
-  Total number of paths / destination ports: 4788 / 47
+Timing constraint: Default period analysis for Clock 'clkDv1/clk3/q_s1'
+  Clock period: 10.348ns (frequency: 96.638MHz)
+  Total number of paths / destination ports: 244 / 23
 -------------------------------------------------------------------------
-Delay:               12.006ns (Levels of Logic = 8)
-  Source:            count_mem_4 (FF)
-  Destination:       shifter1/bcd_out_6 (FF)
-  Source Clock:      clkDv2/clk7/q_s1 falling
-  Destination Clock: clkDv2/clk7/q_s1 falling
+Delay:               5.174ns (Levels of Logic = 2)
+  Source:            count_mem_7 (FF)
+  Destination:       space_state (FF)
+  Source Clock:      clkDv1/clk3/q_s1 falling
+  Destination Clock: clkDv1/clk3/q_s1 rising
 
-  Data Path: count_mem_4 to shifter1/bcd_out_6
+  Data Path: count_mem_7 to space_state
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC_1:C->Q           27   0.626   1.610  count_mem_4 (count_mem_4)
-     LUT4:I2->O            4   0.479   1.074  converter1/add32/adder1/bit0/U1/Mxor_S_Result_SW0 (N47)
-     LUT3:I0->O            1   0.479   0.000  converter1/add36/adder1/bit1/U2/Mxor_S_Result111_F (N130)
-     MUXF5:I0->O           5   0.314   0.806  converter1/add36/adder1/bit1/U2/Mxor_S_Result111 (N75)
-     LUT4_D:I3->LO         1   0.479   0.123  converter1/add36/condition35 (N144)
-     LUT4:I3->O            3   0.479   0.794  converter1/add36/condition56 (converter1/add36/condition)
-     LUT4:I3->O            7   0.479   0.965  converter1/add36/adder1/bit2/U2/Mxor_S_Result (bcd_full<7>)
-     LUT4:I2->O            2   0.479   0.768  digit2/Mrom_LED_out61 (digit2/Mrom_LED_out6)
-     LUT4:I3->O            1   0.479   0.681  shifter1/bcd_out_mux0001<6>_SW0 (N40)
+     FDC_1:C->Q           17   0.626   1.166  count_mem_7 (count_mem_7)
+     LUT4:I3->O            1   0.479   0.851  space_state_not00019 (space_state_not00019)
+     LUT2:I1->O            1   0.479   0.681  space_state_not000110 (space_state_not0001)
+     FDR:R                     0.892          space_state
+    ----------------------------------------
+    Total                      5.174ns (2.476ns logic, 2.698ns route)
+                                       (47.9% logic, 52.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkDv2/clk7/q_s'
+  Clock period: 7.891ns (frequency: 126.735MHz)
+  Total number of paths / destination ports: 35 / 27
+-------------------------------------------------------------------------
+Delay:               3.945ns (Levels of Logic = 1)
+  Source:            shifter1/current_state_0 (FF)
+  Destination:       shifter1/bcd_out_6 (FF)
+  Source Clock:      clkDv2/clk7/q_s rising
+  Destination Clock: clkDv2/clk7/q_s falling
+
+  Data Path: shifter1/current_state_0 to shifter1/bcd_out_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             11   0.626   1.267  shifter1/current_state_0 (shifter1/current_state_0)
+     LUT4:I0->O            1   0.479   0.681  shifter1/bcd_out_mux0001<6>_SW0 (N41)
      FDS_1:S                   0.892          shifter1/bcd_out_6
     ----------------------------------------
-    Total                     12.006ns (5.185ns logic, 6.821ns route)
-                                       (43.2% logic, 56.8% route)
+    Total                      3.945ns (1.997ns logic, 1.948ns route)
+                                       (50.6% logic, 49.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkDv1/clk7/q_s'
@@ -684,10 +701,10 @@ Delay:               2.707ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkDv2/clk6/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
+  Clock period: 3.166ns (frequency: 315.826MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
+Delay:               3.166ns (Levels of Logic = 1)
   Source:            clkDv2/clk7/q_s (FF)
   Destination:       clkDv2/clk7/q_s (FF)
   Source Clock:      clkDv2/clk6/q_s rising
@@ -697,12 +714,12 @@ Delay:               2.707ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv2/clk7/q_s (clkDv2/clk7/q_s1)
+     FDC:C->Q             18   0.626   1.204  clkDv2/clk7/q_s (clkDv2/clk7/q_s)
      INV:I->O              1   0.479   0.681  clkDv2/clk7/Q_not1_INV_0 (clkDv2/qn_internal<7>)
      FDC:D                     0.176          clkDv2/clk7/q_s
     ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
+    Total                      3.166ns (1.281ns logic, 1.885ns route)
+                                       (40.5% logic, 59.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
@@ -785,31 +802,9 @@ Delay:               2.707ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv1/clk3/q_s (clkDv1/clk3/q_s)
+     FDC:C->Q              2   0.626   0.745  clkDv1/clk3/q_s (clkDv1/clk3/q_s1)
      INV:I->O              1   0.479   0.681  clkDv1/clk3/Q_not1_INV_0 (clkDv1/qn_internal<3>)
      FDC:D                     0.176          clkDv1/clk3/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv1/clk3/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv1/clk4/q_s (FF)
-  Destination:       clkDv1/clk4/q_s (FF)
-  Source Clock:      clkDv1/clk3/q_s rising
-  Destination Clock: clkDv1/clk3/q_s rising
-
-  Data Path: clkDv1/clk4/q_s to clkDv1/clk4/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv1/clk4/q_s (clkDv1/clk4/q_s)
-     INV:I->O              1   0.479   0.681  clkDv1/clk4/Q_not1_INV_0 (clkDv1/qn_internal<4>)
-     FDC:D                     0.176          clkDv1/clk4/q_s
     ----------------------------------------
     Total                      2.707ns (1.281ns logic, 1.426ns route)
                                        (47.3% logic, 52.7% route)
@@ -881,66 +876,86 @@ Delay:               2.707ns (Levels of Logic = 1)
                                        (47.3% logic, 52.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clkDv2/clk7/q_s1'
-  Total number of paths / destination ports: 195 / 14
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkDv1/clk3/q_s1'
+  Total number of paths / destination ports: 279 / 16
 -------------------------------------------------------------------------
-Offset:              6.778ns (Levels of Logic = 5)
+Offset:              6.472ns (Levels of Logic = 5)
   Source:            input<3> (PAD)
-  Destination:       count_mem_0 (FF)
-  Destination Clock: clkDv2/clk7/q_s1 falling
+  Destination:       count_mem_6 (FF)
+  Destination Clock: clkDv1/clk3/q_s1 falling
 
-  Data Path: input<3> to count_mem_0
+  Data Path: input<3> to count_mem_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             4   0.715   1.074  input_3_IBUF (input_3_IBUF)
-     LUT2:I0->O            3   0.479   1.066  next_state_mux0004<1>31 (N74)
-     LUT4:I0->O            1   0.479   0.740  count_mem_mux0002<1>2_SW1 (N71)
-     LUT4:I2->O            8   0.479   1.091  count_mem_mux0002<1>2 (N9)
-     LUT4:I1->O            1   0.479   0.000  count_mem_mux0002<7> (count_mem_mux0002<7>)
-     FDC_1:D                   0.176          count_mem_7
+     LUT2:I0->O            3   0.479   0.830  next_state_mux0004<1>31 (N74)
+     LUT4:I2->O            3   0.479   0.794  next_state_mux0004<0>_SW0 (N02)
+     LUT4:I3->O            7   0.479   0.906  count_mem_mux0002<1>2 (N9)
+     MUXF5:S->O            2   0.540   0.000  count_mem_mux0002<6> (count_mem_mux0002<6>)
+     FDC_1:D                   0.176          count_mem_6
     ----------------------------------------
-    Total                      6.778ns (2.807ns logic, 3.971ns route)
-                                       (41.4% logic, 58.6% route)
+    Total                      6.472ns (2.868ns logic, 3.604ns route)
+                                       (44.3% logic, 55.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clkDv2/clk7/q_s1'
-  Total number of paths / destination ports: 4594 / 43
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkDv1/clk3/q_s1'
+  Total number of paths / destination ports: 4824 / 32
 -------------------------------------------------------------------------
-Offset:              14.992ns (Levels of Logic = 9)
-  Source:            count_mem_4 (FF)
-  Destination:       digit3port<6> (PAD)
-  Source Clock:      clkDv2/clk7/q_s1 falling
+Offset:              19.092ns (Levels of Logic = 10)
+  Source:            count_mem_5 (FF)
+  Destination:       digit2port<5> (PAD)
+  Source Clock:      clkDv1/clk3/q_s1 falling
 
-  Data Path: count_mem_4 to digit3port<6>
+  Data Path: count_mem_5 to digit2port<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC_1:C->Q           27   0.626   1.610  count_mem_4 (count_mem_4)
-     LUT4:I2->O            4   0.479   1.074  converter1/add32/adder1/bit0/U1/Mxor_S_Result_SW0 (N47)
-     LUT3:I0->O            1   0.479   0.000  converter1/add36/adder1/bit1/U2/Mxor_S_Result111_F (N130)
-     MUXF5:I0->O           5   0.314   0.806  converter1/add36/adder1/bit1/U2/Mxor_S_Result111 (N75)
-     LUT4_D:I3->LO         1   0.479   0.123  converter1/add36/condition35 (N144)
-     LUT4:I3->O            3   0.479   0.794  converter1/add36/condition56 (converter1/add36/condition)
-     LUT4_D:I3->O          2   0.479   0.768  converter1/add36/adder1/bit1/Cout1 (converter1/add36/adder1/c1)
-     LUT4:I3->O            1   0.479   0.000  digit3/Mrom_LED_out3_f5_F (N114)
-     MUXF5:I0->O           4   0.314   0.779  digit3/Mrom_LED_out3_f5 (digit3/Mrom_LED_out3)
-     OBUF:I->O                 4.909          digit3port_6_OBUF (digit3port<6>)
+     FDC_1:C->Q           22   0.626   1.655  count_mem_5 (count_mem_5)
+     LUT4:I0->O            2   0.479   0.915  converter1/add32/adder1/bit0/U1/Mxor_S_Result_SW0 (N47)
+     LUT3:I1->O            9   0.479   1.125  converter1/add32/adder1/bit0/U1/Mxor_S_Result (converter1/add32/adder1/bit0/U2/Mxor_S_Result_and0001)
+     LUT4:I1->O            1   0.479   0.851  converter1/add36/condition56_SW0_SW0 (N106)
+     LUT4:I1->O            1   0.479   0.704  converter1/add36/condition56_SW0 (N96)
+     LUT4:I3->O            3   0.479   1.066  converter1/add36/condition56 (converter1/add36/condition)
+     LUT4:I0->O            6   0.479   1.148  converter1/add36/adder1/bit1/Cout1 (converter1/add36/adder1/c1)
+     LUT3:I0->O            1   0.479   0.000  converter1/add36/adder1/bit2/U2/Mxor_S_Result1 (converter1/add36/adder1/bit2/U2/Mxor_S_Result)
+     MUXF5:I1->O           7   0.314   1.201  converter1/add36/adder1/bit2/U2/Mxor_S_Result_f5 (bcd_full<7>)
+     LUT4:I0->O            2   0.479   0.745  digit2/Mrom_LED_out41 (digit2/Mrom_LED_out4)
+     OBUF:I->O                 4.909          digit2port_4_OBUF (digit2port<4>)
     ----------------------------------------
-    Total                     14.992ns (9.037ns logic, 5.955ns route)
-                                       (60.3% logic, 39.7% route)
+    Total                     19.092ns (9.681ns logic, 9.411ns route)
+                                       (50.7% logic, 49.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkDv2/clk7/q_s'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              6.216ns (Levels of Logic = 1)
+  Source:            shifter1/An_3 (FF)
+  Destination:       sel_single_port<3> (PAD)
+  Source Clock:      clkDv2/clk7/q_s falling
+
+  Data Path: shifter1/An_3 to sel_single_port<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS_1:C->Q            1   0.626   0.681  shifter1/An_3 (shifter1/An_3)
+     OBUF:I->O                 4.909          sel_single_port_3_OBUF (sel_single_port<3>)
+    ----------------------------------------
+    Total                      6.216ns (5.535ns logic, 0.681ns route)
+                                       (89.0% logic, 11.0% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.78 secs
+Total CPU time to Xst completion: 5.54 secs
  
 --> 
 
-Total memory usage is 263220 kilobytes
+Total memory usage is 262516 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   29 (   0 filtered)
+Number of warnings :   30 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

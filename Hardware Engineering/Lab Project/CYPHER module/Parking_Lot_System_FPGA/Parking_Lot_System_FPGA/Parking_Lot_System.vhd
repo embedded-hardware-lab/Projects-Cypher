@@ -236,6 +236,6 @@ architecture behavioral of parkingLotSystem is
 		digit2port <=digit2port_s ;
 		digit1port <= digit1port_s ;
 		
-		clk_op <= clk3(7);
+		clk_op <= clk2(3);
 
 end architecture;
