@@ -33,7 +33,7 @@ begin
 
 	chooseInput : process(clk,current_state, bcd1,bcd2,bcd3,An)
 	begin
-		if (clk = '0' and clk'event) then
+		if (clk = '1' and clk'event) then
  			case current_state is
 				when S0 => 	An <= "0111";
 						
@@ -60,7 +60,7 @@ begin
 
 	output : process(clk,current_state, bcd1,bcd2,bcd3,An)
 	begin
-		if (clk = '0' and clk'event) then
+		if (clk = '1' and clk'event) then
  			case current_state is
 				when S0 => 	bcd_out <= bcd1;
 						

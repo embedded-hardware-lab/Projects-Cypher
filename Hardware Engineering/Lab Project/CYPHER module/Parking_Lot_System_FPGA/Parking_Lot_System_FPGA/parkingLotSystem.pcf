@@ -1,8 +1,12 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Jun 18 12:51:40 2022
+// Written by: Map P.20131013 on Sat Jun 18 13:09:38 2022
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "gate_close" LOCATE = SITE "P12" LEVEL 1;
+COMP "ready" LOCATE = SITE "K13" LEVEL 1;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "led_red" LOCATE = SITE "P13" LEVEL 1;
 COMP "led_green" LOCATE = SITE "N12" LEVEL 1;
 COMP "single_port<0>" LOCATE = SITE "N16" LEVEL 1;
 COMP "single_port<1>" LOCATE = SITE "F13" LEVEL 1;
@@ -22,9 +26,5 @@ COMP "input<1>" LOCATE = SITE "J13" LEVEL 1;
 COMP "input<2>" LOCATE = SITE "J14" LEVEL 1;
 COMP "input<3>" LOCATE = SITE "H13" LEVEL 1;
 NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
-COMP "gate_close" LOCATE = SITE "P12" LEVEL 1;
-COMP "ready" LOCATE = SITE "K13" LEVEL 1;
-COMP "clk" LOCATE = SITE "T9" LEVEL 1;
-COMP "led_red" LOCATE = SITE "P13" LEVEL 1;
 SCHEMATIC END;
 

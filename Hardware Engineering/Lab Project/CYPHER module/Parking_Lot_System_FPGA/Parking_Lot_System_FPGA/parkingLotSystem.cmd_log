@@ -14,3 +14,9 @@ map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o parking
 par -w -intstyle ise -ol high -t 1 parkingLotSystem_map.ncd parkingLotSystem.ncd parkingLotSystem.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml parkingLotSystem.twx parkingLotSystem.ncd -o parkingLotSystem.twr parkingLotSystem.pcf -ucf netlist.ucf 
 bitgen -intstyle ise -f parkingLotSystem.ut parkingLotSystem.ncd 
+xst -intstyle ise -ifn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/parkingLotSystem.xst" -ofn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/parkingLotSystem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc netlist.ucf -p xc3s1000-ft256-5 "parkingLotSystem.ngc" parkingLotSystem.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o parkingLotSystem_map.ncd parkingLotSystem.ngd parkingLotSystem.pcf 
+par -w -intstyle ise -ol high -t 1 parkingLotSystem_map.ncd parkingLotSystem.ncd parkingLotSystem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml parkingLotSystem.twx parkingLotSystem.ncd -o parkingLotSystem.twr parkingLotSystem.pcf -ucf netlist.ucf 
+bitgen -intstyle ise -f parkingLotSystem.ut parkingLotSystem.ncd 
