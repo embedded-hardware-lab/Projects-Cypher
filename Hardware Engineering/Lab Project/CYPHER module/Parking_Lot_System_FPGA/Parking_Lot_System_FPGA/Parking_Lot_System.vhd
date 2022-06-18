@@ -180,10 +180,12 @@ architecture behavioral of parkingLotSystem is
 		end if;
 		end process;
 
-		carCounter : process(current_state, input, clk, counter_s)
+		carCounter : process(current_state, input, clk, counter_s, rst)
 		variable count_mem : std_logic_vector(7 downto 0) := "00000000";
 			begin
-				if  (clk = '0' and clk'event ) then 
+				
+				if (rst = '1') then count_mem := "00000000";
+				elsif  (clk = '0' and clk'event ) then 
 
 					case current_state is
 						when idle => 	--if (rst = '1') then counter_s <= "00000000";
@@ -202,7 +204,7 @@ architecture behavioral of parkingLotSystem is
 											if input="0010"  then count_mem := count_mem - '1';   -- counting down
 											else count_mem := count_mem;
 											end if;
-					end case;					
+					end case;
 				end if;
 				counter_s<= count_mem;
 		end process;
