@@ -52,7 +52,7 @@ architecture behavioural of counter is
 	display1 : LED_7segment port map (	input => Q,
 						LED_out => SEG);
 
-	sel <= '1' ;
+	sel <= '0' ;
 end behavioural; 
 
 

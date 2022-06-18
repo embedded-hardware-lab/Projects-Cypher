@@ -9,7 +9,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Sat Jun 18 09:07:34 2022
+Mapped Date    : Sat Jun 18 09:15:16 2022
 
 Design Summary
 --------------
@@ -89,7 +89,7 @@ Section 5 - Removed Logic
 
 Optimized Block(s):
 TYPE 		BLOCK
-VCC 		XST_VCC
+GND 		XST_GND
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
