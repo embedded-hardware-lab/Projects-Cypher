@@ -9,7 +9,6 @@ architecture behavioural of counterUpDown_4_bit is
 	signal qn_internal: bit_vector(3 downto 0);
 	signal d0, d1, d2, d3 : bit;
 	signal flip_flop_clock : bit;
-	signal c : bit_vector(3 downto 0);
 
 	component D_flip_flop is 
    		port(	Q : out bit;    

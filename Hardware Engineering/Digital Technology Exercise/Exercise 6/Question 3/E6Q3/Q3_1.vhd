@@ -4,7 +4,8 @@ entity counter is
 		SEG : out bit_vector(6 downto 0);
 		EN  : in bit ;
 		UpDown  : in bit ;
-		RST  : in bit );	
+		RST  : in bit ;	
+		sel : out bit );
 end counter;
   
 architecture behavioural of counter is
@@ -51,7 +52,7 @@ architecture behavioural of counter is
 	display1 : LED_7segment port map (	input => Q,
 						LED_out => SEG);
 
-
+	sel <= '1' ;
 end behavioural; 
 
 
