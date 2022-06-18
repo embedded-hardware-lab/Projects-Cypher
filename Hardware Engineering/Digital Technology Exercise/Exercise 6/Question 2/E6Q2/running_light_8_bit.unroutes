@@ -1,0 +1,24 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sat Jun 18 06:02:10 2022
+
+13 signals are not completely routed.
+
+WARNING:ParHelpers:360 - Design is not completely routed.
+
+   EN_BUFGP
+   EN_BUFGP/IBUFG
+   GLOBAL_LOGIC1
+   RST_IBUF
+   clockDevider1/clk0/q_s
+   clockDevider1/clk1/q_s
+   clockDevider1/clk2/q_s
+   clockDevider1/clk3/q_s
+   clockDevider1/clk4/q_s
+   clockDevider1/clk5/q_s
+   clockDevider1/clk6/q_s
+   clockDevider1/clk7/q_s
+   clock_s
+
+

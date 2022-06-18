@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/running_light_8_bit.xst" -ofn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/running_light_8_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/netlist.ucf" -p xc3s1000-ft256-5 "running_light_8_bit.ngc" running_light_8_bit.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o running_light_8_bit_map.ncd running_light_8_bit.ngd running_light_8_bit.pcf 
+par -w -intstyle ise -ol high -t 1 running_light_8_bit_map.ncd running_light_8_bit.ncd running_light_8_bit.pcf 

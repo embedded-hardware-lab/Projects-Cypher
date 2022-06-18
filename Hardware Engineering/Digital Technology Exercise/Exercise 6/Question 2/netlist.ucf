@@ -10,7 +10,7 @@ NET "LED_OUT<7>" LOC = "P11" ;
 
 NET "EN" LOC = "F12" ;
 NET "RST" LOC = "G12" ;
-NET "CLK" LOC = "H14" ;
+NET "CLK" LOC = "A9" ;
 
 #PACE: Start of PACE Area Constraints
 

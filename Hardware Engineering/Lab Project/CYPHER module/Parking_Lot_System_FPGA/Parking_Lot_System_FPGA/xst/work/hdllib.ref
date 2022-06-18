@@ -1,0 +1,14 @@
+AR bcd_8_bit behavioural "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_8_bit.vhd" sub00/vhpl09 1655524346
+EN led_7segment NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_7segment.vhd" sub00/vhpl10 1655524347
+AR full_adder_1_bit data "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q2.vhd" sub00/vhpl03 1655524340
+AR half_adder_1_bit data "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q1.vhd" sub00/vhpl01 1655524338
+EN full_adder_1_bit NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q2.vhd" sub00/vhpl02 1655524339
+EN half_adder_1_bit NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q1.vhd" sub00/vhpl00 1655524337
+AR parkinglotsystem behavioral "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" sub00/vhpl13 1655524350
+AR led_7segment logic "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_7segment.vhd" sub00/vhpl11 1655524348
+EN parkinglotsystem NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" sub00/vhpl12 1655524349
+AR full_adder_4_bit data "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q3.vhd" sub00/vhpl05 1655524342
+EN add3 NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/add3.vhd" sub00/vhpl06 1655524343
+AR add3 behavioural "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/add3.vhd" sub00/vhpl07 1655524344
+EN full_adder_4_bit NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q3.vhd" sub00/vhpl04 1655524341
+EN bcd_8_bit NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_8_bit.vhd" sub00/vhpl08 1655524345

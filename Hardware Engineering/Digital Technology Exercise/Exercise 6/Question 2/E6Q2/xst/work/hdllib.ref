@@ -1,0 +1,6 @@
+AR clock_divider behavioural "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q2_1.vhd" sub00/vhpl03 1655524911
+AR d_flip_flop behavioral "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q1_1.vhd" sub00/vhpl01 1655524909
+EN d_flip_flop NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q1_1.vhd" sub00/vhpl00 1655524908
+EN clock_divider NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q2_1.vhd" sub00/vhpl02 1655524910
+AR running_light_8_bit behavioural "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/running_light.vhd" sub00/vhpl05 1655524913
+EN running_light_8_bit NULL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/running_light.vhd" sub00/vhpl04 1655524912
