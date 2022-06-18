@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-06-18T08:30:23</DateModified>
+  <DateModified>2022-06-18T10:31:59</DateModified>
   <ModuleName>counter</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/iseconfig/counter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3\</ImplementationReportsDirectory>
   <DateInitialized>2022-06-18T08:30:22</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

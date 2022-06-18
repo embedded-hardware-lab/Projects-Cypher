@@ -9,6 +9,8 @@ end running_light_8_bit;
 architecture behavioural of running_light_8_bit is
 
 	signal clock_s : bit;
+	signal clock_s2 : bit_vector(7 downto 0);
+	signal clock_s3 : bit_vector(7 downto 0);
 	
 	component clock_divider is
 		port (	CLK_main : in bit;				
@@ -18,10 +20,26 @@ architecture behavioural of running_light_8_bit is
 
 	begin
 		clockDevider1 : clock_divider port map(	CLK_main => clock_s,				
+							CLK_N => clock_s2,
+							reset => RST );
+		clockDevider2 : clock_divider port map(	CLK_main => clock_s2(7),				
+							CLK_N => clock_s3,
+							reset => RST );
+		clockDevider3 : clock_divider port map(	CLK_main => clock_s3(7),				
 							CLK_N => LED_OUT,
 							reset => RST );
+		
+		runclk1 : process (CLK,EN, clock_s)
+		begin
+			if (CLK = '1' and CLK'event ) then
+				if (EN = '1') then
+					clock_s <= not clock_s;
+				end if;
+			end if;
+		end process;
+		
 
-
-	clock_s <= CLK when EN = '1';
+		
+			
 end architecture;
   

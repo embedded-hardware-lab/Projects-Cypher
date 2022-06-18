@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-06-18T06:00:28</DateModified>
+  <DateModified>2022-06-18T10:33:43</DateModified>
   <ModuleName>running_light_8_bit</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/iseconfig/running_light.xreport</SavedFilePath>
+  <SummaryTimeStamp>2022-06-18T10:24:10</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/iseconfig/running_light_8_bit.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2</ImplementationReportsDirectory>
-  <DateInitialized>2022-06-18T06:00:28</DateInitialized>
+  <DateInitialized>2022-06-18T10:21:35</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

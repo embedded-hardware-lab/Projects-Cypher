@@ -8,9 +8,9 @@ NET "LED_OUT<6>" LOC = "P12" ;
 NET "LED_OUT<7>" LOC = "P11" ;
 
 
-NET "EN" LOC = "F12" ;
-NET "RST" LOC = "G12" ;
-NET "CLK" LOC = "A9" ;
+NET "EN" LOC = "K13" ;
+NET "RST" LOC = "M13" ;
+NET "CLK" LOC = "T9" ;
 
 #PACE: Start of PACE Area Constraints
 
