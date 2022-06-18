@@ -1,19 +1,19 @@
 V3 11
 FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q1_1.vhd" 2022/06/18.05:22:05 P.20131013
-EN work/D_flip_flop 1655542437 \
+EN work/D_flip_flop 1655542605 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q1_1.vhd"
-AR work/D_flip_flop/Behavioral 1655542438 \
+AR work/D_flip_flop/Behavioral 1655542606 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q1_1.vhd" \
-      EN work/D_flip_flop 1655542437
+      EN work/D_flip_flop 1655542605
 FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q2_1.vhd" 2022/06/18.05:22:05 P.20131013
-EN work/clock_divider 1655542439 \
+EN work/clock_divider 1655542607 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q2_1.vhd"
-AR work/clock_divider/behavioural 1655542440 \
+AR work/clock_divider/behavioural 1655542608 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/Q2_1.vhd" \
-      EN work/clock_divider 1655542439 CP D_flip_flop
-FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/running_light.vhd" 2022/06/18.10:53:52 P.20131013
-EN work/running_light_8_bit 1655542441 \
+      EN work/clock_divider 1655542607 CP D_flip_flop
+FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/running_light.vhd" 2022/06/18.10:56:35 P.20131013
+EN work/running_light_8_bit 1655542609 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/running_light.vhd"
-AR work/running_light_8_bit/behavioural 1655542442 \
+AR work/running_light_8_bit/behavioural 1655542610 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/running_light.vhd" \
-      EN work/running_light_8_bit 1655542441 CP clock_divider
+      EN work/running_light_8_bit 1655542609 CP clock_divider

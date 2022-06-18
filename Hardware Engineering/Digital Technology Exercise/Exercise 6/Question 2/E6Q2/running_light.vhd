@@ -31,11 +31,11 @@ architecture behavioural of running_light_8_bit is
 							CLK_N => clock_s4,
 							reset => RST );
 		clockDevider4 : clock_divider port map(	CLK_main => clock_s4(7),				
-							CLK_N => clock_s5,
-							reset => RST );
-		clockDevider5 : clock_divider port map(	CLK_main => clock_s5(7),				
 							CLK_N => LED_OUT,
 							reset => RST );
+		--clockDevider5 : clock_divider port map(	CLK_main => clock_s5(7),				
+							--CLK_N => LED_OUT,
+							--reset => RST );
 		
 		runclk1 : process (CLK,EN, clock_s)
 		begin

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CYPHER-PC::  Sat Jun 18 10:54:10 2022
+CYPHER-PC::  Sat Jun 18 10:56:58 2022
 
 par -w -intstyle ise -ol high -t 1 running_light_8_bit_map.ncd
 running_light_8_bit.ncd running_light_8_bit.pcf 
@@ -29,7 +29,7 @@ Device Utilization Summary:
    Number of External IOBs                  11 out of 173     6%
       Number of LOCed IOBs                  11 out of 11    100%
 
-   Number of Slices                         41 out of 7680    1%
+   Number of Slices                         33 out of 7680    1%
       Number of SLICEMs                      0 out of 3840    0%
 
 
@@ -48,33 +48,33 @@ Total REAL time at the beginning of Placer: 0 secs
 Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:4bd97995) REAL time: 0 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:4bd97811) REAL time: 0 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:4bd97995) REAL time: 0 secs 
+Phase 2.7  Design Feasibility Check (Checksum:4bd97811) REAL time: 0 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:4bd97995) REAL time: 0 secs 
+Phase 3.31  Local Placement Optimization (Checksum:4bd97811) REAL time: 0 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:67568d3d) REAL time: 0 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:67568bb9) REAL time: 0 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:67568d3d) REAL time: 0 secs 
+Phase 5.36  Local Placement Optimization (Checksum:67568bb9) REAL time: 0 secs 
 
 Phase 6.8  Global Placement
 ..
-Phase 6.8  Global Placement (Checksum:5e17cf8c) REAL time: 1 secs 
+Phase 6.8  Global Placement (Checksum:e9871901) REAL time: 1 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:5e17cf8c) REAL time: 1 secs 
+Phase 7.5  Local Placement Optimization (Checksum:e9871901) REAL time: 1 secs 
 
 Phase 8.18  Placement Optimization
-Phase 8.18  Placement Optimization (Checksum:e0c8bca8) REAL time: 1 secs 
+Phase 8.18  Placement Optimization (Checksum:429424b0) REAL time: 1 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:e0c8bca8) REAL time: 1 secs 
+Phase 9.5  Local Placement Optimization (Checksum:429424b0) REAL time: 1 secs 
 
 Total REAL time to Placer completion: 1 secs 
 Total CPU  time to Placer completion: 1 secs 
@@ -85,13 +85,13 @@ Writing design to file running_light_8_bit.ncd
 Starting Router
 
 
-Phase  1  : 133 unrouted;      REAL time: 1 secs 
+Phase  1  : 109 unrouted;      REAL time: 1 secs 
 
-Phase  2  : 131 unrouted;      REAL time: 1 secs 
+Phase  2  : 107 unrouted;      REAL time: 1 secs 
 
-Phase  3  : 9 unrouted;      REAL time: 1 secs 
+Phase  3  : 8 unrouted;      REAL time: 1 secs 
 
-Phase  4  : 24 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  4  : 17 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
@@ -99,96 +99,80 @@ Updating file: running_light_8_bit.ncd with current fully routed design.
 
 Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
-WARNING:Route:455 - CLK Net:clockDevider3/clk4/q_s may have excessive skew because 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+WARNING:Route:455 - CLK Net:clockDevider2/clk3/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider5/clk3/q_s may have excessive skew because 
+WARNING:Route:455 - CLK Net:clock_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider4/clk0/q_s may have excessive skew because 
       1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider3/clk6/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider4/clk7/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider5/clk2/q_s may have excessive skew because 
-      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider5/clk4/q_s may have excessive skew because 
-      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider2/clk1/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider1/clk1/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider4/clk1/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider2/clk4/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider1/clk5/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider4/clk4/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider3/clk1/q_s may have excessive skew because 
+WARNING:Route:455 - CLK Net:clockDevider2/clk1/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider3/clk0/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider4/clk1/q_s may have excessive skew because 
+      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider4/clk2/q_s may have excessive skew because 
+      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider2/clk0/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider3/clk1/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider1/clk4/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider1/clk6/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider1/clk7/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider4/clk3/q_s may have excessive skew because 
+      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider1/clk3/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider1/clk5/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider3/clk6/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider2/clk5/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider2/clk6/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider4/clk2/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider4/clk4/q_s may have excessive skew because 
+      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider4/clk5/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clockDevider4/clk6/q_s may have excessive skew because 
+      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider3/clk7/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider5/clk0/q_s may have excessive skew because 
-      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider5/clk1/q_s may have excessive skew because 
-      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider5/clk5/q_s may have excessive skew because 
-      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider5/clk6/q_s may have excessive skew because 
-      1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider4/clk0/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider2/clk0/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider1/clk2/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider4/clk6/q_s may have excessive skew because 
+WARNING:Route:455 - CLK Net:clockDevider1/clk1/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider2/clk2/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider3/clk2/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider1/clk3/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider2/clk3/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider3/clk3/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider1/clk4/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider4/clk3/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clock_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider2/clk5/q_s may have excessive skew because 
+WARNING:Route:455 - CLK Net:clockDevider3/clk4/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider3/clk5/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider1/clk6/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider1/clk0/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockDevider1/clk7/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clockDevider2/clk7/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 3 secs 
-Total CPU time to Router completion: 3 secs 
+Total REAL time to Router completion: 2 secs 
+Total CPU time to Router completion: 2 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -206,126 +190,102 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           CLK_BUFGP |      BUFGMUX0| No   |    1 |  0.000     |  0.705      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider5/clk0/q |              |      |      |            |             |
-|                  _s |         Local|      |    3 |  0.000     |  0.965      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider5/clk1/q |              |      |      |            |             |
-|                  _s |         Local|      |    3 |  0.000     |  1.780      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider5/clk2/q |              |      |      |            |             |
-|                  _s |         Local|      |    3 |  0.000     |  1.575      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider5/clk3/q |              |      |      |            |             |
-|                  _s |         Local|      |    3 |  0.000     |  1.751      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider5/clk4/q |              |      |      |            |             |
-|                  _s |         Local|      |    3 |  0.000     |  2.816      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider5/clk5/q |              |      |      |            |             |
-|                  _s |         Local|      |    3 |  0.000     |  0.726      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider5/clk6/q |              |      |      |            |             |
-|                  _s |         Local|      |    3 |  0.000     |  0.707      |
+|           CLK_BUFGP |      BUFGMUX0| No   |    1 |  0.000     |  0.731      |
 +---------------------+--------------+------+------+------------+-------------+
 |clockDevider4/clk0/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.093      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider3/clk7/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.074      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider2/clk1/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.735      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider2/clk0/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.117      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider3/clk6/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.546      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider4/clk7/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.341      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider3/clk1/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.658      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider3/clk0/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.260      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider1/clk2/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  0.658      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider1/clk1/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  0.634      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider4/clk6/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  0.933      |
+|                  _s |         Local|      |    3 |  0.000     |  1.295      |
 +---------------------+--------------+------+------+------------+-------------+
 |clockDevider4/clk1/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.075      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider2/clk2/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.084      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider3/clk2/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  0.668      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider1/clk3/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.299      |
+|                  _s |         Local|      |    3 |  0.000     |  0.941      |
 +---------------------+--------------+------+------+------------+-------------+
 |clockDevider4/clk2/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.678      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider2/clk3/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.573      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider3/clk3/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.570      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider1/clk4/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.583      |
+|                  _s |         Local|      |    3 |  0.000     |  1.370      |
 +---------------------+--------------+------+------+------------+-------------+
 |clockDevider4/clk3/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.299      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider2/clk4/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.061      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider3/clk4/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.324      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider1/clk5/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.306      |
+|                  _s |         Local|      |    3 |  0.000     |  1.360      |
 +---------------------+--------------+------+------+------------+-------------+
 |clockDevider4/clk4/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  0.916      |
-+---------------------+--------------+------+------+------------+-------------+
-|             clock_s |         Local|      |    2 |  0.000     |  1.249      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider2/clk5/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.697      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider3/clk5/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.550      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider1/clk6/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  0.976      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider1/clk0/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.250      |
+|                  _s |         Local|      |    3 |  0.000     |  3.163      |
 +---------------------+--------------+------+------+------------+-------------+
 |clockDevider4/clk5/q |              |      |      |            |             |
+|                  _s |         Local|      |    3 |  0.000     |  1.270      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider4/clk6/q |              |      |      |            |             |
+|                  _s |         Local|      |    3 |  0.000     |  0.653      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider3/clk7/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.365      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider2/clk1/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.546      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider2/clk0/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.549      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider3/clk6/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.074      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider3/clk1/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.735      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider3/clk0/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.324      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider1/clk2/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  0.707      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider1/clk1/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  0.658      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider2/clk2/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  0.945      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider3/clk2/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.413      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider1/clk3/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.524      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider2/clk3/q |              |      |      |            |             |
 |                  _s |         Local|      |    2 |  0.000     |  1.341      |
 +---------------------+--------------+------+------+------------+-------------+
-|clockDevider2/clk6/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.731      |
-+---------------------+--------------+------+------+------------+-------------+
-|clockDevider1/clk7/q |              |      |      |            |             |
+|clockDevider3/clk3/q |              |      |      |            |             |
 |                  _s |         Local|      |    2 |  0.000     |  0.989      |
 +---------------------+--------------+------+------+------------+-------------+
+|clockDevider1/clk4/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.344      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider2/clk4/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.074      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider3/clk4/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.704      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider1/clk5/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.731      |
++---------------------+--------------+------+------+------------+-------------+
+|             clock_s |         Local|      |    2 |  0.000     |  0.973      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider2/clk5/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.585      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider3/clk5/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  0.779      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider1/clk6/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.389      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider1/clk0/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.249      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider2/clk6/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  1.074      |
++---------------------+--------------+------+------+------------+-------------+
+|clockDevider1/clk7/q |              |      |      |            |             |
+|                  _s |         Local|      |    2 |  0.000     |  0.668      |
++---------------------+--------------+------+------+------------+-------------+
 |clockDevider2/clk7/q |              |      |      |            |             |
-|                  _s |         Local|      |    2 |  0.000     |  1.413      |
+|                  _s |         Local|      |    2 |  0.000     |  1.759      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -345,35 +305,32 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.477ns|     N/A|           0
-  ckDevider5/clk0/q_s                       | HOLD        |     0.795ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.727ns|     N/A|           0
+  ckDevider4/clk0/q_s                       | HOLD        |     0.995ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
-  ckDevider5/clk1/q_s                       | HOLD        |     0.779ns|            |       0|           0
+  ckDevider4/clk1/q_s                       | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.743ns|     N/A|           0
-  ckDevider5/clk2/q_s                       | HOLD        |     1.008ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.451ns|     N/A|           0
+  ckDevider4/clk2/q_s                       | HOLD        |     0.774ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.743ns|     N/A|           0
-  ckDevider5/clk3/q_s                       | HOLD        |     1.008ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
+  ckDevider4/clk3/q_s                       | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.505ns|     N/A|           0
-  ckDevider5/clk4/q_s                       | HOLD        |     0.818ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.477ns|     N/A|           0
+  ckDevider4/clk4/q_s                       | HOLD        |     0.795ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.508ns|     N/A|           0
-  ckDevider5/clk5/q_s                       | HOLD        |     0.820ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.455ns|     N/A|           0
+  ckDevider4/clk5/q_s                       | HOLD        |     0.778ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.440ns|     N/A|           0
-  ckDevider5/clk6/q_s                       | HOLD        |     0.766ns|            |       0|           0
+  ckDevider4/clk6/q_s                       | HOLD        |     0.766ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     1.457ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.779ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     1.485ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.801ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.743ns|     N/A|           0
-  ckDevider4/clk0/q_s                       | HOLD        |     1.008ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
-  ckDevider3/clk7/q_s                       | HOLD        |     0.779ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.727ns|     N/A|           0
+  ckDevider3/clk7/q_s                       | HOLD        |     0.995ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
   ckDevider2/clk1/q_s                       | HOLD        |     0.779ns|            |       0|           0
@@ -381,92 +338,71 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
   ckDevider2/clk0/q_s                       | HOLD        |     0.979ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.451ns|     N/A|           0
-  ckDevider3/clk6/q_s                       | HOLD        |     0.774ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.477ns|     N/A|           0
-  ckDevider4/clk7/q_s                       | HOLD        |     0.795ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
-  ckDevider3/clk1/q_s                       | HOLD        |     0.979ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.690ns|     N/A|           0
-  ckDevider3/clk0/q_s                       | HOLD        |     0.966ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
+  ckDevider3/clk6/q_s                       | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
-  ckDevider1/clk2/q_s                       | HOLD        |     0.779ns|            |       0|           0
+  ckDevider3/clk1/q_s                       | HOLD        |     0.779ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
+  ckDevider3/clk0/q_s                       | HOLD        |     0.979ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.440ns|     N/A|           0
+  ckDevider1/clk2/q_s                       | HOLD        |     0.766ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
   ckDevider1/clk1/q_s                       | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
-  ckDevider4/clk6/q_s                       | HOLD        |     0.979ns|            |       0|           0
+  ckDevider2/clk2/q_s                       | HOLD        |     0.979ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.440ns|     N/A|           0
-  ckDevider4/clk1/q_s                       | HOLD        |     0.766ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.440ns|     N/A|           0
-  ckDevider2/clk2/q_s                       | HOLD        |     0.766ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
-  ckDevider3/clk2/q_s                       | HOLD        |     0.779ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
-  ckDevider1/clk3/q_s                       | HOLD        |     0.779ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
-  ckDevider4/clk2/q_s                       | HOLD        |     0.779ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.722ns|     N/A|           0
-  ckDevider2/clk3/q_s                       | HOLD        |     0.991ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.693ns|     N/A|           0
-  ckDevider3/clk3/q_s                       | HOLD        |     0.968ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.500ns|     N/A|           0
+  ckDevider3/clk2/q_s                       | HOLD        |     0.814ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
-  ckDevider1/clk4/q_s                       | HOLD        |     0.979ns|            |       0|           0
+  ckDevider1/clk3/q_s                       | HOLD        |     0.979ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
-  ckDevider4/clk3/q_s                       | HOLD        |     0.979ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.451ns|     N/A|           0
+  ckDevider2/clk3/q_s                       | HOLD        |     0.774ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.504ns|     N/A|           0
-  ckDevider2/clk4/q_s                       | HOLD        |     0.816ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
-  ckDevider3/clk4/q_s                       | HOLD        |     0.979ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.537ns|     N/A|           0
+  ckDevider3/clk3/q_s                       | HOLD        |     0.843ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.484ns|     N/A|           0
-  ckDevider1/clk5/q_s                       | HOLD        |     0.801ns|            |       0|           0
+  ckDevider1/clk4/q_s                       | HOLD        |     0.801ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
+  ckDevider2/clk4/q_s                       | HOLD        |     0.779ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.500ns|     N/A|           0
+  ckDevider3/clk4/q_s                       | HOLD        |     0.814ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
-  ckDevider4/clk4/q_s                       | HOLD        |     0.979ns|            |       0|           0
+  ckDevider1/clk5/q_s                       | HOLD        |     0.979ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
   ck_s                                      | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.710ns|     N/A|           0
-  ckDevider2/clk5/q_s                       | HOLD        |     0.981ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.451ns|     N/A|           0
+  ckDevider2/clk5/q_s                       | HOLD        |     0.774ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.451ns|     N/A|           0
+  ckDevider3/clk5/q_s                       | HOLD        |     0.774ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
-  ckDevider3/clk5/q_s                       | HOLD        |     0.979ns|            |       0|           0
+  ckDevider1/clk6/q_s                       | HOLD        |     0.979ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.500ns|     N/A|           0
-  ckDevider1/clk6/q_s                       | HOLD        |     0.814ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
+  ckDevider1/clk0/q_s                       | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
-  ckDevider1/clk0/q_s                       | HOLD        |     0.979ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.440ns|     N/A|           0
-  ckDevider4/clk5/q_s                       | HOLD        |     0.766ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.500ns|     N/A|           0
-  ckDevider2/clk6/q_s                       | HOLD        |     0.814ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.494ns|     N/A|           0
-  ckDevider1/clk7/q_s                       | HOLD        |     0.809ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.457ns|     N/A|           0
+  ckDevider2/clk6/q_s                       | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.706ns|     N/A|           0
-  ckDevider2/clk7/q_s                       | HOLD        |     0.979ns|            |       0|           0
+  ckDevider1/clk7/q_s                       | HOLD        |     0.979ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     1.693ns|     N/A|           0
+  ckDevider2/clk7/q_s                       | HOLD        |     0.968ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -485,13 +421,13 @@ All signals are completely routed.
 Total REAL time to PAR completion: 3 secs 
 Total CPU time to PAR completion: 3 secs 
 
-Peak Memory Usage:  266 MB
+Peak Memory Usage:  263 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 40
+Number of warning messages: 32
 Number of info messages: 1
 
 Writing design to file running_light_8_bit.ncd
