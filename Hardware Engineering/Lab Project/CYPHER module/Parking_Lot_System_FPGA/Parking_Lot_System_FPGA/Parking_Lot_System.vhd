@@ -181,28 +181,30 @@ architecture behavioral of parkingLotSystem is
 		end process;
 
 		carCounter : process(current_state, input, clk, counter_s)
+		variable count_mem : std_logic_vector(7 downto 0) := "00000000";
 			begin
 				if  (clk = '0' and clk'event ) then 
 
 					case current_state is
 						when idle => 	--if (rst = '1') then counter_s <= "00000000";
 											--els
-											if (input="0001")  then	counter_s <= counter_s + '1' ;   -- counting up
-											elsif (input="0010")  then	counter_s <= counter_s - '1' ;   -- counting down
-											else counter_s <= counter_s;
+											if (input="0001")  then	count_mem := count_mem + '1' ;   -- counting up
+											elsif (input="0010")  then	count_mem := count_mem - '1' ;   -- counting down
+											else count_mem := count_mem;
 											end if;
 						when display =>	--if (rst = '1') then counter_s <= "00000000";
 												--else 
-												counter_s <= counter_s ;	
+												count_mem := count_mem ;	
 												--end if;
 
 						when full => 	--if (rst = '1') then counter_s <= "00000000";
 											--els
-											if input="0010"  then counter_s <= counter_s - '1';   -- counting down
-											else counter_s <= counter_s;
+											if input="0010"  then count_mem := count_mem - '1';   -- counting down
+											else count_mem := count_mem;
 											end if;
-					end case;		
+					end case;					
 				end if;
+				counter_s<= count_mem;
 		end process;
 		
 		space_checker : process(counter_s, space_state)
