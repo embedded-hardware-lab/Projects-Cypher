@@ -6,6 +6,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity parkingLotSystem is
  	port (	rst, clk: in std_logic;
 		input : in std_logic_vector(3 downto 0); 
+		
 		counter : out std_logic_vector(7 downto 0); 
 		led_red : out std_logic;
 		gate_close : out std_logic;
@@ -15,7 +16,9 @@ entity parkingLotSystem is
 		
 		digit3port : out bit_vector(6 downto 0);
 		digit2port : out bit_vector(6 downto 0);
-		digit1port : out bit_vector(6 downto 0)
+		digit1port : out bit_vector(6 downto 0);
+		single_port : out bit_vector(6 downto 0);
+		sel_single_port : out bit_vector(3 downto 0)
 		);
 		
 end entity parkingLotSystem;
@@ -34,6 +37,10 @@ architecture behavioral of parkingLotSystem is
 	signal bcd_1 : bit_vector(3 downto 0);
 	signal bcd_full : bit_vector(11 downto 0);
 
+	signal digit3port_s :  bit_vector(6 downto 0);
+	signal digit2port_s :  bit_vector(6 downto 0);
+	signal digit1port_S :  bit_vector(6 downto 0);
+
 
 	component bcd_8_bit is
     		port (	input_8_bit:    in  bit_vector (7 downto 0);
@@ -46,17 +53,37 @@ architecture behavioral of parkingLotSystem is
 		LED_out : out bit_vector (6 downto 0));
 	end component;
 
+	component bcd_shifter is
+	port (		rst : in std_logic; 
+			clk : in std_logic; 
+				bcd1 : in bit_vector (6 downto 0);
+			bcd2 : in bit_vector (6 downto 0);
+			bcd3 : in bit_vector (6 downto 0);
+			bcd_out : out bit_vector (6 downto 0);
+			sel : out bit_vector (3 downto 0));
+	end component ;
+
 
 	begin
 		converter1 : bcd_8_bit port map ( 	input_8_bit => counter_s_bit,
 							bcd => bcd_full );
 
 		digit3 : LED_7segment port map (	input => bcd_3,
-							LED_out => digit3port);
+							LED_out => digit3port_s);
 		digit2 : LED_7segment port map (	input => bcd_2,
-							LED_out => digit2port);
+							LED_out => digit2port_s);
 		digit1 : LED_7segment port map (	input => bcd_1,
-							LED_out => digit1port);
+							LED_out => digit1port_S);
+
+
+		shifter1 : bcd_shifter port map (	rst => rst,
+							clk => clk,
+							bcd1 => digit1port_s,
+							bcd2 => digit1port_s,
+							bcd3 => digit1port_s,
+							bcd_out => single_port,
+							sel => sel_single_port);
+
 
 		state_memory: process(clk, rst, next_state, current_state)
  		begin
@@ -166,4 +193,9 @@ architecture behavioral of parkingLotSystem is
 		bcd_3 <= bcd_full(11 downto 8);
 		bcd_2 <= bcd_full(7 downto 4);
 		bcd_1 <=  bcd_full(3 downto 0);
+
+		digit3port <= digit3port_s ;
+		digit2port <=digit2port_s ;
+		digit1port <= digit1port_s ;
+
 end architecture;
