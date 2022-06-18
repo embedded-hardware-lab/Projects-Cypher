@@ -104,7 +104,7 @@ architecture behavioral of parkingLotSystem is
 
 
 		shifter1 : bcd_shifter port map (	rst => rst,
-							clk => clk5(4),
+							clk => clk4(2),
 							bcd1 => digit1port_s,
 							bcd2 => digit1port_s,
 							bcd3 => digit1port_s,

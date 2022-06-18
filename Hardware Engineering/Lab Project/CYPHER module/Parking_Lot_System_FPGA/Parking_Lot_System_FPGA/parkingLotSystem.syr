@@ -254,9 +254,9 @@ Unit <bcd_8_bit> synthesized.
 Synthesizing Unit <parkingLotSystem>.
     Related source file is "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd".
 WARNING:Xst:1780 - Signal <clk6> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <clk5<7:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <clk5<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <clk4<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk4<6:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk4<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk3<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk2<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_0> for signal <current_state>.
@@ -319,11 +319,17 @@ Optimizing FSM <current_state/FSM> on signal <current_state[1:2]> with user enco
  display | 01
  full    | 10
 ---------------------
-WARNING:Xst:1290 - Hierarchical block <clk5> is unconnected in block <clkDv4>.
+WARNING:Xst:1290 - Hierarchical block <clk3> is unconnected in block <clkDv3>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <clk6> is unconnected in block <clkDv4>.
+WARNING:Xst:1290 - Hierarchical block <clk4> is unconnected in block <clkDv3>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <clk7> is unconnected in block <clkDv4>.
+WARNING:Xst:1290 - Hierarchical block <clk5> is unconnected in block <clkDv3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <clk6> is unconnected in block <clkDv3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <clk7> is unconnected in block <clkDv3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <clkDv4> is unconnected in block <parkingLotSystem>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <U1> is unconnected in block <bit3>.
    It will be removed from the design.
@@ -357,13 +363,23 @@ Optimizing unit <parkingLotSystem> ...
 Optimizing unit <bcd_shifter> ...
 
 Optimizing unit <clock_divider> ...
+WARNING:Xst:2677 - Node <clkDv4/clk0/q_s> of sequential type is unconnected in block <parkingLotSystem>.
+WARNING:Xst:2677 - Node <clkDv4/clk1/q_s> of sequential type is unconnected in block <parkingLotSystem>.
+WARNING:Xst:2677 - Node <clkDv4/clk2/q_s> of sequential type is unconnected in block <parkingLotSystem>.
+WARNING:Xst:2677 - Node <clkDv4/clk3/q_s> of sequential type is unconnected in block <parkingLotSystem>.
+WARNING:Xst:2677 - Node <clkDv4/clk4/q_s> of sequential type is unconnected in block <parkingLotSystem>.
 WARNING:Xst:2677 - Node <clkDv4/clk5/q_s> of sequential type is unconnected in block <parkingLotSystem>.
 WARNING:Xst:2677 - Node <clkDv4/clk6/q_s> of sequential type is unconnected in block <parkingLotSystem>.
 WARNING:Xst:2677 - Node <clkDv4/clk7/q_s> of sequential type is unconnected in block <parkingLotSystem>.
+WARNING:Xst:2677 - Node <clkDv3/clk3/q_s> of sequential type is unconnected in block <parkingLotSystem>.
+WARNING:Xst:2677 - Node <clkDv3/clk4/q_s> of sequential type is unconnected in block <parkingLotSystem>.
+WARNING:Xst:2677 - Node <clkDv3/clk5/q_s> of sequential type is unconnected in block <parkingLotSystem>.
+WARNING:Xst:2677 - Node <clkDv3/clk6/q_s> of sequential type is unconnected in block <parkingLotSystem>.
+WARNING:Xst:2677 - Node <clkDv3/clk7/q_s> of sequential type is unconnected in block <parkingLotSystem>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block parkingLotSystem, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block parkingLotSystem, actual ratio is 0.
 FlipFlop current_state_FSM_FFd1 has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -372,8 +388,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 57
- Flip-Flops                                            : 57
+# Registers                                            : 47
+ Flip-Flops                                            : 47
 
 =========================================================================
 
@@ -402,9 +418,9 @@ Design Statistics
 # IOs                              : 51
 
 Cell Usage :
-# BELS                             : 154
+# BELS                             : 144
 #      GND                         : 1
-#      INV                         : 30
+#      INV                         : 20
 #      LUT2                        : 12
 #      LUT3                        : 25
 #      LUT3_D                      : 1
@@ -413,9 +429,9 @@ Cell Usage :
 #      LUT4_D                      : 2
 #      LUT4_L                      : 9
 #      MUXF5                       : 3
-# FlipFlops/Latches                : 57
+# FlipFlops/Latches                : 47
 #      FD_1                        : 12
-#      FDC                         : 34
+#      FDC                         : 24
 #      FDP                         : 1
 #      FDS_1                       : 10
 # Clock Buffers                    : 1
@@ -431,8 +447,8 @@ Device utilization summary:
 Selected Device : 3s1000ft256-5 
 
  Number of Slices:                       66  out of   7680     0%  
- Number of Slice Flip Flops:             57  out of  15360     0%  
- Number of 4 input LUTs:                150  out of  15360     0%  
+ Number of Slice Flip Flops:             47  out of  15360     0%  
+ Number of 4 input LUTs:                140  out of  15360     0%  
  Number of IOs:                          51
  Number of bonded IOBs:                  51  out of    173    29%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -459,20 +475,10 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)         | Load  |
 -----------------------------------+-------------------------------+-------+
 clk                                | BUFGP                         | 12    |
-clkDv4/clk4/q_s                    | NONE(shifter1/current_state_2)| 17    |
-clkDv3/clk7/q_s                    | NONE(clkDv4/clk0/q_s)         | 1     |
-clkDv4/clk0/q_s                    | NONE(clkDv4/clk1/q_s)         | 1     |
-clkDv4/clk1/q_s                    | NONE(clkDv4/clk2/q_s)         | 1     |
-clkDv4/clk2/q_s                    | NONE(clkDv4/clk3/q_s)         | 1     |
-clkDv4/clk3/q_s                    | NONE(clkDv4/clk4/q_s)         | 1     |
+clkDv3/clk2/q_s                    | NONE(shifter1/current_state_2)| 17    |
 clkDv2/clk7/q_s                    | NONE(clkDv3/clk0/q_s)         | 1     |
 clkDv3/clk0/q_s                    | NONE(clkDv3/clk1/q_s)         | 1     |
 clkDv3/clk1/q_s                    | NONE(clkDv3/clk2/q_s)         | 1     |
-clkDv3/clk2/q_s                    | NONE(clkDv3/clk3/q_s)         | 1     |
-clkDv3/clk3/q_s                    | NONE(clkDv3/clk4/q_s)         | 1     |
-clkDv3/clk4/q_s                    | NONE(clkDv3/clk5/q_s)         | 1     |
-clkDv3/clk5/q_s                    | NONE(clkDv3/clk6/q_s)         | 1     |
-clkDv3/clk6/q_s                    | NONE(clkDv3/clk7/q_s)         | 1     |
 clkDv1/clk7/q_s                    | NONE(clkDv2/clk0/q_s)         | 1     |
 clkDv2/clk0/q_s                    | NONE(clkDv2/clk1/q_s)         | 1     |
 clkDv2/clk1/q_s                    | NONE(clkDv2/clk2/q_s)         | 1     |
@@ -496,7 +502,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-rst                                | IBUF                   | 35    |
+rst                                | IBUF                   | 25    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -536,15 +542,15 @@ Delay:               5.263ns (Levels of Logic = 2)
                                        (47.0% logic, 53.0% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv4/clk4/q_s'
+Timing constraint: Default period analysis for Clock 'clkDv3/clk2/q_s'
   Clock period: 5.097ns (frequency: 196.202MHz)
   Total number of paths / destination ports: 36 / 20
 -------------------------------------------------------------------------
 Delay:               2.548ns (Levels of Logic = 1)
   Source:            shifter1/current_state_1 (FF)
   Destination:       shifter1/bcd_out_6 (FF)
-  Source Clock:      clkDv4/clk4/q_s rising
-  Destination Clock: clkDv4/clk4/q_s falling
+  Source Clock:      clkDv3/clk2/q_s rising
+  Destination Clock: clkDv3/clk2/q_s falling
 
   Data Path: shifter1/current_state_1 to shifter1/bcd_out_6
                                 Gate     Net
@@ -556,116 +562,6 @@ Delay:               2.548ns (Levels of Logic = 1)
     ----------------------------------------
     Total                      2.548ns (1.281ns logic, 1.267ns route)
                                        (50.3% logic, 49.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv3/clk7/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv4/clk0/q_s (FF)
-  Destination:       clkDv4/clk0/q_s (FF)
-  Source Clock:      clkDv3/clk7/q_s rising
-  Destination Clock: clkDv3/clk7/q_s rising
-
-  Data Path: clkDv4/clk0/q_s to clkDv4/clk0/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv4/clk0/q_s (clkDv4/clk0/q_s)
-     INV:I->O              1   0.479   0.681  clkDv4/clk0/Q_not1_INV_0 (clkDv4/qn_internal<0>)
-     FDC:D                     0.176          clkDv4/clk0/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv4/clk0/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv4/clk1/q_s (FF)
-  Destination:       clkDv4/clk1/q_s (FF)
-  Source Clock:      clkDv4/clk0/q_s rising
-  Destination Clock: clkDv4/clk0/q_s rising
-
-  Data Path: clkDv4/clk1/q_s to clkDv4/clk1/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv4/clk1/q_s (clkDv4/clk1/q_s)
-     INV:I->O              1   0.479   0.681  clkDv4/clk1/Q_not1_INV_0 (clkDv4/qn_internal<1>)
-     FDC:D                     0.176          clkDv4/clk1/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv4/clk1/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv4/clk2/q_s (FF)
-  Destination:       clkDv4/clk2/q_s (FF)
-  Source Clock:      clkDv4/clk1/q_s rising
-  Destination Clock: clkDv4/clk1/q_s rising
-
-  Data Path: clkDv4/clk2/q_s to clkDv4/clk2/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv4/clk2/q_s (clkDv4/clk2/q_s)
-     INV:I->O              1   0.479   0.681  clkDv4/clk2/Q_not1_INV_0 (clkDv4/qn_internal<2>)
-     FDC:D                     0.176          clkDv4/clk2/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv4/clk2/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv4/clk3/q_s (FF)
-  Destination:       clkDv4/clk3/q_s (FF)
-  Source Clock:      clkDv4/clk2/q_s rising
-  Destination Clock: clkDv4/clk2/q_s rising
-
-  Data Path: clkDv4/clk3/q_s to clkDv4/clk3/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv4/clk3/q_s (clkDv4/clk3/q_s)
-     INV:I->O              1   0.479   0.681  clkDv4/clk3/Q_not1_INV_0 (clkDv4/qn_internal<3>)
-     FDC:D                     0.176          clkDv4/clk3/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv4/clk3/q_s'
-  Clock period: 3.166ns (frequency: 315.826MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               3.166ns (Levels of Logic = 1)
-  Source:            clkDv4/clk4/q_s (FF)
-  Destination:       clkDv4/clk4/q_s (FF)
-  Source Clock:      clkDv4/clk3/q_s rising
-  Destination Clock: clkDv4/clk3/q_s rising
-
-  Data Path: clkDv4/clk4/q_s to clkDv4/clk4/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q             18   0.626   1.204  clkDv4/clk4/q_s (clkDv4/clk4/q_s)
-     INV:I->O              1   0.479   0.681  clkDv4/clk4/Q_not1_INV_0 (clkDv4/qn_internal<4>)
-     FDC:D                     0.176          clkDv4/clk4/q_s
-    ----------------------------------------
-    Total                      3.166ns (1.281ns logic, 1.885ns route)
-                                       (40.5% logic, 59.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkDv2/clk7/q_s'
@@ -713,10 +609,10 @@ Delay:               2.707ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkDv3/clk1/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
+  Clock period: 3.166ns (frequency: 315.826MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
+Delay:               3.166ns (Levels of Logic = 1)
   Source:            clkDv3/clk2/q_s (FF)
   Destination:       clkDv3/clk2/q_s (FF)
   Source Clock:      clkDv3/clk1/q_s rising
@@ -726,122 +622,12 @@ Delay:               2.707ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv3/clk2/q_s (clkDv3/clk2/q_s)
+     FDC:C->Q             18   0.626   1.204  clkDv3/clk2/q_s (clkDv3/clk2/q_s)
      INV:I->O              1   0.479   0.681  clkDv3/clk2/Q_not1_INV_0 (clkDv3/qn_internal<2>)
      FDC:D                     0.176          clkDv3/clk2/q_s
     ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv3/clk2/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv3/clk3/q_s (FF)
-  Destination:       clkDv3/clk3/q_s (FF)
-  Source Clock:      clkDv3/clk2/q_s rising
-  Destination Clock: clkDv3/clk2/q_s rising
-
-  Data Path: clkDv3/clk3/q_s to clkDv3/clk3/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv3/clk3/q_s (clkDv3/clk3/q_s)
-     INV:I->O              1   0.479   0.681  clkDv3/clk3/Q_not1_INV_0 (clkDv3/qn_internal<3>)
-     FDC:D                     0.176          clkDv3/clk3/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv3/clk3/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv3/clk4/q_s (FF)
-  Destination:       clkDv3/clk4/q_s (FF)
-  Source Clock:      clkDv3/clk3/q_s rising
-  Destination Clock: clkDv3/clk3/q_s rising
-
-  Data Path: clkDv3/clk4/q_s to clkDv3/clk4/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv3/clk4/q_s (clkDv3/clk4/q_s)
-     INV:I->O              1   0.479   0.681  clkDv3/clk4/Q_not1_INV_0 (clkDv3/qn_internal<4>)
-     FDC:D                     0.176          clkDv3/clk4/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv3/clk4/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv3/clk5/q_s (FF)
-  Destination:       clkDv3/clk5/q_s (FF)
-  Source Clock:      clkDv3/clk4/q_s rising
-  Destination Clock: clkDv3/clk4/q_s rising
-
-  Data Path: clkDv3/clk5/q_s to clkDv3/clk5/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv3/clk5/q_s (clkDv3/clk5/q_s)
-     INV:I->O              1   0.479   0.681  clkDv3/clk5/Q_not1_INV_0 (clkDv3/qn_internal<5>)
-     FDC:D                     0.176          clkDv3/clk5/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv3/clk5/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv3/clk6/q_s (FF)
-  Destination:       clkDv3/clk6/q_s (FF)
-  Source Clock:      clkDv3/clk5/q_s rising
-  Destination Clock: clkDv3/clk5/q_s rising
-
-  Data Path: clkDv3/clk6/q_s to clkDv3/clk6/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv3/clk6/q_s (clkDv3/clk6/q_s)
-     INV:I->O              1   0.479   0.681  clkDv3/clk6/Q_not1_INV_0 (clkDv3/qn_internal<6>)
-     FDC:D                     0.176          clkDv3/clk6/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkDv3/clk6/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clkDv3/clk7/q_s (FF)
-  Destination:       clkDv3/clk7/q_s (FF)
-  Source Clock:      clkDv3/clk6/q_s rising
-  Destination Clock: clkDv3/clk6/q_s rising
-
-  Data Path: clkDv3/clk7/q_s to clkDv3/clk7/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clkDv3/clk7/q_s (clkDv3/clk7/q_s)
-     INV:I->O              1   0.479   0.681  clkDv3/clk7/Q_not1_INV_0 (clkDv3/qn_internal<7>)
-     FDC:D                     0.176          clkDv3/clk7/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
+    Total                      3.166ns (1.281ns logic, 1.885ns route)
+                                       (40.5% logic, 59.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkDv1/clk7/q_s'
@@ -1233,13 +1019,13 @@ Offset:              25.746ns (Levels of Logic = 14)
                                        (45.7% logic, 54.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clkDv4/clk4/q_s'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkDv3/clk2/q_s'
   Total number of paths / destination ports: 11 / 11
 -------------------------------------------------------------------------
 Offset:              6.216ns (Levels of Logic = 1)
   Source:            shifter1/An_3 (FF)
   Destination:       sel_single_port<3> (PAD)
-  Source Clock:      clkDv4/clk4/q_s falling
+  Source Clock:      clkDv3/clk2/q_s falling
 
   Data Path: shifter1/An_3 to sel_single_port<3>
                                 Gate     Net
@@ -1255,13 +1041,13 @@ Offset:              6.216ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.02 secs
+Total CPU time to Xst completion: 4.03 secs
  
 --> 
 
-Total memory usage is 262516 kilobytes
+Total memory usage is 263476 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   16 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 
