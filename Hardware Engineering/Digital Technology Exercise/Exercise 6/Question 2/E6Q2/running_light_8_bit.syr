@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: running_light_8_bit.prj
 
@@ -156,7 +156,8 @@ Unit <clock_divider> synthesized.
 
 Synthesizing Unit <running_light_8_bit>.
     Related source file is "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/E6Q2/running_light.vhd".
-WARNING:Xst:646 - Signal <clock_s3<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clock_s3<7:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clock_s3<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clock_s2<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <clock_s>.
     Summary:
@@ -177,6 +178,18 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <clk2> is unconnected in block <clockDevider2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <clk3> is unconnected in block <clockDevider2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <clk4> is unconnected in block <clockDevider2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <clk5> is unconnected in block <clockDevider2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <clk6> is unconnected in block <clockDevider2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <clk7> is unconnected in block <clockDevider2>.
+   It will be removed from the design.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -194,6 +207,12 @@ Macro Statistics
 Optimizing unit <running_light_8_bit> ...
 
 Optimizing unit <clock_divider> ...
+WARNING:Xst:2677 - Node <clockDevider2/clk2/q_s> of sequential type is unconnected in block <running_light_8_bit>.
+WARNING:Xst:2677 - Node <clockDevider2/clk3/q_s> of sequential type is unconnected in block <running_light_8_bit>.
+WARNING:Xst:2677 - Node <clockDevider2/clk4/q_s> of sequential type is unconnected in block <running_light_8_bit>.
+WARNING:Xst:2677 - Node <clockDevider2/clk5/q_s> of sequential type is unconnected in block <running_light_8_bit>.
+WARNING:Xst:2677 - Node <clockDevider2/clk6/q_s> of sequential type is unconnected in block <running_light_8_bit>.
+WARNING:Xst:2677 - Node <clockDevider2/clk7/q_s> of sequential type is unconnected in block <running_light_8_bit>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -205,8 +224,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 25
- Flip-Flops                                            : 25
+# Registers                                            : 19
+ Flip-Flops                                            : 19
 
 =========================================================================
 
@@ -235,10 +254,10 @@ Design Statistics
 # IOs                              : 11
 
 Cell Usage :
-# BELS                             : 25
-#      INV                         : 25
-# FlipFlops/Latches                : 25
-#      FDC                         : 24
+# BELS                             : 19
+#      INV                         : 19
+# FlipFlops/Latches                : 19
+#      FDC                         : 18
 #      FDE                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -252,9 +271,9 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                       14  out of   7680     0%  
- Number of Slice Flip Flops:             25  out of  15360     0%  
- Number of 4 input LUTs:                 25  out of  15360     0%  
+ Number of Slices:                       11  out of   7680     0%  
+ Number of Slice Flip Flops:             19  out of  15360     0%  
+ Number of 4 input LUTs:                 19  out of  15360     0%  
  Number of IOs:                          11
  Number of bonded IOBs:                  11  out of    173     6%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -281,7 +300,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
 CLK                                | BUFGP                       | 1     |
-clockDevider2/clk7/q_s             | NONE(clockDevider3/clk0/q_s)| 1     |
+clockDevider2/clk1/q_s             | NONE(clockDevider3/clk0/q_s)| 1     |
 clockDevider3/clk0/q_s             | NONE(clockDevider3/clk1/q_s)| 1     |
 clockDevider3/clk1/q_s             | NONE(clockDevider3/clk2/q_s)| 1     |
 clockDevider3/clk2/q_s             | NONE(clockDevider3/clk3/q_s)| 1     |
@@ -291,12 +310,6 @@ clockDevider3/clk5/q_s             | NONE(clockDevider3/clk6/q_s)| 1     |
 clockDevider3/clk6/q_s             | NONE(clockDevider3/clk7/q_s)| 1     |
 clockDevider1/clk7/q_s             | NONE(clockDevider2/clk0/q_s)| 1     |
 clockDevider2/clk0/q_s             | NONE(clockDevider2/clk1/q_s)| 1     |
-clockDevider2/clk1/q_s             | NONE(clockDevider2/clk2/q_s)| 1     |
-clockDevider2/clk2/q_s             | NONE(clockDevider2/clk3/q_s)| 1     |
-clockDevider2/clk3/q_s             | NONE(clockDevider2/clk4/q_s)| 1     |
-clockDevider2/clk4/q_s             | NONE(clockDevider2/clk5/q_s)| 1     |
-clockDevider2/clk5/q_s             | NONE(clockDevider2/clk6/q_s)| 1     |
-clockDevider2/clk6/q_s             | NONE(clockDevider2/clk7/q_s)| 1     |
 clock_s                            | NONE(clockDevider1/clk0/q_s)| 1     |
 clockDevider1/clk0/q_s             | NONE(clockDevider1/clk1/q_s)| 1     |
 clockDevider1/clk1/q_s             | NONE(clockDevider1/clk2/q_s)| 1     |
@@ -313,7 +326,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-RST                                | IBUF                   | 24    |
+RST                                | IBUF                   | 18    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -352,15 +365,15 @@ Delay:               2.707ns (Levels of Logic = 1)
                                        (47.3% logic, 52.7% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clockDevider2/clk7/q_s'
+Timing constraint: Default period analysis for Clock 'clockDevider2/clk1/q_s'
   Clock period: 2.733ns (frequency: 365.925MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Delay:               2.733ns (Levels of Logic = 1)
   Source:            clockDevider3/clk0/q_s (FF)
   Destination:       clockDevider3/clk0/q_s (FF)
-  Source Clock:      clockDevider2/clk7/q_s rising
-  Destination Clock: clockDevider2/clk7/q_s rising
+  Source Clock:      clockDevider2/clk1/q_s rising
+  Destination Clock: clockDevider2/clk1/q_s rising
 
   Data Path: clockDevider3/clk0/q_s to clockDevider3/clk0/q_s
                                 Gate     Net
@@ -567,138 +580,6 @@ Delay:               2.707ns (Levels of Logic = 1)
      FDC:C->Q              2   0.626   0.745  clockDevider2/clk1/q_s (clockDevider2/clk1/q_s)
      INV:I->O              1   0.479   0.681  clockDevider2/clk1/Q_not1_INV_0 (clockDevider2/qn_internal<1>)
      FDC:D                     0.176          clockDevider2/clk1/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clockDevider2/clk1/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clockDevider2/clk2/q_s (FF)
-  Destination:       clockDevider2/clk2/q_s (FF)
-  Source Clock:      clockDevider2/clk1/q_s rising
-  Destination Clock: clockDevider2/clk1/q_s rising
-
-  Data Path: clockDevider2/clk2/q_s to clockDevider2/clk2/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clockDevider2/clk2/q_s (clockDevider2/clk2/q_s)
-     INV:I->O              1   0.479   0.681  clockDevider2/clk2/Q_not1_INV_0 (clockDevider2/qn_internal<2>)
-     FDC:D                     0.176          clockDevider2/clk2/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clockDevider2/clk2/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clockDevider2/clk3/q_s (FF)
-  Destination:       clockDevider2/clk3/q_s (FF)
-  Source Clock:      clockDevider2/clk2/q_s rising
-  Destination Clock: clockDevider2/clk2/q_s rising
-
-  Data Path: clockDevider2/clk3/q_s to clockDevider2/clk3/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clockDevider2/clk3/q_s (clockDevider2/clk3/q_s)
-     INV:I->O              1   0.479   0.681  clockDevider2/clk3/Q_not1_INV_0 (clockDevider2/qn_internal<3>)
-     FDC:D                     0.176          clockDevider2/clk3/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clockDevider2/clk3/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clockDevider2/clk4/q_s (FF)
-  Destination:       clockDevider2/clk4/q_s (FF)
-  Source Clock:      clockDevider2/clk3/q_s rising
-  Destination Clock: clockDevider2/clk3/q_s rising
-
-  Data Path: clockDevider2/clk4/q_s to clockDevider2/clk4/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clockDevider2/clk4/q_s (clockDevider2/clk4/q_s)
-     INV:I->O              1   0.479   0.681  clockDevider2/clk4/Q_not1_INV_0 (clockDevider2/qn_internal<4>)
-     FDC:D                     0.176          clockDevider2/clk4/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clockDevider2/clk4/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clockDevider2/clk5/q_s (FF)
-  Destination:       clockDevider2/clk5/q_s (FF)
-  Source Clock:      clockDevider2/clk4/q_s rising
-  Destination Clock: clockDevider2/clk4/q_s rising
-
-  Data Path: clockDevider2/clk5/q_s to clockDevider2/clk5/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clockDevider2/clk5/q_s (clockDevider2/clk5/q_s)
-     INV:I->O              1   0.479   0.681  clockDevider2/clk5/Q_not1_INV_0 (clockDevider2/qn_internal<5>)
-     FDC:D                     0.176          clockDevider2/clk5/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clockDevider2/clk5/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clockDevider2/clk6/q_s (FF)
-  Destination:       clockDevider2/clk6/q_s (FF)
-  Source Clock:      clockDevider2/clk5/q_s rising
-  Destination Clock: clockDevider2/clk5/q_s rising
-
-  Data Path: clockDevider2/clk6/q_s to clockDevider2/clk6/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clockDevider2/clk6/q_s (clockDevider2/clk6/q_s)
-     INV:I->O              1   0.479   0.681  clockDevider2/clk6/Q_not1_INV_0 (clockDevider2/qn_internal<6>)
-     FDC:D                     0.176          clockDevider2/clk6/q_s
-    ----------------------------------------
-    Total                      2.707ns (1.281ns logic, 1.426ns route)
-                                       (47.3% logic, 52.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clockDevider2/clk6/q_s'
-  Clock period: 2.707ns (frequency: 369.372MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.707ns (Levels of Logic = 1)
-  Source:            clockDevider2/clk7/q_s (FF)
-  Destination:       clockDevider2/clk7/q_s (FF)
-  Source Clock:      clockDevider2/clk6/q_s rising
-  Destination Clock: clockDevider2/clk6/q_s rising
-
-  Data Path: clockDevider2/clk7/q_s to clockDevider2/clk7/q_s
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   0.745  clockDevider2/clk7/q_s (clockDevider2/clk7/q_s)
-     INV:I->O              1   0.479   0.681  clockDevider2/clk7/Q_not1_INV_0 (clockDevider2/qn_internal<7>)
-     FDC:D                     0.176          clockDevider2/clk7/q_s
     ----------------------------------------
     Total                      2.707ns (1.281ns logic, 1.426ns route)
                                        (47.3% logic, 52.7% route)
@@ -1032,13 +913,13 @@ Offset:              6.306ns (Levels of Logic = 1)
                                        (87.8% logic, 12.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clockDevider2/clk7/q_s'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockDevider2/clk1/q_s'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              6.306ns (Levels of Logic = 1)
   Source:            clockDevider3/clk0/q_s (FF)
   Destination:       LED_OUT<0> (PAD)
-  Source Clock:      clockDevider2/clk7/q_s rising
+  Source Clock:      clockDevider2/clk1/q_s rising
 
   Data Path: clockDevider3/clk0/q_s to LED_OUT<0>
                                 Gate     Net
@@ -1054,13 +935,13 @@ Offset:              6.306ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.91 secs
+Total CPU time to Xst completion: 2.86 secs
  
 --> 
 
-Total memory usage is 255284 kilobytes
+Total memory usage is 255540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 
