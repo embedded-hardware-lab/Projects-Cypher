@@ -11,7 +11,7 @@ NET "SEG<6>" LOC = "E14" ;
 NET "EN" LOC = "K13" ;
 NET "UpDown" LOC = "K14" ;
 NET "RST" LOC = "M13" ;
-NET "CLK" LOC = "A8" ;
+NET "CLK" LOC = "T9" ;
 NET "sel" LOC = "E13";
 
 #PACE: Start of PACE Area Constraints

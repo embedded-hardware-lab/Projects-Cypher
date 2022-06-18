@@ -13,3 +13,28 @@ map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o counter
 par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf 
 bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.xst" -ofn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/netlist.ucf" -p xc3s1000-ft256-5 "counter.ngc" counter.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.xst" -ofn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/netlist.ucf" -p xc3s1000-ft256-5 "counter.ngc" counter.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.xst" -ofn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/netlist.ucf" -p xc3s1000-ft256-5 "counter.ngc" counter.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.xst" -ofn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.syr" 
+xst -intstyle ise -ifn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.xst" -ofn "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/netlist.ucf" -p xc3s1000-ft256-5 "counter.ngc" counter.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf 
+bitgen -intstyle ise -f counter.ut counter.ncd 

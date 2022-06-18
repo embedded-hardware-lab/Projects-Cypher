@@ -12,6 +12,8 @@ architecture behavioural of counter is
   	
 	signal Q_s: bit_vector(3 downto 0) ;
 	signal counter_clock : bit_vector(7 downto 0) ;
+	signal counter_clock2 : bit_vector(7 downto 0) ;
+	signal counter_clock3 : bit_vector(7 downto 0) ;
 
 	component counter_4_bit is 
 		port ( 	CLK, RESET, EN: in bit;
@@ -42,8 +44,16 @@ architecture behavioural of counter is
 	clockDivider1 : clock_divider port map(	CLK_main => CLK,			
 						CLK_N => counter_clock,
 						reset => RST );	
+						
+	clockDivider2 : clock_divider port map(	CLK_main => counter_clock(7),			
+						CLK_N => counter_clock2,
+						reset => RST );	
+						
+	clockDivider3 : clock_divider port map(	CLK_main => counter_clock2(7),			
+						CLK_N => counter_clock3,
+						reset => RST );
 
-	counter1 : counterUpDown_4_bit port map (	CLK => counter_clock(7), 
+	counter1 : counterUpDown_4_bit port map (	CLK => counter_clock3(7), 
 						RESET => RST, 
 						EN => EN,
 						counter => Q_s,
