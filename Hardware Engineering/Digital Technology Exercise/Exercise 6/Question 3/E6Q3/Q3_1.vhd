@@ -43,7 +43,7 @@ architecture behavioural of counter is
 						CLK_N => counter_clock,
 						reset => RST );	
 
-	counter1 : counterUpDown_4_bit port map (	CLK => counter_clock(3), 
+	counter1 : counterUpDown_4_bit port map (	CLK => counter_clock(7), 
 						RESET => RST, 
 						EN => EN,
 						counter => Q,

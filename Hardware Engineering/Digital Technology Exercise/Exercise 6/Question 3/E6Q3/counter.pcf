@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Jun 18 09:18:32 2022
+// Written by: Map P.20131013 on Sat Jun 18 09:33:18 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -13,7 +13,7 @@ COMP "SEG<3>" LOCATE = SITE "P15" LEVEL 1;
 COMP "SEG<4>" LOCATE = SITE "N15" LEVEL 1;
 COMP "SEG<5>" LOCATE = SITE "G13" LEVEL 1;
 COMP "UpDown" LOCATE = SITE "K14" LEVEL 1;
-COMP "CLK" LOCATE = SITE "A8" LEVEL 1;
+COMP "CLK" LOCATE = SITE "T9" LEVEL 1;
 COMP "SEG<6>" LOCATE = SITE "E14" LEVEL 1;
 NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
