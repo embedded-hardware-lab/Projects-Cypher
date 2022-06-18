@@ -56,11 +56,11 @@ architecture behavioral of parkingLotSystem is
 	component bcd_shifter is
 	port (		rst : in std_logic; 
 			clk : in std_logic; 
-				bcd1 : in bit_vector (6 downto 0);
-			bcd2 : in bit_vector (6 downto 0);
-			bcd3 : in bit_vector (6 downto 0);
-			bcd_out : out bit_vector (6 downto 0);
-			sel : out bit_vector (3 downto 0));
+				bcd1 : in std_logic_vector (6 downto 0);
+			bcd2 : in std_logic_vector (6 downto 0);
+			bcd3 : in std_logic_vector (6 downto 0);
+			bcd_out : out std_logic_vector (6 downto 0);
+			sel : out std_logic_vector (3 downto 0));
 	end component ;
 
 
@@ -78,9 +78,9 @@ architecture behavioral of parkingLotSystem is
 
 		shifter1 : bcd_shifter port map (	rst => rst,
 							clk => clk,
-							bcd1 => digit1port_s,
-							bcd2 => digit1port_s,
-							bcd3 => digit1port_s,
+							bcd1 => to_bitvector(digit1port_s),
+							bcd2 => to_bitvector(digit1port_s),
+							bcd3 => to_bitvector(digit1port_s),
 							bcd_out => single_port,
 							sel => sel_single_port);
 
