@@ -11,7 +11,38 @@
 <msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/Q1_1.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">counter_clock&lt;6:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">counter_clock&lt;7:4&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">counter_clock&lt;2:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">clk4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">clockDivider1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">clk5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">clockDivider1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">clk6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">clockDivider1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">clk7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">clockDivider1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clockDivider1/clk4/q_s</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">counter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clockDivider1/clk5/q_s</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">counter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clockDivider1/clk6/q_s</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">counter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clockDivider1/clk7/q_s</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">counter</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
