@@ -117,6 +117,7 @@ architecture behavioral of parkingLotSystem is
 							sel => sel_single_port);
 
 ----------------------------------------------------------------------------------------------------------------   FSM
+		clk_op <= clk2(4);
 		state_memory: process(clk_op, rst, next_state, current_state)
 		
 		--------------------------------------------------------------------------- reset n chang state
@@ -236,6 +237,6 @@ architecture behavioral of parkingLotSystem is
 		digit2port <=digit2port_s ;
 		digit1port <= digit1port_s ;
 		
-		clk_op <= clk2(3);
+		
 
 end architecture;
