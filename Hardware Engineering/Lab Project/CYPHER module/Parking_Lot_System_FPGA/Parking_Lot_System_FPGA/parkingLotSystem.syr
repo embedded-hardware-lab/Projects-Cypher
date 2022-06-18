@@ -121,8 +121,7 @@ Architecture logic of Entity led_7segment is up to date.
 Compiling vhdl file "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q2_1.vhd" in Library work.
 Architecture behavioural of Entity clock_divider is up to date.
 Compiling vhdl file "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_shifter.vhd" in Library work.
-Entity <bcd_shifter> compiled.
-Entity <bcd_shifter> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity bcd_shifter is up to date.
 Compiling vhdl file "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" in Library work.
 Entity <parkinglotsystem> compiled.
 Entity <parkinglotsystem> (Architecture <behavioral>) compiled.
@@ -155,7 +154,7 @@ Analyzing hierarchy for entity <half_adder_1_bit> in library <work> (architectur
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <parkingLotSystem> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" line 208: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" line 210: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <clk>
 Entity <parkingLotSystem> analyzed. Unit <parkingLotSystem> generated.
 
@@ -270,7 +269,7 @@ WARNING:Xst:646 - Signal <clk2<6:0>> is assigned but never used. This unconnecte
     Found 1-bit register for signal <gate_s>.
     Found 3-bit register for signal <next_state>.
     Found 1-bit register for signal <space_state>.
-    Found 8-bit comparator less for signal <space_state$cmp_lt0000> created at line 209.
+    Found 8-bit comparator less for signal <space_state$cmp_lt0000> created at line 211.
     Summary:
 	inferred  13 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
@@ -520,8 +519,8 @@ Delay:               6.410ns (Levels of Logic = 3)
     ----------------------------------------  ------------
      FDC:C->Q              7   0.626   0.929  current_state_2 (current_state_2)
      LUT4:I3->O            2   0.479   0.768  next_state_mux0004<0>_SW0 (N02)
-     LUT4_D:I3->O          7   0.479   1.076  counter_s_mux0000<1>2 (N9)
-     LUT2:I1->O            1   0.479   0.681  counter_s_mux0000<1>0 (counter_s_mux0000<1>0)
+     LUT4_D:I3->O          7   0.479   1.076  counter_s_mux0002<1>2 (N9)
+     LUT2:I1->O            1   0.479   0.681  counter_s_mux0002<1>0 (counter_s_mux0002<1>0)
      FDS_1:S                   0.892          counter_s_1
     ----------------------------------------
     Total                      6.410ns (2.955ns logic, 3.454ns route)
@@ -960,9 +959,9 @@ Offset:              8.169ns (Levels of Logic = 5)
     ----------------------------------------  ------------
      IBUF:I->O             4   0.715   1.074  input_3_IBUF (input_3_IBUF)
      LUT2:I0->O            4   0.479   1.074  next_state_mux0004<1>31 (N74)
-     LUT4:I0->O            1   0.479   0.740  counter_s_mux0000<1>2_SW1 (N19)
-     LUT4_D:I2->O          7   0.479   1.076  counter_s_mux0000<1>2 (N9)
-     LUT2:I1->O            1   0.479   0.681  counter_s_mux0000<1>0 (counter_s_mux0000<1>0)
+     LUT4:I0->O            1   0.479   0.740  counter_s_mux0002<1>2_SW1 (N19)
+     LUT4_D:I2->O          7   0.479   1.076  counter_s_mux0002<1>2 (N9)
+     LUT2:I1->O            1   0.479   0.681  counter_s_mux0002<1>0 (counter_s_mux0002<1>0)
      FDS_1:S                   0.892          counter_s_1
     ----------------------------------------
     Total                      8.169ns (3.523ns logic, 4.646ns route)
@@ -1019,11 +1018,11 @@ Offset:              6.216ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.09 secs
+Total CPU time to Xst completion: 3.98 secs
  
 --> 
 
-Total memory usage is 262964 kilobytes
+Total memory usage is 262900 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   30 (   0 filtered)

@@ -189,6 +189,7 @@ architecture behavioral of parkingLotSystem is
 											--els
 											if (input="0001")  then	counter_s <= counter_s + '1' ;   -- counting up
 											elsif (input="0010")  then	counter_s <= counter_s - '1' ;   -- counting down
+											else counter_s <= counter_s;
 											end if;
 						when display =>	--if (rst = '1') then counter_s <= "00000000";
 												--else 
@@ -198,6 +199,7 @@ architecture behavioral of parkingLotSystem is
 						when full => 	--if (rst = '1') then counter_s <= "00000000";
 											--els
 											if input="0010"  then counter_s <= counter_s - '1';   -- counting down
+											else counter_s <= counter_s;
 											end if;
 					end case;		
 				end if;
