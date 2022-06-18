@@ -45,15 +45,15 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-input<0>    |    2.571(R)|   -0.026(R)|clk_BUFGP         |   0.000|
-            |    4.731(F)|   -0.400(F)|clk_BUFGP         |   0.000|
-input<1>    |    3.306(R)|   -1.072(R)|clk_BUFGP         |   0.000|
-            |    5.984(F)|   -1.042(F)|clk_BUFGP         |   0.000|
-input<2>    |    3.748(R)|   -0.369(R)|clk_BUFGP         |   0.000|
-            |    6.183(F)|   -1.395(F)|clk_BUFGP         |   0.000|
-input<3>    |    3.810(R)|   -0.547(R)|clk_BUFGP         |   0.000|
-            |    5.967(F)|   -1.444(F)|clk_BUFGP         |   0.000|
-ready       |    2.474(R)|    0.323(R)|clk_BUFGP         |   0.000|
+input<0>    |    3.727(R)|   -0.103(R)|clk_BUFGP         |   0.000|
+            |    5.021(F)|   -0.902(F)|clk_BUFGP         |   0.000|
+input<1>    |    3.535(R)|   -0.770(R)|clk_BUFGP         |   0.000|
+            |    6.018(F)|   -1.425(F)|clk_BUFGP         |   0.000|
+input<2>    |    3.877(R)|   -0.778(R)|clk_BUFGP         |   0.000|
+            |    5.568(F)|   -1.202(F)|clk_BUFGP         |   0.000|
+input<3>    |    4.545(R)|   -0.763(R)|clk_BUFGP         |   0.000|
+            |    5.682(F)|   -1.345(F)|clk_BUFGP         |   0.000|
+ready       |    2.858(R)|    0.488(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -61,38 +61,38 @@ Clock clk to Pad
              | clk (edge) |                  | Clock  |
 Destination  |   to PAD   |Internal Clock(s) | Phase  |
 -------------+------------+------------------+--------+
-counter<0>   |    9.633(F)|clk_BUFGP         |   0.000|
-counter<1>   |    9.712(F)|clk_BUFGP         |   0.000|
-counter<2>   |    9.255(F)|clk_BUFGP         |   0.000|
-counter<3>   |    9.226(F)|clk_BUFGP         |   0.000|
-counter<4>   |    9.207(F)|clk_BUFGP         |   0.000|
-counter<5>   |   10.927(F)|clk_BUFGP         |   0.000|
-counter<6>   |    9.584(F)|clk_BUFGP         |   0.000|
-counter<7>   |   10.550(F)|clk_BUFGP         |   0.000|
-digit1port<0>|   15.053(F)|clk_BUFGP         |   0.000|
-digit1port<1>|   14.715(F)|clk_BUFGP         |   0.000|
-digit1port<2>|   14.889(F)|clk_BUFGP         |   0.000|
-digit1port<3>|   14.888(F)|clk_BUFGP         |   0.000|
-digit1port<4>|   14.541(F)|clk_BUFGP         |   0.000|
-digit1port<5>|   16.920(F)|clk_BUFGP         |   0.000|
-digit1port<6>|   15.811(F)|clk_BUFGP         |   0.000|
-digit2port<0>|   17.547(F)|clk_BUFGP         |   0.000|
-digit2port<1>|   17.424(F)|clk_BUFGP         |   0.000|
-digit2port<2>|   17.547(F)|clk_BUFGP         |   0.000|
-digit2port<3>|   17.067(F)|clk_BUFGP         |   0.000|
-digit2port<4>|   17.961(F)|clk_BUFGP         |   0.000|
-digit2port<5>|   18.621(F)|clk_BUFGP         |   0.000|
-digit2port<6>|   18.272(F)|clk_BUFGP         |   0.000|
-digit3port<0>|   11.480(F)|clk_BUFGP         |   0.000|
-digit3port<1>|   17.706(F)|clk_BUFGP         |   0.000|
-digit3port<2>|   17.790(F)|clk_BUFGP         |   0.000|
-digit3port<3>|   18.618(F)|clk_BUFGP         |   0.000|
-digit3port<4>|   11.415(F)|clk_BUFGP         |   0.000|
-digit3port<6>|   18.918(F)|clk_BUFGP         |   0.000|
-gate_close   |    9.217(R)|clk_BUFGP         |   0.000|
-gate_open    |    9.517(R)|clk_BUFGP         |   0.000|
-led_green    |    8.814(R)|clk_BUFGP         |   0.000|
-led_red      |    9.170(R)|clk_BUFGP         |   0.000|
+counter<0>   |    9.355(F)|clk_BUFGP         |   0.000|
+counter<1>   |    9.325(F)|clk_BUFGP         |   0.000|
+counter<2>   |    9.519(F)|clk_BUFGP         |   0.000|
+counter<3>   |    9.715(F)|clk_BUFGP         |   0.000|
+counter<4>   |    9.374(F)|clk_BUFGP         |   0.000|
+counter<5>   |    9.445(F)|clk_BUFGP         |   0.000|
+counter<6>   |    9.694(F)|clk_BUFGP         |   0.000|
+counter<7>   |    9.267(F)|clk_BUFGP         |   0.000|
+digit1port<0>|   14.950(F)|clk_BUFGP         |   0.000|
+digit1port<1>|   15.124(F)|clk_BUFGP         |   0.000|
+digit1port<2>|   14.861(F)|clk_BUFGP         |   0.000|
+digit1port<3>|   14.650(F)|clk_BUFGP         |   0.000|
+digit1port<4>|   14.500(F)|clk_BUFGP         |   0.000|
+digit1port<5>|   14.903(F)|clk_BUFGP         |   0.000|
+digit1port<6>|   15.078(F)|clk_BUFGP         |   0.000|
+digit2port<0>|   16.505(F)|clk_BUFGP         |   0.000|
+digit2port<1>|   17.324(F)|clk_BUFGP         |   0.000|
+digit2port<2>|   16.506(F)|clk_BUFGP         |   0.000|
+digit2port<3>|   16.452(F)|clk_BUFGP         |   0.000|
+digit2port<4>|   16.833(F)|clk_BUFGP         |   0.000|
+digit2port<5>|   17.525(F)|clk_BUFGP         |   0.000|
+digit2port<6>|   17.113(F)|clk_BUFGP         |   0.000|
+digit3port<0>|   10.957(F)|clk_BUFGP         |   0.000|
+digit3port<1>|   15.771(F)|clk_BUFGP         |   0.000|
+digit3port<2>|   16.327(F)|clk_BUFGP         |   0.000|
+digit3port<3>|   16.214(F)|clk_BUFGP         |   0.000|
+digit3port<4>|   10.823(F)|clk_BUFGP         |   0.000|
+digit3port<6>|   16.214(F)|clk_BUFGP         |   0.000|
+gate_close   |    8.644(R)|clk_BUFGP         |   0.000|
+gate_open    |    8.944(R)|clk_BUFGP         |   0.000|
+led_green    |    8.621(R)|clk_BUFGP         |   0.000|
+led_red      |    8.221(R)|clk_BUFGP         |   0.000|
 -------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -100,18 +100,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.627|    4.292|    4.169|    5.930|
+clk            |    4.098|    4.201|    4.461|    6.290|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Jun 18 16:09:31 2022 
+Analysis completed Sat Jun 18 16:16:01 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 161 MB
+Peak Memory Usage: 160 MB
 
 
 
