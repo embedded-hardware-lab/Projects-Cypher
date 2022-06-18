@@ -45,15 +45,15 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-input<0>    |    3.077(R)|    0.086(R)|clk_BUFGP         |   0.000|
-            |    4.583(F)|    0.051(F)|clk_BUFGP         |   0.000|
-input<1>    |    4.301(R)|   -0.655(R)|clk_BUFGP         |   0.000|
-            |    5.807(F)|   -1.224(F)|clk_BUFGP         |   0.000|
-input<2>    |    4.587(R)|   -0.606(R)|clk_BUFGP         |   0.000|
-            |    6.791(F)|   -1.503(F)|clk_BUFGP         |   0.000|
-input<3>    |    3.907(R)|   -0.515(R)|clk_BUFGP         |   0.000|
-            |    6.111(F)|   -0.997(F)|clk_BUFGP         |   0.000|
-ready       |    2.273(R)|    0.494(R)|clk_BUFGP         |   0.000|
+input<0>    |    2.148(R)|   -0.184(R)|clk_BUFGP         |   0.000|
+            |    4.697(F)|    0.086(F)|clk_BUFGP         |   0.000|
+input<1>    |    3.090(R)|   -0.779(R)|clk_BUFGP         |   0.000|
+            |    5.609(F)|   -1.157(F)|clk_BUFGP         |   0.000|
+input<2>    |    3.868(R)|   -0.643(R)|clk_BUFGP         |   0.000|
+            |    6.387(F)|   -1.104(F)|clk_BUFGP         |   0.000|
+input<3>    |    4.037(R)|   -0.548(R)|clk_BUFGP         |   0.000|
+            |    6.556(F)|   -1.170(F)|clk_BUFGP         |   0.000|
+ready       |    2.331(R)|    0.321(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -61,38 +61,38 @@ Clock clk to Pad
              | clk (edge) |                  | Clock  |
 Destination  |   to PAD   |Internal Clock(s) | Phase  |
 -------------+------------+------------------+--------+
-counter<0>   |    8.931(F)|clk_BUFGP         |   0.000|
-counter<1>   |    9.600(F)|clk_BUFGP         |   0.000|
-counter<2>   |    9.185(F)|clk_BUFGP         |   0.000|
-counter<3>   |    9.883(F)|clk_BUFGP         |   0.000|
-counter<4>   |    9.676(F)|clk_BUFGP         |   0.000|
-counter<5>   |    9.456(F)|clk_BUFGP         |   0.000|
-counter<6>   |    9.506(F)|clk_BUFGP         |   0.000|
-counter<7>   |    9.452(F)|clk_BUFGP         |   0.000|
-digit1port<0>|   15.708(F)|clk_BUFGP         |   0.000|
-digit1port<1>|   15.461(F)|clk_BUFGP         |   0.000|
-digit1port<2>|   14.820(F)|clk_BUFGP         |   0.000|
-digit1port<3>|   15.168(F)|clk_BUFGP         |   0.000|
-digit1port<4>|   15.285(F)|clk_BUFGP         |   0.000|
-digit1port<5>|   15.185(F)|clk_BUFGP         |   0.000|
-digit1port<6>|   15.359(F)|clk_BUFGP         |   0.000|
-digit2port<0>|   16.863(F)|clk_BUFGP         |   0.000|
-digit2port<1>|   17.653(F)|clk_BUFGP         |   0.000|
-digit2port<2>|   17.775(F)|clk_BUFGP         |   0.000|
-digit2port<3>|   16.350(F)|clk_BUFGP         |   0.000|
-digit2port<4>|   16.952(F)|clk_BUFGP         |   0.000|
-digit2port<5>|   17.440(F)|clk_BUFGP         |   0.000|
-digit2port<6>|   17.636(F)|clk_BUFGP         |   0.000|
-digit3port<0>|   11.420(F)|clk_BUFGP         |   0.000|
-digit3port<1>|   16.607(F)|clk_BUFGP         |   0.000|
-digit3port<2>|   17.338(F)|clk_BUFGP         |   0.000|
-digit3port<3>|   17.344(F)|clk_BUFGP         |   0.000|
-digit3port<4>|   11.350(F)|clk_BUFGP         |   0.000|
-digit3port<6>|   17.344(F)|clk_BUFGP         |   0.000|
-gate_close   |    8.337(R)|clk_BUFGP         |   0.000|
-gate_open    |    8.634(R)|clk_BUFGP         |   0.000|
-led_green    |    8.197(R)|clk_BUFGP         |   0.000|
-led_red      |    8.371(R)|clk_BUFGP         |   0.000|
+counter<0>   |    9.452(F)|clk_BUFGP         |   0.000|
+counter<1>   |    8.954(F)|clk_BUFGP         |   0.000|
+counter<2>   |    9.576(F)|clk_BUFGP         |   0.000|
+counter<3>   |    9.591(F)|clk_BUFGP         |   0.000|
+counter<4>   |    9.327(F)|clk_BUFGP         |   0.000|
+counter<5>   |    9.659(F)|clk_BUFGP         |   0.000|
+counter<6>   |    9.685(F)|clk_BUFGP         |   0.000|
+counter<7>   |    8.818(F)|clk_BUFGP         |   0.000|
+digit1port<0>|   15.073(F)|clk_BUFGP         |   0.000|
+digit1port<1>|   15.046(F)|clk_BUFGP         |   0.000|
+digit1port<2>|   14.195(F)|clk_BUFGP         |   0.000|
+digit1port<3>|   14.491(F)|clk_BUFGP         |   0.000|
+digit1port<4>|   14.732(F)|clk_BUFGP         |   0.000|
+digit1port<5>|   15.138(F)|clk_BUFGP         |   0.000|
+digit1port<6>|   15.173(F)|clk_BUFGP         |   0.000|
+digit2port<0>|   17.889(F)|clk_BUFGP         |   0.000|
+digit2port<1>|   17.111(F)|clk_BUFGP         |   0.000|
+digit2port<2>|   17.575(F)|clk_BUFGP         |   0.000|
+digit2port<3>|   17.839(F)|clk_BUFGP         |   0.000|
+digit2port<4>|   18.421(F)|clk_BUFGP         |   0.000|
+digit2port<5>|   18.324(F)|clk_BUFGP         |   0.000|
+digit2port<6>|   18.763(F)|clk_BUFGP         |   0.000|
+digit3port<0>|   11.897(F)|clk_BUFGP         |   0.000|
+digit3port<1>|   17.708(F)|clk_BUFGP         |   0.000|
+digit3port<2>|   18.389(F)|clk_BUFGP         |   0.000|
+digit3port<3>|   18.091(F)|clk_BUFGP         |   0.000|
+digit3port<4>|   11.807(F)|clk_BUFGP         |   0.000|
+digit3port<6>|   18.685(F)|clk_BUFGP         |   0.000|
+gate_close   |    8.429(R)|clk_BUFGP         |   0.000|
+gate_open    |    8.758(R)|clk_BUFGP         |   0.000|
+led_green    |    8.021(R)|clk_BUFGP         |   0.000|
+led_red      |    8.020(R)|clk_BUFGP         |   0.000|
 -------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -100,11 +100,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.990|    5.085|    5.109|    5.788|
+clk            |    4.107|    4.283|    5.252|    4.608|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Jun 18 15:27:17 2022 
+Analysis completed Sat Jun 18 15:38:23 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

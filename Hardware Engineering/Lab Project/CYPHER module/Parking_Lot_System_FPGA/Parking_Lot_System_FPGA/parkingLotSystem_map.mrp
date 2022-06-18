@@ -9,7 +9,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Sat Jun 18 15:27:08 2022
+Mapped Date    : Sat Jun 18 15:38:15 2022
 
 Design Summary
 --------------
@@ -19,9 +19,9 @@ Logic Utilization:
   Number of Slice Flip Flops:            52 out of  15,360    1%
   Number of 4 input LUTs:               108 out of  15,360    1%
 Logic Distribution:
-  Number of occupied Slices:             85 out of   7,680    1%
-    Number of Slices containing only related logic:      85 out of      85 100%
-    Number of Slices containing unrelated logic:          0 out of      85   0%
+  Number of occupied Slices:             87 out of   7,680    1%
+    Number of Slices containing only related logic:      87 out of      87 100%
+    Number of Slices containing unrelated logic:          0 out of      87   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:         109 out of  15,360    1%
     Number used as logic:               108

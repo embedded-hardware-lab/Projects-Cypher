@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CYPHER-PC::  Sat Jun 18 15:27:11 2022
+CYPHER-PC::  Sat Jun 18 15:38:17 2022
 
 par -w -intstyle ise -ol high -t 1 parkingLotSystem_map.ncd
 parkingLotSystem.ncd parkingLotSystem.pcf 
@@ -29,7 +29,7 @@ Device Utilization Summary:
    Number of External IOBs                  51 out of 173    29%
       Number of LOCed IOBs                  22 out of 51     43%
 
-   Number of Slices                         85 out of 7680    1%
+   Number of Slices                         87 out of 7680    1%
       Number of SLICEMs                      0 out of 3840    0%
 
 
@@ -48,44 +48,45 @@ Total REAL time at the beginning of Placer: 0 secs
 Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:605bd611) REAL time: 0 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:605bd724) REAL time: 0 secs 
 
 Phase 2.7  Design Feasibility Check
 INFO:Place:834 - Only a subset of IOs are locked. Out of 51 IOs, 22 are locked and 29 are not locked. If you would like
    to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:605bd611) REAL time: 0 secs 
+Phase 2.7  Design Feasibility Check (Checksum:605bd724) REAL time: 0 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:605bd611) REAL time: 0 secs 
+Phase 3.31  Local Placement Optimization (Checksum:605bd724) REAL time: 0 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 .....
-Phase 4.2  Initial Clock and IO Placement (Checksum:dfce4879) REAL time: 0 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:dfce498c) REAL time: 0 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:dfce4879) REAL time: 0 secs 
+Phase 5.36  Local Placement Optimization (Checksum:dfce498c) REAL time: 0 secs 
 
 Phase 6.3  Local Placement Optimization
 .....
-Phase 6.3  Local Placement Optimization (Checksum:34cce2d3) REAL time: 0 secs 
+Phase 6.3  Local Placement Optimization (Checksum:34cce3e6) REAL time: 0 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:34cce2d3) REAL time: 0 secs 
+Phase 7.5  Local Placement Optimization (Checksum:34cce3e6) REAL time: 0 secs 
 
 Phase 8.8  Global Placement
 ..
 ..
 ..
-Phase 8.8  Global Placement (Checksum:ce27a9fb) REAL time: 1 secs 
+..
+Phase 8.8  Global Placement (Checksum:73b6b4fe) REAL time: 1 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:ce27a9fb) REAL time: 1 secs 
+Phase 9.5  Local Placement Optimization (Checksum:73b6b4fe) REAL time: 1 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:567e930a) REAL time: 1 secs 
+Phase 10.18  Placement Optimization (Checksum:b9eb310b) REAL time: 1 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:567e930a) REAL time: 1 secs 
+Phase 11.5  Local Placement Optimization (Checksum:b9eb310b) REAL time: 1 secs 
 
 Total REAL time to Placer completion: 1 secs 
 Total CPU  time to Placer completion: 1 secs 
@@ -96,13 +97,13 @@ Writing design to file parkingLotSystem.ncd
 Starting Router
 
 
-Phase  1  : 565 unrouted;      REAL time: 1 secs 
+Phase  1  : 569 unrouted;      REAL time: 1 secs 
 
-Phase  2  : 535 unrouted;      REAL time: 2 secs 
+Phase  2  : 537 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 93 unrouted;      REAL time: 2 secs 
+Phase  3  : 81 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 108 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  4  : 96 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
@@ -110,32 +111,34 @@ Updating file: parkingLotSystem.ncd with current fully routed design.
 
 Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 WARNING:Route:455 - CLK Net:clkDv1/clk0/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clkDv2/clk2/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clkDv2/clk0/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clkDv2/clk4/q_s may have excessive skew because 
+WARNING:Route:455 - CLK Net:clkDv3/clk1/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clkDv3/clk2/q_s may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clkDv2/clk6/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clkDv2/clk7/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clkDv2/clk3/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clkDv2/clk5/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clkDv1/clk7/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clkDv2/clk2/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clkDv2/clk3/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clkDv2/clk0/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clkDv2/clk7/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clkDv2/clk1/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clkDv2/clk6/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clkDv1/clk6/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
@@ -143,21 +146,19 @@ WARNING:Route:455 - CLK Net:clkDv3/clk0/q_s may have excessive skew because
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clkDv1/clk1/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clkDv2/clk1/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clkDv3/clk1/q_s may have excessive skew because 
-      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clkDv1/clk2/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clkDv1/clk3/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clkDv1/clk4/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clkDv2/clk4/q_s may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:clkDv1/clk5/q_s may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 2 secs 
-Total CPU time to Router completion: 2 secs 
+Total REAL time to Router completion: 3 secs 
+Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -175,43 +176,43 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP |      BUFGMUX0| No   |   16 |  0.142     |  0.864      |
+|           clk_BUFGP |      BUFGMUX0| No   |   16 |  0.161     |  0.875      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv3/clk2/q_s |         Local|      |   14 |  0.224     |  2.894      |
+|     clkDv3/clk2/q_s |         Local|      |   16 |  0.320     |  3.161      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv1/clk0/q_s |         Local|      |    2 |  0.000     |  1.299      |
+|     clkDv1/clk0/q_s |         Local|      |    2 |  0.000     |  1.226      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv2/clk6/q_s |         Local|      |    2 |  0.000     |  1.750      |
+|     clkDv2/clk6/q_s |         Local|      |    2 |  0.000     |  1.084      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv2/clk5/q_s |         Local|      |    2 |  0.000     |  1.299      |
+|     clkDv2/clk5/q_s |         Local|      |    2 |  0.000     |  1.059      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv2/clk0/q_s |         Local|      |    2 |  0.000     |  1.550      |
+|     clkDv2/clk0/q_s |         Local|      |    2 |  0.000     |  1.074      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv1/clk7/q_s |         Local|      |    2 |  0.000     |  1.299      |
+|     clkDv1/clk7/q_s |         Local|      |    2 |  0.000     |  1.565      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv1/clk6/q_s |         Local|      |    2 |  0.000     |  1.365      |
+|     clkDv1/clk6/q_s |         Local|      |    2 |  0.000     |  1.299      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv3/clk0/q_s |         Local|      |    2 |  0.000     |  1.413      |
+|     clkDv3/clk0/q_s |         Local|      |    2 |  0.000     |  0.945      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv2/clk7/q_s |         Local|      |    2 |  0.000     |  1.750      |
+|     clkDv2/clk7/q_s |         Local|      |    2 |  0.000     |  1.356      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv1/clk1/q_s |         Local|      |    2 |  0.000     |  0.707      |
+|     clkDv1/clk1/q_s |         Local|      |    2 |  0.000     |  0.659      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv2/clk1/q_s |         Local|      |    2 |  0.000     |  1.573      |
+|     clkDv2/clk1/q_s |         Local|      |    2 |  0.000     |  1.365      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv3/clk1/q_s |         Local|      |    2 |  0.000     |  1.476      |
+|     clkDv3/clk1/q_s |         Local|      |    2 |  0.000     |  1.366      |
 +---------------------+--------------+------+------+------------+-------------+
 |     clkDv1/clk2/q_s |         Local|      |    2 |  0.000     |  1.540      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv2/clk2/q_s |         Local|      |    2 |  0.000     |  1.060      |
+|     clkDv2/clk2/q_s |         Local|      |    2 |  0.000     |  1.274      |
 +---------------------+--------------+------+------+------------+-------------+
 |     clkDv1/clk3/q_s |         Local|      |    2 |  0.000     |  1.330      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv2/clk3/q_s |         Local|      |    2 |  0.000     |  1.299      |
+|     clkDv2/clk3/q_s |         Local|      |    2 |  0.000     |  1.565      |
 +---------------------+--------------+------+------+------------+-------------+
 |     clkDv1/clk4/q_s |         Local|      |    2 |  0.000     |  1.413      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clkDv2/clk4/q_s |         Local|      |    2 |  0.000     |  1.059      |
+|     clkDv2/clk4/q_s |         Local|      |    2 |  0.000     |  1.558      |
 +---------------------+--------------+------+------+------------+-------------+
 |     clkDv1/clk5/q_s |         Local|      |    2 |  0.000     |  0.692      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -233,11 +234,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    10.218ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.734ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    10.504ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.656ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    10.728ns|     N/A|           0
-  Dv3/clk2/q_s                              | HOLD        |     7.011ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     9.664ns|     N/A|           0
+  Dv3/clk2/q_s                              | HOLD        |     6.455ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.457ns|     N/A|           0
   Dv1/clk0/q_s                              | HOLD        |     0.779ns|            |       0|           0
@@ -245,20 +246,20 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.451ns|     N/A|           0
   Dv2/clk6/q_s                              | HOLD        |     0.774ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.451ns|     N/A|           0
-  Dv2/clk5/q_s                              | HOLD        |     0.774ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.440ns|     N/A|           0
-  Dv2/clk0/q_s                              | HOLD        |     0.766ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.743ns|     N/A|           0
-  Dv1/clk7/q_s                              | HOLD        |     1.008ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.457ns|     N/A|           0
+  Dv2/clk5/q_s                              | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.457ns|     N/A|           0
-  Dv1/clk6/q_s                              | HOLD        |     0.779ns|            |       0|           0
+  Dv2/clk0/q_s                              | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.494ns|     N/A|           0
-  Dv3/clk0/q_s                              | HOLD        |     0.809ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.451ns|     N/A|           0
+  Dv1/clk7/q_s                              | HOLD        |     0.774ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.743ns|     N/A|           0
+  Dv1/clk6/q_s                              | HOLD        |     1.008ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.457ns|     N/A|           0
+  Dv3/clk0/q_s                              | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.457ns|     N/A|           0
   Dv2/clk7/q_s                              | HOLD        |     0.779ns|            |       0|           0
@@ -266,29 +267,29 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.494ns|     N/A|           0
   Dv1/clk1/q_s                              | HOLD        |     0.809ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.722ns|     N/A|           0
-  Dv2/clk1/q_s                              | HOLD        |     0.991ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.706ns|     N/A|           0
+  Dv2/clk1/q_s                              | HOLD        |     0.979ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.743ns|     N/A|           0
-  Dv3/clk1/q_s                              | HOLD        |     1.008ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.494ns|     N/A|           0
+  Dv3/clk1/q_s                              | HOLD        |     0.809ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.457ns|     N/A|           0
   Dv1/clk2/q_s                              | HOLD        |     0.779ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.457ns|     N/A|           0
-  Dv2/clk2/q_s                              | HOLD        |     0.779ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.743ns|     N/A|           0
+  Dv2/clk2/q_s                              | HOLD        |     1.008ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.500ns|     N/A|           0
   Dv1/clk3/q_s                              | HOLD        |     0.814ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.706ns|     N/A|           0
-  Dv2/clk3/q_s                              | HOLD        |     0.979ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.440ns|     N/A|           0
+  Dv2/clk3/q_s                              | HOLD        |     0.766ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.500ns|     N/A|           0
   Dv1/clk4/q_s                              | HOLD        |     0.814ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.457ns|     N/A|           0
-  Dv2/clk4/q_s                              | HOLD        |     0.779ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.706ns|     N/A|           0
+  Dv2/clk4/q_s                              | HOLD        |     0.979ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.457ns|     N/A|           0
   Dv1/clk5/q_s                              | HOLD        |     0.779ns|            |       0|           0
