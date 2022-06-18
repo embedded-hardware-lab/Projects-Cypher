@@ -185,16 +185,19 @@ architecture behavioral of parkingLotSystem is
 				if  (clk = '0' and clk'event ) then 
 
 					case current_state is
-						when idle => 	if (rst = '1') then counter_s <= "00000000";
-											elsif (input="0001")  then	counter_s <= counter_s + '1' ;   -- counting up
+						when idle => 	--if (rst = '1') then counter_s <= "00000000";
+											--els
+											if (input="0001")  then	counter_s <= counter_s + '1' ;   -- counting up
 											elsif (input="0010")  then	counter_s <= counter_s - '1' ;   -- counting down
 											end if;
-						when display =>	if (rst = '1') then counter_s <= "00000000";
-												else counter_s <= counter_s ;	
-												end if;
+						when display =>	--if (rst = '1') then counter_s <= "00000000";
+												--else 
+												counter_s <= counter_s ;	
+												--end if;
 
-						when full => 	if (rst = '1') then counter_s <= "00000000";
-											elsif input="0010"  then counter_s <= counter_s - '1';   -- counting down
+						when full => 	--if (rst = '1') then counter_s <= "00000000";
+											--els
+											if input="0010"  then counter_s <= counter_s - '1';   -- counting down
 											end if;
 					end case;		
 				end if;
