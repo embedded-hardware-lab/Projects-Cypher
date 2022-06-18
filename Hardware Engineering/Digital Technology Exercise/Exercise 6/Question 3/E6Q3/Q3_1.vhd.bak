@@ -10,7 +10,7 @@ end counter;
   
 architecture behavioural of counter is
   	
-	signal Q_s: bit_vector(3 downto 0) ;
+	signal Q : bit_vector(3 downto 0) ;
 	signal counter_clock : bit_vector(7 downto 0) ;
 
 	component counter_4_bit is 
@@ -46,10 +46,10 @@ architecture behavioural of counter is
 	counter1 : counterUpDown_4_bit port map (	CLK => counter_clock(7), 
 						RESET => RST, 
 						EN => EN,
-						counter => Q_s,
+						counter => Q,
 						upDown => UpDown); 
 
-	display1 : LED_7segment port map (	input => Q_s,
+	display1 : LED_7segment port map (	input => Q,
 						LED_out => SEG);
 
 	sel <= '0' ;

@@ -1,0 +1,47 @@
+{D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 1/FPGAdemo/FPGAdemo.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FPGAdemo2
+-- Compiling architecture Behavioral of FPGAdemo2
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/Q3_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/Q3_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity counter
+-- Compiling architecture behavioural of counter
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 2/Q2_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 2/Q2_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity clock_divider
+-- Compiling architecture behavioural of clock_divider
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 3/Question 1/Q1_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 3/Question 1/Q1_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity LED_7segment
+-- Compiling architecture Behavioral of LED_7segment
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 5/Q5_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 5/Q5_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity counterUpDown_4_bit
+-- Compiling architecture behavioural of counterUpDown_4_bit
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 2/Q2_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity running_light_8_bit
+-- Compiling architecture behavioural of running_light_8_bit
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 4/Question 1/Q1_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity D_flip_flop
+-- Compiling architecture Behavioral of D_flip_flop
+
+} {} {}}
