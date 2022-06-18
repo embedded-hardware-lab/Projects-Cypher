@@ -25,7 +25,9 @@ end entity parkingLotSystem;
 
 
 architecture behavioral of parkingLotSystem is
- 	type state is (idle, display, full);
+ 	type state is ( idle, display, full);
+	
+---------------------------------------------------------------------------  SIGNAL
  	signal current_state, next_state: state;				
 	signal counter_s: std_logic_vector(7 downto 0):= x"00";
 	signal counter_s_bit: bit_vector(7 downto 0);
@@ -47,7 +49,7 @@ architecture behavioral of parkingLotSystem is
 	signal digit2port_s :  bit_vector(6 downto 0);
 	signal digit1port_S :  bit_vector(6 downto 0);
 
-
+------------------------------------------------------------------------------  COMPONENT
 	component bcd_8_bit is
     		port (	input_8_bit:    in  bit_vector (7 downto 0);
         		bcd:    out bit_vector (11 downto 0)
@@ -77,6 +79,7 @@ architecture behavioral of parkingLotSystem is
 
 
 	begin
+	---------------------------------------------------------------------------- PORT MAPING
 		converter1 : bcd_8_bit port map ( 	input_8_bit => counter_s_bit,
 							bcd => bcd_full );
 
@@ -111,8 +114,10 @@ architecture behavioral of parkingLotSystem is
 							bcd_out => single_port,
 							sel => sel_single_port);
 
-
+----------------------------------------------------------------------------------------------------------------   FSM
 		state_memory: process(clk, rst, next_state, current_state)
+		
+		--------------------------------------------------------------------------- reset n chang state
  		begin
  			if rst = '1' then
  				current_state <= idle;
@@ -120,45 +125,38 @@ architecture behavioral of parkingLotSystem is
  				current_state <= next_state;
  			end if;
  		end process;
+	-------------------------------------------------------------------------------- input to change state
 
-
-		sysInput: process(current_state, input,space_state, next_state, ready)
+		sysInput: process(clk, current_state, input,space_state, next_state, ready)
 		begin
+		
+		if (clk = '1' and clk'event) then
  			case current_state is
-				when idle => 	if input = "0001" then
-							next_state <= display;
-						elsif input = "0010" then
-							next_state <= display;
-						else 
-							next_state <= idle;
-						end if;
 
+				when idle => 	if input = "0001" then	next_state <= display;
+									elsif input = "0010" then next_state <= display;
+									else next_state <= idle;
+									end if;
 
-
-
-
-
-				when display => if (space_state = '1' and ready = '1') then
-							next_state <= idle;
-						elsif (space_state = '0' and ready = '1') then
-							next_state <= full;
-						else
-							next_state <= display;
-						end if;
+				when display =>	if (space_state = '1' and ready = '1') then next_state <= idle;
+										elsif (space_state = '0' and ready = '1') then next_state <= full;
+										else	next_state <= display;
+										end if;
 
 	
-				when full => 	if input = "0010" then
-							next_state <= display;
-						else 
-							next_state <= full;
-						end if;
+				when full => 	if input = "0010" then	next_state <= display;
+									else next_state <= full;
+									end if;
  			end case;
+		end if;
 		end process;
 
 
+	--------------------------------------------------------------------------------------  output
 
-		ledProcess : process(current_state, led_s)
+		ledProcess : process(clk, current_state, led_s)
 		begin
+		if (clk = '1' and clk'event) then
 			case current_state is
 				when idle => led_s <= '1';	
 	
@@ -166,9 +164,12 @@ architecture behavioral of parkingLotSystem is
 
 				when full => led_s <= '0';	
 			end case;
+		end if;
 		end process;
-		gateProcess : process(current_state, gate_s)
-			begin
+		
+		gateProcess : process(clk, current_state, gate_s)
+		begin
+		if (clk = '1' and clk'event) then
 				case current_state is
 					when idle => gate_s <= '1';	
 	
@@ -176,6 +177,7 @@ architecture behavioral of parkingLotSystem is
 
 					when full => gate_s <= '0';	
 				end case;
+		end if;
 		end process;
 
 		carCounter : process(current_state, input, clk, counter_s)
@@ -184,33 +186,27 @@ architecture behavioral of parkingLotSystem is
 
 					case current_state is
 						when idle => 	if (rst = '1') then counter_s <= "00000000";
-											elsif (input="0001")  then		-- car enter
-												counter_s <= counter_s + '1' ;   -- counting up
-											elsif (input="0010")  then		-- car leave
-												counter_s <= counter_s - '1' ;   -- counting down
+											elsif (input="0001")  then	counter_s <= counter_s + '1' ;   -- counting up
+											elsif (input="0010")  then	counter_s <= counter_s - '1' ;   -- counting down
 											end if;
 						when display =>	if (rst = '1') then counter_s <= "00000000";
 												else counter_s <= counter_s ;	
 												end if;
 
 						when full => 	if (rst = '1') then counter_s <= "00000000";
-											elsif input="0010"  then		-- car leave
-												counter_s <= counter_s - '1';   -- counting down
+											elsif input="0010"  then counter_s <= counter_s - '1';   -- counting down
 											end if;
-				end case;		
-
+					end case;		
 				end if;
-
 		end process;
 		
 		space_checker : process(counter_s, space_state)
 			begin
-			if counter_s < "1101"  then
-				space_state <= '1';
-			else 
-				space_state <= '0';
+			if (clk = '1' and clk'event) then
+				if counter_s < "1101"  then space_state <= '1';
+				else space_state <= '0';
+				end if;
 			end if;
-			
 		end process;
 		
 

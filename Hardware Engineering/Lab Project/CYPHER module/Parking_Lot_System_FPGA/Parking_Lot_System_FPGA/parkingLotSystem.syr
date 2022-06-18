@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> Reading design: parkingLotSystem.prj
 
@@ -154,6 +154,8 @@ Analyzing hierarchy for entity <half_adder_1_bit> in library <work> (architectur
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <parkingLotSystem> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" line 205: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk>
 Entity <parkingLotSystem> analyzed. Unit <parkingLotSystem> generated.
 
 Analyzing Entity <bcd_8_bit> in library <work> (Architecture <behavioural>).
@@ -259,26 +261,17 @@ WARNING:Xst:646 - Signal <clk4<6:3>> is assigned but never used. This unconnecte
 WARNING:Xst:646 - Signal <clk4<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk3<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk2<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found finite state machine <FSM_0> for signal <current_state>.
-    -----------------------------------------------------------------------
-    | States             | 3                                              |
-    | Transitions        | 8                                              |
-    | Inputs             | 4                                              |
-    | Outputs            | 4                                              |
-    | Clock              | clk                       (rising_edge)        |
-    | Reset              | rst                       (positive)           |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | idle                                           |
-    | Power Up State     | idle                                           |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
+    Register <led_s> equivalent to <gate_s> has been removed
+    Using one-hot encoding for signal <current_state>.
     Found 8-bit register for signal <counter_s>.
-    Found 8-bit addsub for signal <counter_s$share0000> created at line 185.
-    Found 8-bit comparator less for signal <space_state$cmp_lt0000> created at line 208.
+    Found 8-bit addsub for signal <counter_s$share0000> created at line 187.
+    Found 3-bit register for signal <current_state>.
+    Found 1-bit register for signal <gate_s>.
+    Found 3-bit register for signal <next_state>.
+    Found 1-bit register for signal <space_state>.
+    Found 8-bit comparator less for signal <space_state$cmp_lt0000> created at line 206.
     Summary:
-	inferred   1 Finite State Machine(s).
-	inferred   8 D-type flip-flop(s).
+	inferred  13 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
 Unit <parkingLotSystem> synthesized.
@@ -293,9 +286,9 @@ Macro Statistics
  16x7-bit ROM                                          : 3
 # Adders/Subtractors                                   : 1
  8-bit addsub                                          : 1
-# Registers                                            : 37
- 1-bit register                                        : 32
- 3-bit register                                        : 2
+# Registers                                            : 41
+ 1-bit register                                        : 34
+ 3-bit register                                        : 4
  4-bit register                                        : 1
  7-bit register                                        : 1
  8-bit register                                        : 1
@@ -310,15 +303,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <current_state/FSM> on signal <current_state[1:2]> with user encoding.
----------------------
- State   | Encoding
----------------------
- idle    | 00
- display | 01
- full    | 10
----------------------
 WARNING:Xst:1290 - Hierarchical block <clk3> is unconnected in block <clkDv3>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <clk4> is unconnected in block <clkDv3>.
@@ -340,13 +324,12 @@ WARNING:Xst:1290 - Hierarchical block <U1> is unconnected in block <bit3>.
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# FSMs                                                 : 1
 # ROMs                                                 : 3
  16x7-bit ROM                                          : 3
 # Adders/Subtractors                                   : 1
  8-bit addsub                                          : 1
-# Registers                                            : 57
- Flip-Flops                                            : 57
+# Registers                                            : 65
+ Flip-Flops                                            : 65
 # Comparators                                          : 1
  8-bit comparator less                                 : 1
 # Xors                                                 : 56
@@ -379,8 +362,7 @@ WARNING:Xst:2677 - Node <clkDv3/clk7/q_s> of sequential type is unconnected in b
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block parkingLotSystem, actual ratio is 0.
-FlipFlop current_state_FSM_FFd1 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block parkingLotSystem, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -388,8 +370,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 47
- Flip-Flops                                            : 47
+# Registers                                            : 52
+ Flip-Flops                                            : 52
 
 =========================================================================
 
@@ -418,22 +400,25 @@ Design Statistics
 # IOs                              : 51
 
 Cell Usage :
-# BELS                             : 144
+# BELS                             : 157
 #      GND                         : 1
 #      INV                         : 20
-#      LUT2                        : 12
-#      LUT3                        : 25
-#      LUT3_D                      : 1
-#      LUT3_L                      : 1
-#      LUT4                        : 70
-#      LUT4_D                      : 2
-#      LUT4_L                      : 9
-#      MUXF5                       : 3
-# FlipFlops/Latches                : 47
-#      FD_1                        : 12
-#      FDC                         : 24
-#      FDP                         : 1
-#      FDS_1                       : 10
+#      LUT2                        : 10
+#      LUT3                        : 16
+#      LUT3_D                      : 3
+#      LUT4                        : 81
+#      LUT4_D                      : 4
+#      LUT4_L                      : 7
+#      MUXF5                       : 14
+#      VCC                         : 1
+# FlipFlops/Latches                : 52
+#      FD                          : 1
+#      FD_1                        : 13
+#      FDC                         : 23
+#      FDP                         : 2
+#      FDR                         : 1
+#      FDS                         : 3
+#      FDS_1                       : 9
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 50
@@ -446,9 +431,9 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                       66  out of   7680     0%  
- Number of Slice Flip Flops:             47  out of  15360     0%  
- Number of 4 input LUTs:                140  out of  15360     0%  
+ Number of Slices:                       65  out of   7680     0%  
+ Number of Slice Flip Flops:             52  out of  15360     0%  
+ Number of 4 input LUTs:                141  out of  15360     0%  
  Number of IOs:                          51
  Number of bonded IOBs:                  51  out of    173    29%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -474,7 +459,7 @@ Clock Information:
 -----------------------------------+-------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)         | Load  |
 -----------------------------------+-------------------------------+-------+
-clk                                | BUFGP                         | 12    |
+clk                                | BUFGP                         | 17    |
 clkDv3/clk2/q_s                    | NONE(shifter1/current_state_2)| 17    |
 clkDv2/clk7/q_s                    | NONE(clkDv3/clk0/q_s)         | 1     |
 clkDv3/clk0/q_s                    | NONE(clkDv3/clk1/q_s)         | 1     |
@@ -509,9 +494,9 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 10.525ns (Maximum Frequency: 95.008MHz)
-   Minimum input arrival time before clock: 8.986ns
-   Maximum output required time after clock: 25.746ns
+   Minimum period: 10.892ns (Maximum Frequency: 91.811MHz)
+   Minimum input arrival time before clock: 7.500ns
+   Maximum output required time after clock: 18.991ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -520,26 +505,26 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 10.525ns (frequency: 95.008MHz)
-  Total number of paths / destination ports: 161 / 19
+  Clock period: 10.892ns (frequency: 91.811MHz)
+  Total number of paths / destination ports: 185 / 26
 -------------------------------------------------------------------------
-Delay:               5.263ns (Levels of Logic = 2)
-  Source:            current_state_FSM_FFd2 (FF)
-  Destination:       counter_s_1 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk falling
+Delay:               5.446ns (Levels of Logic = 2)
+  Source:            counter_s_3 (FF)
+  Destination:       space_state (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
 
-  Data Path: current_state_FSM_FFd2 to counter_s_1
+  Data Path: counter_s_3 to space_state
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             16   0.626   1.074  current_state_FSM_FFd2 (current_state_FSM_FFd2)
-     LUT4_D:I3->O         11   0.479   1.031  counter_s_mux0000<0>21 (N3)
-     LUT3:I2->O            1   0.479   0.681  counter_s_mux0000<5>_SW0 (N2)
-     FDS_1:S                   0.892          counter_s_2
+     FDS_1:C->Q           17   0.626   1.313  counter_s_3 (counter_s_3)
+     LUT4:I1->O            1   0.479   0.976  space_state_not00019 (space_state_not00019)
+     LUT2:I0->O            1   0.479   0.681  space_state_not000110 (space_state_not0001)
+     FDR:R                     0.892          space_state
     ----------------------------------------
-    Total                      5.263ns (2.476ns logic, 2.787ns route)
-                                       (47.0% logic, 53.0% route)
+    Total                      5.446ns (2.476ns logic, 2.970ns route)
+                                       (45.5% logic, 54.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkDv3/clk2/q_s'
@@ -548,11 +533,11 @@ Timing constraint: Default period analysis for Clock 'clkDv3/clk2/q_s'
 -------------------------------------------------------------------------
 Delay:               2.548ns (Levels of Logic = 1)
   Source:            shifter1/current_state_1 (FF)
-  Destination:       shifter1/bcd_out_6 (FF)
+  Destination:       shifter1/An_3 (FF)
   Source Clock:      clkDv3/clk2/q_s rising
   Destination Clock: clkDv3/clk2/q_s falling
 
-  Data Path: shifter1/current_state_1 to shifter1/bcd_out_6
+  Data Path: shifter1/current_state_1 to shifter1/An_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -961,62 +946,56 @@ Delay:               2.707ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 298 / 18
+  Total number of paths / destination ports: 187 / 19
 -------------------------------------------------------------------------
-Offset:              8.986ns (Levels of Logic = 9)
-  Source:            input<0> (PAD)
+Offset:              7.500ns (Levels of Logic = 7)
+  Source:            input<3> (PAD)
   Destination:       counter_s_7 (FF)
   Destination Clock: clk falling
 
-  Data Path: input<0> to counter_s_7
+  Data Path: input<3> to counter_s_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.715   1.040  input_0_IBUF (input_0_IBUF)
-     LUT4:I0->O           15   0.479   1.180  current_state_cmp_eq00001 (current_state_cmp_eq0000)
-     LUT3_D:I1->LO         1   0.479   0.123  Maddsub_counter_s_share0000_lut<1>1_SW0 (N137)
-     LUT4:I3->O            5   0.479   0.806  Maddsub_counter_s_share0000_cy<3>11_SW1 (N88)
-     LUT4:I3->O            1   0.479   0.000  counter_s_mux0000<0>_SW0_SW0_F (N133)
-     MUXF5:I0->O           1   0.314   0.704  counter_s_mux0000<0>_SW0_SW0 (N98)
-     LUT4:I3->O            1   0.479   0.740  counter_s_mux0000<0>_SW0 (N80)
-     LUT4:I2->O            1   0.479   0.000  counter_s_mux0000<0>_G (N120)
-     MUXF5:I1->O           1   0.314   0.000  counter_s_mux0000<0> (counter_s_mux0000<0>)
+     IBUF:I->O             7   0.715   1.201  input_3_IBUF (input_3_IBUF)
+     LUT2:I0->O           14   0.479   1.068  next_state_mux0004<1>31 (N78)
+     LUT4:I2->O            1   0.479   0.000  counter_s_mux00011_SW1_G (N105)
+     MUXF5:I1->O           2   0.314   0.768  counter_s_mux00011_SW1 (N88)
+     LUT4_L:I3->LO         1   0.479   0.123  counter_s_mux0000<0>_SW0_SW1 (N102)
+     LUT4:I3->O            1   0.479   0.740  counter_s_mux0000<0>_SW0 (N90)
+     LUT4:I2->O            1   0.479   0.000  counter_s_mux0000<0> (counter_s_mux0000<0>)
      FD_1:D                    0.176          counter_s_7
     ----------------------------------------
-    Total                      8.986ns (4.393ns logic, 4.593ns route)
-                                       (48.9% logic, 51.1% route)
+    Total                      7.500ns (3.600ns logic, 3.900ns route)
+                                       (48.0% logic, 52.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 38741 / 32
+  Total number of paths / destination ports: 4860 / 32
 -------------------------------------------------------------------------
-Offset:              25.746ns (Levels of Logic = 14)
-  Source:            counter_s_6 (FF)
-  Destination:       digit2port<3> (PAD)
+Offset:              18.991ns (Levels of Logic = 10)
+  Source:            counter_s_5 (FF)
+  Destination:       digit2port<5> (PAD)
   Source Clock:      clk falling
 
-  Data Path: counter_s_6 to digit2port<3>
+  Data Path: counter_s_5 to digit2port<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS_1:C->Q           12   0.626   1.245  counter_s_6 (counter_s_6)
-     LUT4:I0->O            7   0.479   1.076  converter1/add31/condition (converter1/add31/condition)
-     LUT3:I1->O            1   0.479   0.851  converter1/add32/condition_SW2 (N125)
-     LUT4:I1->O            5   0.479   0.806  converter1/add32/condition (converter1/add32/condition)
-     LUT4:I3->O            4   0.479   1.074  converter1/add32/adder1/bit1/U2/Mxor_S_Result1 (converter1/add33/adder1/bit2/U1/Mxor_S_Result_and0001)
-     LUT4:I0->O            5   0.479   1.078  converter1/add33/condition (converter1/add33/condition)
-     LUT4:I0->O            3   0.479   0.830  converter1/add33/adder1/bit1/Cout1 (converter1/add33/adder1/c1)
-     LUT4:I2->O            9   0.479   1.250  converter1/add33/adder1/bit3/U2/Mxor_S_Result1 (converter1/add3_3<3>)
-     LUT3:I0->O            2   0.479   0.915  converter1/add36/condition_SW0 (N21)
-     LUT3:I1->O            6   0.479   1.148  converter1/add36/condition (converter1/add36/condition)
+     FDS_1:C->Q           21   0.626   1.583  counter_s_5 (counter_s_5)
+     LUT4:I0->O            2   0.479   0.915  converter1/add32/adder1/bit0/U1/Mxor_S_Result_SW0 (N37)
+     LUT3:I1->O            9   0.479   1.125  converter1/add32/adder1/bit0/U1/Mxor_S_Result (converter1/add32/adder1/bit0/U2/Mxor_S_Result_and0001)
+     LUT4:I1->O            1   0.479   0.851  converter1/add36/condition72_SW0_SW0 (N124)
+     LUT4:I1->O            1   0.479   0.740  converter1/add36/condition72_SW0 (N112)
+     LUT4:I2->O            3   0.479   1.066  converter1/add36/condition72 (converter1/add36/condition)
      LUT4:I0->O            6   0.479   1.148  converter1/add36/adder1/bit1/Cout1 (converter1/add36/adder1/c1)
-     LUT2:I0->O            5   0.479   0.842  converter1/add36/adder1/bit2/U2/Mxor_S_Result1 (bcd_full<7>)
-     LUT4:I2->O            2   0.479   1.040  digit2/Mrom_LED_out6 (digit2port_6_OBUF)
-     LUT2:I0->O            1   0.479   0.681  digit2/Mrom_LED_out31 (digit2port_3_OBUF)
-     OBUF:I->O                 4.909          digit2port_3_OBUF (digit2port<3>)
+     LUT3:I0->O            1   0.479   0.000  converter1/add36/adder1/bit2/U2/Mxor_S_Result1 (converter1/add36/adder1/bit2/U2/Mxor_S_Result)
+     MUXF5:I1->O           7   0.314   1.201  converter1/add36/adder1/bit2/U2/Mxor_S_Result_f5 (bcd_full<7>)
+     LUT4:I0->O            1   0.479   0.681  digit2/Mrom_LED_out41 (digit2port_4_OBUF)
+     OBUF:I->O                 4.909          digit2port_4_OBUF (digit2port<4>)
     ----------------------------------------
-    Total                     25.746ns (11.762ns logic, 13.984ns route)
-                                       (45.7% logic, 54.3% route)
+    Total                     18.991ns (9.681ns logic, 9.310ns route)
+                                       (51.0% logic, 49.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clkDv3/clk2/q_s'
@@ -1041,13 +1020,13 @@ Offset:              6.216ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.03 secs
+Total CPU time to Xst completion: 4.02 secs
  
 --> 
 
-Total memory usage is 263476 kilobytes
+Total memory usage is 262388 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   29 (   0 filtered)
+Number of warnings :   30 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 
