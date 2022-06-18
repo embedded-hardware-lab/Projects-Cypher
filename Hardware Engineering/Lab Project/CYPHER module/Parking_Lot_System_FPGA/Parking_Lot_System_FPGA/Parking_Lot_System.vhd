@@ -35,6 +35,8 @@ architecture behavioral of parkingLotSystem is
 	signal clk2 : std_logic_vector (7 downto 0);
 	signal clk3 : std_logic_vector (7 downto 0);
 	signal clk4 : std_logic_vector (7 downto 0);
+	signal clk5 : std_logic_vector (7 downto 0);
+	signal clk6 : std_logic_vector (7 downto 0);
 
 	signal bcd_3 : bit_vector(3 downto 0);
 	signal bcd_2 : bit_vector(3 downto 0);
@@ -92,10 +94,17 @@ architecture behavioral of parkingLotSystem is
 		clkDv2 : clock_divider port map(	CLK_main => clk2(7),				
 													CLK_N => clk3,
 													reset => rst );
+		clkDv3 : clock_divider port map(	CLK_main => clk3(7),				
+													CLK_N => clk4,
+													reset => rst );
+													
+		clkDv4 : clock_divider port map(	CLK_main => clk4(7),				
+													CLK_N => clk5,
+													reset => rst );
 
 
 		shifter1 : bcd_shifter port map (	rst => rst,
-							clk => clk3(6),
+							clk => clk5(4),
 							bcd1 => digit1port_s,
 							bcd2 => digit1port_s,
 							bcd3 => digit1port_s,
@@ -174,16 +183,20 @@ architecture behavioral of parkingLotSystem is
 				if  (clk = '0' and clk'event ) then 
 
 					case current_state is
-						when idle => 	if (input="0001")  then		-- car enter
-									counter_s <= counter_s + '1' ;   -- counting up
-								elsif (input="0010")  then		-- car leave
-									counter_s <= counter_s - '1' ;   -- counting down
-								end if;
-						when display =>	counter_s <= counter_s ;	
+						when idle => 	if (rst = '1') then counter_s <= "00000000";
+											elsif (input="0001")  then		-- car enter
+												counter_s <= counter_s + '1' ;   -- counting up
+											elsif (input="0010")  then		-- car leave
+												counter_s <= counter_s - '1' ;   -- counting down
+											end if;
+						when display =>	if (rst = '1') then counter_s <= "00000000";
+												else counter_s <= counter_s ;	
+												end if;
 
-						when full => 	if input="0010"  then		-- car leave
-									counter_s <= counter_s - '1' after 100 ps;   -- counting down
-								end if;
+						when full => 	if (rst = '1') then counter_s <= "00000000";
+											elsif input="0010"  then		-- car leave
+												counter_s <= counter_s - '1';   -- counting down
+											end if;
 				end case;		
 
 				end if;
