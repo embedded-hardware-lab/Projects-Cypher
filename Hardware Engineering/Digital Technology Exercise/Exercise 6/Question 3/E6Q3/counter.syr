@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: counter.prj
 
@@ -189,6 +189,7 @@ Unit <counterUpDown_4_bit> synthesized.
 
 Synthesizing Unit <counter>.
     Related source file is "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Digital Technology Exercise/Exercise 6/Question 3/E6Q3/Q3_1.vhd".
+WARNING:Xst:646 - Signal <counter_clock2<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <counter_clock<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <counter> synthesized.
 
@@ -199,8 +200,8 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Registers                                            : 13
- 1-bit register                                        : 13
+# Registers                                            : 21
+ 1-bit register                                        : 21
 # Xors                                                 : 1
  1-bit xor2                                            : 1
 
@@ -217,8 +218,8 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Registers                                            : 13
- Flip-Flops                                            : 13
+# Registers                                            : 21
+ Flip-Flops                                            : 21
 # Xors                                                 : 1
  1-bit xor2                                            : 1
 
@@ -244,8 +245,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 13
- Flip-Flops                                            : 13
+# Registers                                            : 21
+ Flip-Flops                                            : 21
 
 =========================================================================
 
@@ -274,13 +275,13 @@ Design Statistics
 # IOs                              : 12
 
 Cell Usage :
-# BELS                             : 22
+# BELS                             : 30
 #      GND                         : 1
-#      INV                         : 10
+#      INV                         : 18
 #      LUT3                        : 2
 #      LUT4                        : 9
-# FlipFlops/Latches                : 13
-#      FDC                         : 12
+# FlipFlops/Latches                : 21
+#      FDC                         : 20
 #      FDE                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -294,9 +295,9 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                        8  out of   7680     0%  
- Number of Slice Flip Flops:             13  out of  15360     0%  
- Number of 4 input LUTs:                 21  out of  15360     0%  
+ Number of Slices:                       13  out of   7680     0%  
+ Number of Slice Flip Flops:             21  out of  15360     0%  
+ Number of 4 input LUTs:                 29  out of  15360     0%  
  Number of IOs:                          12
  Number of bonded IOBs:                  12  out of    173     6%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -322,6 +323,14 @@ Clock Information:
 -----------------------------------+-------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)         | Load  |
 -----------------------------------+-------------------------------+-------+
+clockDivider1/clk7/q_s             | NONE(clockDivider2/clk0/q_s)  | 1     |
+clockDivider2/clk0/q_s             | NONE(clockDivider2/clk1/q_s)  | 1     |
+clockDivider2/clk1/q_s             | NONE(clockDivider2/clk2/q_s)  | 1     |
+clockDivider2/clk2/q_s             | NONE(clockDivider2/clk3/q_s)  | 1     |
+clockDivider2/clk3/q_s             | NONE(clockDivider2/clk4/q_s)  | 1     |
+clockDivider2/clk4/q_s             | NONE(clockDivider2/clk5/q_s)  | 1     |
+clockDivider2/clk5/q_s             | NONE(clockDivider2/clk6/q_s)  | 1     |
+clockDivider2/clk6/q_s             | NONE(clockDivider2/clk7/q_s)  | 1     |
 CLK                                | BUFGP                         | 1     |
 clockDivider1/clk0/q_s             | NONE(clockDivider1/clk1/q_s)  | 1     |
 clockDivider1/clk1/q_s             | NONE(clockDivider1/clk2/q_s)  | 1     |
@@ -331,7 +340,7 @@ clockDivider1/clk4/q_s             | NONE(clockDivider1/clk5/q_s)  | 1     |
 clockDivider1/clk5/q_s             | NONE(clockDivider1/clk6/q_s)  | 1     |
 clockDivider1/clk6/q_s             | NONE(clockDivider1/clk7/q_s)  | 1     |
 counter1/flip_flop_clock           | NONE(counter1/clk0/q_s)       | 4     |
-clockDivider1/clk7/q_s             | NONE(counter1/flip_flop_clock)| 1     |
+clockDivider2/clk7/q_s             | NONE(counter1/flip_flop_clock)| 1     |
 -----------------------------------+-------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -340,7 +349,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-RST                                | IBUF                   | 12    |
+RST                                | IBUF                   | 20    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -355,6 +364,182 @@ Speed Grade: -5
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockDivider1/clk7/q_s'
+  Clock period: 2.707ns (frequency: 369.372MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.707ns (Levels of Logic = 1)
+  Source:            clockDivider2/clk0/q_s (FF)
+  Destination:       clockDivider2/clk0/q_s (FF)
+  Source Clock:      clockDivider1/clk7/q_s rising
+  Destination Clock: clockDivider1/clk7/q_s rising
+
+  Data Path: clockDivider2/clk0/q_s to clockDivider2/clk0/q_s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.745  clockDivider2/clk0/q_s (clockDivider2/clk0/q_s)
+     INV:I->O              1   0.479   0.681  clockDivider2/clk0/Q_not1_INV_0 (clockDivider2/qn_internal<0>)
+     FDC:D                     0.176          clockDivider2/clk0/q_s
+    ----------------------------------------
+    Total                      2.707ns (1.281ns logic, 1.426ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockDivider2/clk0/q_s'
+  Clock period: 2.707ns (frequency: 369.372MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.707ns (Levels of Logic = 1)
+  Source:            clockDivider2/clk1/q_s (FF)
+  Destination:       clockDivider2/clk1/q_s (FF)
+  Source Clock:      clockDivider2/clk0/q_s rising
+  Destination Clock: clockDivider2/clk0/q_s rising
+
+  Data Path: clockDivider2/clk1/q_s to clockDivider2/clk1/q_s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.745  clockDivider2/clk1/q_s (clockDivider2/clk1/q_s)
+     INV:I->O              1   0.479   0.681  clockDivider2/clk1/Q_not1_INV_0 (clockDivider2/qn_internal<1>)
+     FDC:D                     0.176          clockDivider2/clk1/q_s
+    ----------------------------------------
+    Total                      2.707ns (1.281ns logic, 1.426ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockDivider2/clk1/q_s'
+  Clock period: 2.707ns (frequency: 369.372MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.707ns (Levels of Logic = 1)
+  Source:            clockDivider2/clk2/q_s (FF)
+  Destination:       clockDivider2/clk2/q_s (FF)
+  Source Clock:      clockDivider2/clk1/q_s rising
+  Destination Clock: clockDivider2/clk1/q_s rising
+
+  Data Path: clockDivider2/clk2/q_s to clockDivider2/clk2/q_s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.745  clockDivider2/clk2/q_s (clockDivider2/clk2/q_s)
+     INV:I->O              1   0.479   0.681  clockDivider2/clk2/Q_not1_INV_0 (clockDivider2/qn_internal<2>)
+     FDC:D                     0.176          clockDivider2/clk2/q_s
+    ----------------------------------------
+    Total                      2.707ns (1.281ns logic, 1.426ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockDivider2/clk2/q_s'
+  Clock period: 2.707ns (frequency: 369.372MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.707ns (Levels of Logic = 1)
+  Source:            clockDivider2/clk3/q_s (FF)
+  Destination:       clockDivider2/clk3/q_s (FF)
+  Source Clock:      clockDivider2/clk2/q_s rising
+  Destination Clock: clockDivider2/clk2/q_s rising
+
+  Data Path: clockDivider2/clk3/q_s to clockDivider2/clk3/q_s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.745  clockDivider2/clk3/q_s (clockDivider2/clk3/q_s)
+     INV:I->O              1   0.479   0.681  clockDivider2/clk3/Q_not1_INV_0 (clockDivider2/qn_internal<3>)
+     FDC:D                     0.176          clockDivider2/clk3/q_s
+    ----------------------------------------
+    Total                      2.707ns (1.281ns logic, 1.426ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockDivider2/clk3/q_s'
+  Clock period: 2.707ns (frequency: 369.372MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.707ns (Levels of Logic = 1)
+  Source:            clockDivider2/clk4/q_s (FF)
+  Destination:       clockDivider2/clk4/q_s (FF)
+  Source Clock:      clockDivider2/clk3/q_s rising
+  Destination Clock: clockDivider2/clk3/q_s rising
+
+  Data Path: clockDivider2/clk4/q_s to clockDivider2/clk4/q_s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.745  clockDivider2/clk4/q_s (clockDivider2/clk4/q_s)
+     INV:I->O              1   0.479   0.681  clockDivider2/clk4/Q_not1_INV_0 (clockDivider2/qn_internal<4>)
+     FDC:D                     0.176          clockDivider2/clk4/q_s
+    ----------------------------------------
+    Total                      2.707ns (1.281ns logic, 1.426ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockDivider2/clk4/q_s'
+  Clock period: 2.707ns (frequency: 369.372MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.707ns (Levels of Logic = 1)
+  Source:            clockDivider2/clk5/q_s (FF)
+  Destination:       clockDivider2/clk5/q_s (FF)
+  Source Clock:      clockDivider2/clk4/q_s rising
+  Destination Clock: clockDivider2/clk4/q_s rising
+
+  Data Path: clockDivider2/clk5/q_s to clockDivider2/clk5/q_s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.745  clockDivider2/clk5/q_s (clockDivider2/clk5/q_s)
+     INV:I->O              1   0.479   0.681  clockDivider2/clk5/Q_not1_INV_0 (clockDivider2/qn_internal<5>)
+     FDC:D                     0.176          clockDivider2/clk5/q_s
+    ----------------------------------------
+    Total                      2.707ns (1.281ns logic, 1.426ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockDivider2/clk5/q_s'
+  Clock period: 2.707ns (frequency: 369.372MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.707ns (Levels of Logic = 1)
+  Source:            clockDivider2/clk6/q_s (FF)
+  Destination:       clockDivider2/clk6/q_s (FF)
+  Source Clock:      clockDivider2/clk5/q_s rising
+  Destination Clock: clockDivider2/clk5/q_s rising
+
+  Data Path: clockDivider2/clk6/q_s to clockDivider2/clk6/q_s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.745  clockDivider2/clk6/q_s (clockDivider2/clk6/q_s)
+     INV:I->O              1   0.479   0.681  clockDivider2/clk6/Q_not1_INV_0 (clockDivider2/qn_internal<6>)
+     FDC:D                     0.176          clockDivider2/clk6/q_s
+    ----------------------------------------
+    Total                      2.707ns (1.281ns logic, 1.426ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockDivider2/clk6/q_s'
+  Clock period: 2.707ns (frequency: 369.372MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.707ns (Levels of Logic = 1)
+  Source:            clockDivider2/clk7/q_s (FF)
+  Destination:       clockDivider2/clk7/q_s (FF)
+  Source Clock:      clockDivider2/clk6/q_s rising
+  Destination Clock: clockDivider2/clk6/q_s rising
+
+  Data Path: clockDivider2/clk7/q_s to clockDivider2/clk7/q_s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   0.745  clockDivider2/clk7/q_s (clockDivider2/clk7/q_s)
+     INV:I->O              1   0.479   0.681  clockDivider2/clk7/Q_not1_INV_0 (clockDivider2/qn_internal<7>)
+     FDC:D                     0.176          clockDivider2/clk7/q_s
+    ----------------------------------------
+    Total                      2.707ns (1.281ns logic, 1.426ns route)
+                                       (47.3% logic, 52.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
@@ -556,15 +741,15 @@ Delay:               3.598ns (Levels of Logic = 2)
                                        (48.9% logic, 51.1% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clockDivider1/clk7/q_s'
+Timing constraint: Default period analysis for Clock 'clockDivider2/clk7/q_s'
   Clock period: 2.745ns (frequency: 364.339MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Delay:               2.745ns (Levels of Logic = 1)
   Source:            counter1/flip_flop_clock (FF)
   Destination:       counter1/flip_flop_clock (FF)
-  Source Clock:      clockDivider1/clk7/q_s rising
-  Destination Clock: clockDivider1/clk7/q_s rising
+  Source Clock:      clockDivider2/clk7/q_s rising
+  Destination Clock: clockDivider2/clk7/q_s rising
 
   Data Path: counter1/flip_flop_clock to counter1/flip_flop_clock
                                 Gate     Net
@@ -599,13 +784,13 @@ Offset:              3.627ns (Levels of Logic = 3)
                                        (51.0% logic, 49.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clockDivider1/clk7/q_s'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clockDivider2/clk7/q_s'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              1.920ns (Levels of Logic = 1)
   Source:            EN (PAD)
   Destination:       counter1/flip_flop_clock (FF)
-  Destination Clock: clockDivider1/clk7/q_s rising
+  Destination Clock: clockDivider2/clk7/q_s rising
 
   Data Path: EN to counter1/flip_flop_clock
                                 Gate     Net
@@ -641,13 +826,13 @@ Offset:              7.954ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.97 secs
+Total CPU time to Xst completion: 3.00 secs
  
 --> 
 
-Total memory usage is 256372 kilobytes
+Total memory usage is 257012 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 
