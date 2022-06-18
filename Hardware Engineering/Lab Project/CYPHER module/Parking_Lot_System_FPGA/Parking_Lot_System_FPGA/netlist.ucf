@@ -16,9 +16,9 @@ NET "single_port<3>" LOC = "P15";
 NET "single_port<4>" LOC = "N15";
 NET "single_port<5>" LOC = "G13";
 NET "single_port<6>" LOC = "E14";
-NET "sel_single_port<0>" LOC = "F14";
+NET "sel_single_port<0>" LOC = "D14";
 NET "sel_single_port<1>" LOC = "G14";
-NET "sel_single_port<2>" LOC = "D14";
+NET "sel_single_port<2>" LOC = "F14";
 NET "sel_single_port<3>" LOC = "E13";
 
 

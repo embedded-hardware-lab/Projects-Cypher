@@ -31,6 +31,10 @@ architecture behavioral of parkingLotSystem is
 	signal counter_s_bit: bit_vector(7 downto 0);
 	signal led_s, gate_s : std_logic := '1';  
 	signal space_state : std_logic;
+	
+	signal clk2 : std_logic_vector (7 downto 0);
+	signal clk3 : std_logic_vector (7 downto 0);
+	signal clk4 : std_logic_vector (7 downto 0);
 
 	signal bcd_3 : bit_vector(3 downto 0);
 	signal bcd_2 : bit_vector(3 downto 0);
@@ -62,6 +66,12 @@ architecture behavioral of parkingLotSystem is
 			bcd_out : out bit_vector (6 downto 0);
 			sel : out bit_vector (3 downto 0));
 	end component ;
+	
+	component clock_divider is
+		port (	CLK_main : in std_logic;				
+			CLK_N: out std_logic_vector(7 downto 0);
+			reset : in std_logic );	
+	end component;
 
 
 	begin
@@ -74,10 +84,18 @@ architecture behavioral of parkingLotSystem is
 							LED_out => digit2port_s);
 		digit1 : LED_7segment port map (	input => bcd_1,
 							LED_out => digit1port_S);
+							
+		clkDv1 : clock_divider port map(	CLK_main => clk,				
+													CLK_N => clk2,
+													reset => rst );	
+													
+		clkDv2 : clock_divider port map(	CLK_main => clk2(7),				
+													CLK_N => clk3,
+													reset => rst );
 
 
 		shifter1 : bcd_shifter port map (	rst => rst,
-							clk => clk,
+							clk => clk3(6),
 							bcd1 => digit1port_s,
 							bcd2 => digit1port_s,
 							bcd3 => digit1port_s,

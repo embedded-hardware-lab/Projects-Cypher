@@ -35,11 +35,11 @@ begin
 	begin
 		if (clk = '1' and clk'event) then
  			case current_state is
-				when S0 => 	An <= "0111";
+				when S0 => 	An <= "1011";
 						
-				when S1 => 	An <= "1011";
+				when S1 => 	An <= "1101";
 
-				when S2 => 	An <= "1101";
+				when S2 => 	An <= "1110";
 			end case;
 		end if;
 	end process;
