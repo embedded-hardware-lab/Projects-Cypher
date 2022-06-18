@@ -1,4 +1,47 @@
-{D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd}
+{D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity full_adder_4_bit
+-- Compiling architecture data of full_adder_4_bit
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/add3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/add3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity add3
+-- Compiling architecture behavioural of add3
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/bcd_shifter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/bcd_shifter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity bcd_shifter
+-- Compiling architecture behavioral of bcd_shifter
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity half_adder_1_bit
+-- Compiling architecture data of half_adder_1_bit
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/bcd_8_bit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/bcd_8_bit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity bcd_8_bit
+-- Compiling architecture behavioural of bcd_8_bit
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/bcd_7segment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/bcd_7segment.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity LED_7segment
+-- Compiling architecture logic of LED_7segment
+
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,20 +50,11 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity parkingLotSystem
 -- Compiling architecture behavioral of parkingLotSystem
-** Error: D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd(81): (vcom-1600) No feasible entries for subprogram "To_bitvector".
-   Visible subprograms are:
-      (explicit) std_logic_1164.To_bitvector[STD_LOGIC_VECTOR, BIT return BIT_VECTOR] at $MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd(341)
-      (explicit) std_logic_1164.To_bitvector[STD_ULOGIC_VECTOR, BIT return BIT_VECTOR] at $MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd(342)
-** Error: D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd(82): (vcom-1600) No feasible entries for subprogram "To_bitvector".
-   Visible subprograms are:
-      (explicit) std_logic_1164.To_bitvector[STD_LOGIC_VECTOR, BIT return BIT_VECTOR] at $MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd(341)
-      (explicit) std_logic_1164.To_bitvector[STD_ULOGIC_VECTOR, BIT return BIT_VECTOR] at $MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd(342)
-** Error: D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd(83): (vcom-1600) No feasible entries for subprogram "To_bitvector".
-   Visible subprograms are:
-      (explicit) std_logic_1164.To_bitvector[STD_LOGIC_VECTOR, BIT return BIT_VECTOR] at $MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd(341)
-      (explicit) std_logic_1164.To_bitvector[STD_ULOGIC_VECTOR, BIT return BIT_VECTOR] at $MODEL_TECH/../vhdl_src/ieee/stdlogic.vhd(342)
-** Error: D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd(84): Signal [mode OUT port] "single_port" is type std.STANDARD.BIT_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd(85): Signal [mode OUT port] "sel_single_port" is type std.STANDARD.BIT_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Note: D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/parking_lot.vhd(201): VHDL Compiler exiting
 
-} {10.0 11.0 14.0 15.0 18.0 19.0 22.0 24.0} {}}
+} {} {}} {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/Implementation/VHDL/Q2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Compiling entity full_adder_1_bit
+-- Compiling architecture data of full_adder_1_bit
+
+} {} {}}
