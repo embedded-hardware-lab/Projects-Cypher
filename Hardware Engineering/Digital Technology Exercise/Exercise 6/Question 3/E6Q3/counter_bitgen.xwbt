@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\cypher\Documents\GitHub\Projects-Cypher\Hardware Engineering\Digital Technology Exercise\Exercise 6\Question 3\E6Q3\counter.ncd
+OUTFILE=C:\Users\cypher\Documents\GitHub\Projects-Cypher\Hardware Engineering\Digital Technology Exercise\Exercise 6\Question 3\E6Q3\counter.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=C:\Users\cypher\Documents\GitHub\Projects-Cypher\Hardware Engineering\Digital Technology Exercise\Exercise 6\Question 3\E6Q3
+LICENSE=ISE
+USER_INFO=212492371_0_0_563
