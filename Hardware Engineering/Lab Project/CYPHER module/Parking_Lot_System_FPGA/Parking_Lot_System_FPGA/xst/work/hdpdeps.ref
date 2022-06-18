@@ -1,45 +1,53 @@
-V3 28
+V3 32
 FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/add3.vhd" 2022/06/18.05:22:05 P.20131013
-EN work/add3 1655524343 \
+EN work/add3 1655549377 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/add3.vhd"
-AR work/add3/behavioural 1655524344 \
+AR work/add3/behavioural 1655549378 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/add3.vhd" \
-      EN work/add3 1655524343 CP full_adder_4_bit
+      EN work/add3 1655549377 CP full_adder_4_bit
 FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_7segment.vhd" 2022/06/18.05:22:05 P.20131013
-EN work/LED_7segment 1655524347 \
+EN work/LED_7segment 1655549381 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_7segment.vhd"
-AR work/LED_7segment/logic 1655524348 \
+AR work/LED_7segment/logic 1655549382 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_7segment.vhd" \
-      EN work/LED_7segment 1655524347
+      EN work/LED_7segment 1655549381
 FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_8_bit.vhd" 2022/06/18.05:22:05 P.20131013
-EN work/bcd_8_bit 1655524345 \
+EN work/bcd_8_bit 1655549379 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_8_bit.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/bcd_8_bit/behavioural 1655524346 \
+AR work/bcd_8_bit/behavioural 1655549380 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_8_bit.vhd" \
-      EN work/bcd_8_bit 1655524345 CP add3
-FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" 2022/06/18.05:52:12 P.20131013
-EN work/parkingLotSystem 1655524349 \
+      EN work/bcd_8_bit 1655549379 CP add3
+FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_shifter.vhd" 2022/06/18.12:31:46 P.20131013
+EN work/bcd_shifter 1655549383 \
+      FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_shifter.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/bcd_shifter/behavioral 1655549384 \
+      FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_shifter.vhd" \
+      EN work/bcd_shifter 1655549383
+FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" 2022/06/18.12:31:46 P.20131013
+EN work/parkingLotSystem 1655549385 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/parkingLotSystem/behavioral 1655524350 \
+AR work/parkingLotSystem/behavioral 1655549386 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" \
-      EN work/parkingLotSystem 1655524349 CP bcd_8_bit CP LED_7segment
+      EN work/parkingLotSystem 1655549385 CP bcd_8_bit CP LED_7segment \
+      CP bcd_shifter
 FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q1.vhd" 2022/06/18.05:22:05 P.20131013
-EN work/half_adder_1_bit 1655524337 \
+EN work/half_adder_1_bit 1655549371 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q1.vhd"
-AR work/half_adder_1_bit/data 1655524338 \
+AR work/half_adder_1_bit/data 1655549372 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q1.vhd" \
-      EN work/half_adder_1_bit 1655524337
+      EN work/half_adder_1_bit 1655549371
 FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q2.vhd" 2022/06/18.05:22:05 P.20131013
-EN work/full_adder_1_bit 1655524339 \
+EN work/full_adder_1_bit 1655549373 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q2.vhd"
-AR work/full_adder_1_bit/data 1655524340 \
+AR work/full_adder_1_bit/data 1655549374 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q2.vhd" \
-      EN work/full_adder_1_bit 1655524339 CP half_adder_1_bit CP Cout
+      EN work/full_adder_1_bit 1655549373 CP half_adder_1_bit CP Cout
 FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q3.vhd" 2022/06/18.05:22:05 P.20131013
-EN work/full_adder_4_bit 1655524341 \
+EN work/full_adder_4_bit 1655549375 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q3.vhd"
-AR work/full_adder_4_bit/data 1655524342 \
+AR work/full_adder_4_bit/data 1655549376 \
       FL "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q3.vhd" \
-      EN work/full_adder_4_bit 1655524341 CP full_adder_1_bit
+      EN work/full_adder_4_bit 1655549375 CP full_adder_1_bit
