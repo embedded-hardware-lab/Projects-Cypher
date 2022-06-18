@@ -25,7 +25,7 @@ architecture behavioural of running_light_8_bit is
 		clockDevider2 : clock_divider port map(	CLK_main => clock_s2(7),				
 							CLK_N => clock_s3,
 							reset => RST );
-		clockDevider3 : clock_divider port map(	CLK_main => clock_s3(7),				
+		clockDevider3 : clock_divider port map(	CLK_main => clock_s3(1),				
 							CLK_N => LED_OUT,
 							reset => RST );
 		
