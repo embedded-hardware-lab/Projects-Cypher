@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CYPHER-PC::  Mon Jun 20 21:59:19 2022
+CYPHER-PC::  Mon Jun 20 22:02:51 2022
 
 par -w -intstyle ise -ol high -t 1 parkingLotSystem_map.ncd
 parkingLotSystem.ncd parkingLotSystem.pcf 
@@ -45,7 +45,7 @@ Finished initial Timing Analysis.  REAL time: 0 secs
 
 Starting Placer
 Total REAL time at the beginning of Placer: 0 secs 
-Total CPU  time at the beginning of Placer: 0 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
 Phase 1.1  Initial Placement Analysis (Checksum:3bd373e0) REAL time: 1 secs 
@@ -78,16 +78,16 @@ Phase 8.8  Global Placement
 ..
 ..
 ..
-Phase 8.8  Global Placement (Checksum:2f9d78cc) REAL time: 2 secs 
+Phase 8.8  Global Placement (Checksum:3b71a6b6) REAL time: 2 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:2f9d78cc) REAL time: 2 secs 
+Phase 9.5  Local Placement Optimization (Checksum:3b71a6b6) REAL time: 2 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:b5a287e2) REAL time: 2 secs 
+Phase 10.18  Placement Optimization (Checksum:51a5e050) REAL time: 2 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:b5a287e2) REAL time: 2 secs 
+Phase 11.5  Local Placement Optimization (Checksum:51a5e050) REAL time: 2 secs 
 
 Total REAL time to Placer completion: 2 secs 
 Total CPU  time to Placer completion: 2 secs 
@@ -102,9 +102,9 @@ Phase  1  : 569 unrouted;      REAL time: 2 secs
 
 Phase  2  : 529 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 106 unrouted;      REAL time: 2 secs 
+Phase  3  : 97 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 125 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 113 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
@@ -121,7 +121,7 @@ Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 WARNING:Route:455 - CLK Net:clockScalers<18> may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:clockScalers<5> may have excessive skew because 
+WARNING:Route:455 - CLK Net:clockScalers<0> may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
 Total REAL time to Router completion: 3 secs 
@@ -143,11 +143,11 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP |      BUFGMUX0| No   |   17 |  0.172     |  0.865      |
+|           clk_BUFGP |      BUFGMUX0| No   |   17 |  0.169     |  0.904      |
 +---------------------+--------------+------+------+------------+-------------+
-|    clockScalers<18> |         Local|      |   16 |  0.179     |  2.749      |
+|    clockScalers<18> |         Local|      |   16 |  0.188     |  2.721      |
 +---------------------+--------------+------+------+------------+-------------+
-|     clockScalers<5> |         Local|      |    8 |  0.015     |  2.021      |
+|     clockScalers<0> |         Local|      |    8 |  0.016     |  1.996      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -168,13 +168,13 @@ Asterisk (*) preceding a constraint indicates it was not met.
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.679ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.695ns|            |       0|           0
+  _BUFGP                                    | HOLD        |     0.702ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     7.698ns|     N/A|           0
-  ckScalers<18>                             | HOLD        |     5.487ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     8.070ns|     N/A|           0
+  ckScalers<18>                             | HOLD        |     5.289ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     3.713ns|     N/A|           0
-  ckScalers<5>                              | HOLD        |     0.887ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     3.920ns|     N/A|           0
+  ckScalers<0>                              | HOLD        |     0.884ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
