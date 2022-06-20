@@ -29,7 +29,7 @@ architecture behavioural of add3 is
 												S => output,
 												Cout => CoutS );
 												
-		valueB : process (fix_value, input) 
+		valueB : process (fix_value, condition, input) 
 			begin
 				if (condition = '1') then fix_value <= 	"0011";
 				else fix_value <= 	"0000";

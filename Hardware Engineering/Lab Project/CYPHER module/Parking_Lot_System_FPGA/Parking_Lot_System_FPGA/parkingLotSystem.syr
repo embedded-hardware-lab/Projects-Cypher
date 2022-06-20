@@ -111,7 +111,8 @@ Architecture data of Entity full_adder_1_bit is up to date.
 Compiling vhdl file "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Q3.vhd" in Library work.
 Architecture data of Entity full_adder_4_bit is up to date.
 Compiling vhdl file "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/add3.vhd" in Library work.
-Architecture behavioural of Entity add3 is up to date.
+Entity <add3> compiled.
+Entity <add3> (Architecture <behavioural>) compiled.
 Compiling vhdl file "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_8_bit.vhd" in Library work.
 Architecture behavioural of Entity bcd_8_bit is up to date.
 Compiling vhdl file "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_7segment.vhd" in Library work.
@@ -119,8 +120,7 @@ Architecture logic of Entity led_7segment is up to date.
 Compiling vhdl file "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/bcd_shifter.vhd" in Library work.
 Architecture behavioral of Entity bcd_shifter is up to date.
 Compiling vhdl file "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" in Library work.
-Entity <parkinglotsystem> compiled.
-Entity <parkinglotsystem> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity parkinglotsystem is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -146,18 +146,12 @@ Analyzing hierarchy for entity <half_adder_1_bit> in library <work> (architectur
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <parkingLotSystem> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" line 87: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <clockScalers<20>>
-WARNING:Xst:819 - "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd" line 176: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <clockScalers<20>>
 Entity <parkingLotSystem> analyzed. Unit <parkingLotSystem> generated.
 
 Analyzing Entity <bcd_8_bit> in library <work> (Architecture <behavioural>).
 Entity <bcd_8_bit> analyzed. Unit <bcd_8_bit> generated.
 
 Analyzing Entity <add3> in library <work> (Architecture <behavioural>).
-WARNING:Xst:819 - "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/add3.vhd" line 32: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <condition>
 Entity <add3> analyzed. Unit <add3> generated.
 
 Analyzing Entity <full_adder_4_bit> in library <work> (Architecture <data>).
@@ -233,19 +227,19 @@ Unit <bcd_8_bit> synthesized.
 
 Synthesizing Unit <parkingLotSystem>.
     Related source file is "C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd".
+    Register <led_s> equivalent to <gate_s> has been removed
     Using one-hot encoding for signal <current_state>.
     Found 31-bit up counter for signal <clockScalers>.
     Found 8-bit register for signal <count_mem>.
     Found 8-bit addsub for signal <count_mem$share0000> created at line 159.
     Found 3-bit register for signal <current_state>.
     Found 1-bit register for signal <gate_s>.
-    Found 1-bit register for signal <led_s>.
     Found 3-bit register for signal <next_state>.
     Found 1-bit register for signal <space_state>.
     Found 8-bit comparator less for signal <space_state$cmp_lt0000> created at line 177.
     Summary:
 	inferred   1 Counter(s).
-	inferred  14 D-type flip-flop(s).
+	inferred  13 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
 Unit <parkingLotSystem> synthesized.
@@ -262,8 +256,8 @@ Macro Statistics
  8-bit addsub                                          : 1
 # Counters                                             : 1
  31-bit up counter                                     : 1
-# Registers                                            : 10
- 1-bit register                                        : 3
+# Registers                                            : 9
+ 1-bit register                                        : 2
  3-bit register                                        : 4
  4-bit register                                        : 1
  7-bit register                                        : 1
@@ -294,8 +288,8 @@ Macro Statistics
  8-bit addsub                                          : 1
 # Counters                                             : 1
  31-bit up counter                                     : 1
-# Registers                                            : 34
- Flip-Flops                                            : 34
+# Registers                                            : 33
+ Flip-Flops                                            : 33
 # Comparators                                          : 1
  8-bit comparator less                                 : 1
 # Xors                                                 : 56
@@ -324,12 +318,7 @@ Optimizing unit <bcd_shifter> ...
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block parkingLotSystem, actual ratio is 1.
-FlipFlop count_mem_0 has been replicated 1 time(s)
-FlipFlop count_mem_4 has been replicated 1 time(s)
 FlipFlop count_mem_5 has been replicated 1 time(s)
-FlipFlop count_mem_6 has been replicated 1 time(s)
-FlipFlop count_mem_7 has been replicated 1 time(s)
-FlipFlop gate_s has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -337,8 +326,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 61
- Flip-Flops                                            : 61
+# Registers                                            : 55
+ Flip-Flops                                            : 55
 
 =========================================================================
 
@@ -367,30 +356,29 @@ Design Statistics
 # IOs                              : 43
 
 Cell Usage :
-# BELS                             : 187
+# BELS                             : 185
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 2
 #      LUT1                        : 20
-#      LUT2                        : 6
-#      LUT3                        : 19
-#      LUT4                        : 64
-#      LUT4_D                      : 11
-#      LUT4_L                      : 7
+#      LUT2                        : 10
+#      LUT3                        : 16
+#      LUT4                        : 70
+#      LUT4_D                      : 4
+#      LUT4_L                      : 5
 #      MUXCY                       : 20
-#      MUXF5                       : 14
+#      MUXF5                       : 15
 #      VCC                         : 1
 #      XORCY                       : 21
-# FlipFlops/Latches                : 61
+# FlipFlops/Latches                : 55
 #      FD                          : 1
 #      FD_1                        : 4
 #      FDC                         : 25
-#      FDC_1                       : 13
+#      FDC_1                       : 9
 #      FDP                         : 2
 #      FDR                         : 1
-#      FDS                         : 5
+#      FDS                         : 3
 #      FDS_1                       : 10
-# Clock Buffers                    : 2
-#      BUFG                        : 1
+# Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 42
 #      IBUF                        : 6
@@ -402,13 +390,12 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                       69  out of   7680     0%  
- Number of Slice Flip Flops:             60  out of  15360     0%  
- Number of 4 input LUTs:                130  out of  15360     0%  
+ Number of Slices:                       68  out of   7680     0%  
+ Number of Slice Flip Flops:             55  out of  15360     0%  
+ Number of 4 input LUTs:                127  out of  15360     0%  
  Number of IOs:                          43
  Number of bonded IOBs:                  43  out of    173    24%  
-    IOB Flip Flops:                       1
- Number of GCLKs:                         2  out of      8    25%  
+ Number of GCLKs:                         1  out of      8    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -428,28 +415,29 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clockScalers_201                   | BUFG                   | 38    |
-clk                                | BUFGP                  | 23    |
------------------------------------+------------------------+-------+
+-----------------------------------+-------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)         | Load  |
+-----------------------------------+-------------------------------+-------+
+clk                                | BUFGP                         | 38    |
+clockScalers_20                    | NONE(shifter1/current_state_2)| 17    |
+-----------------------------------+-------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-rst                                | IBUF                   | 40    |
+rst                                | IBUF                   | 36    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 11.029ns (Maximum Frequency: 90.667MHz)
-   Minimum input arrival time before clock: 6.778ns
-   Maximum output required time after clock: 13.864ns
+   Minimum period: 10.506ns (Maximum Frequency: 95.184MHz)
+   Minimum input arrival time before clock: 6.472ns
+   Maximum output required time after clock: 19.019ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -457,154 +445,131 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clockScalers_201'
-  Clock period: 11.029ns (frequency: 90.667MHz)
-  Total number of paths / destination ports: 3368 / 51
--------------------------------------------------------------------------
-Delay:               11.029ns (Levels of Logic = 7)
-  Source:            count_mem_5_1 (FF)
-  Destination:       shifter1/bcd_out_6 (FF)
-  Source Clock:      clockScalers_201 falling
-  Destination Clock: clockScalers_201 falling
-
-  Data Path: count_mem_5_1 to shifter1/bcd_out_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC_1:C->Q            7   0.626   1.201  count_mem_5_1 (count_mem_5_1)
-     LUT4:I0->O            1   0.479   0.000  converter1/add34/adder1/bit3/U2/Mxor_S_Result11_F (N139)
-     MUXF5:I0->O           7   0.314   1.076  converter1/add34/adder1/bit3/U2/Mxor_S_Result11 (N11)
-     LUT4:I1->O            6   0.479   0.876  converter1/add33/adder1/bit3/U2/Mxor_S_Result1 (converter1/add3_3<3>)
-     LUT4:I3->O            2   0.479   0.915  converter1/add36/adder1/bit1/U2/Mxor_S_Result61 (converter1/add36/adder1/bit1/U2/Mxor_S_Result61)
-     LUT4_D:I1->O          5   0.479   0.806  converter1/add36/adder1/bit1/U2/Mxor_S_Result115 (bcd_full<6>)
-     LUT4:I3->O            2   0.479   0.768  digit2c/Mrom_LED_out111 (digit2c/Mrom_LED_out1)
-     LUT4:I3->O            1   0.479   0.681  shifter1/bcd_out_mux0001<1>_SW0 (N47)
-     FDS_1:S                   0.892          shifter1/bcd_out_1
-    ----------------------------------------
-    Total                     11.029ns (4.706ns logic, 6.323ns route)
-                                       (42.7% logic, 57.3% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.477ns (frequency: 223.371MHz)
-  Total number of paths / destination ports: 231 / 21
+  Clock period: 10.506ns (frequency: 95.184MHz)
+  Total number of paths / destination ports: 419 / 41
 -------------------------------------------------------------------------
-Delay:               4.477ns (Levels of Logic = 21)
-  Source:            clockScalers_1 (FF)
-  Destination:       clockScalers_20 (FF)
-  Source Clock:      clk rising
+Delay:               5.253ns (Levels of Logic = 2)
+  Source:            count_mem_1 (FF)
+  Destination:       space_state (FF)
+  Source Clock:      clk falling
   Destination Clock: clk rising
 
-  Data Path: clockScalers_1 to clockScalers_20
+  Data Path: count_mem_1 to space_state
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              1   0.626   0.976  clockScalers_1 (clockScalers_1)
-     LUT1:I0->O            1   0.479   0.000  Mcount_clockScalers_cy<1>_rt (Mcount_clockScalers_cy<1>_rt)
-     MUXCY:S->O            1   0.435   0.000  Mcount_clockScalers_cy<1> (Mcount_clockScalers_cy<1>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<2> (Mcount_clockScalers_cy<2>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<3> (Mcount_clockScalers_cy<3>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<4> (Mcount_clockScalers_cy<4>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<5> (Mcount_clockScalers_cy<5>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<6> (Mcount_clockScalers_cy<6>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<7> (Mcount_clockScalers_cy<7>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<8> (Mcount_clockScalers_cy<8>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<9> (Mcount_clockScalers_cy<9>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<10> (Mcount_clockScalers_cy<10>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<11> (Mcount_clockScalers_cy<11>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<12> (Mcount_clockScalers_cy<12>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<13> (Mcount_clockScalers_cy<13>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<14> (Mcount_clockScalers_cy<14>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<15> (Mcount_clockScalers_cy<15>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<16> (Mcount_clockScalers_cy<16>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<17> (Mcount_clockScalers_cy<17>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<18> (Mcount_clockScalers_cy<18>)
-     MUXCY:CI->O           0   0.056   0.000  Mcount_clockScalers_cy<19> (Mcount_clockScalers_cy<19>)
-     XORCY:CI->O           1   0.786   0.000  Mcount_clockScalers_xor<20> (Result<20>)
-     FDC:D                     0.176          clockScalers_20
+     FDC_1:C->Q           12   0.626   1.245  count_mem_1 (count_mem_1)
+     LUT4:I0->O            1   0.479   0.851  space_state_not00014 (space_state_not00014)
+     LUT2:I1->O            1   0.479   0.681  space_state_not000110 (space_state_not0001)
+     FDR:R                     0.892          space_state
     ----------------------------------------
-    Total                      4.477ns (3.501ns logic, 0.976ns route)
-                                       (78.2% logic, 21.8% route)
+    Total                      5.253ns (2.476ns logic, 2.777ns route)
+                                       (47.1% logic, 52.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clockScalers_201'
-  Total number of paths / destination ports: 263 / 18
+Timing constraint: Default period analysis for Clock 'clockScalers_20'
+  Clock period: 7.891ns (frequency: 126.735MHz)
+  Total number of paths / destination ports: 35 / 27
 -------------------------------------------------------------------------
-Offset:              6.778ns (Levels of Logic = 5)
-  Source:            input<3> (PAD)
-  Destination:       count_mem_0 (FF)
-  Destination Clock: clockScalers_201 falling
+Delay:               3.945ns (Levels of Logic = 1)
+  Source:            shifter1/current_state_0 (FF)
+  Destination:       shifter1/bcd_out_6 (FF)
+  Source Clock:      clockScalers_20 rising
+  Destination Clock: clockScalers_20 falling
 
-  Data Path: input<3> to count_mem_0
+  Data Path: shifter1/current_state_0 to shifter1/bcd_out_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             11   0.626   1.267  shifter1/current_state_0 (shifter1/current_state_0)
+     LUT4:I0->O            1   0.479   0.681  shifter1/bcd_out_mux0001<6>_SW0 (N41)
+     FDS_1:S                   0.892          shifter1/bcd_out_6
+    ----------------------------------------
+    Total                      3.945ns (1.997ns logic, 1.948ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 219 / 14
+-------------------------------------------------------------------------
+Offset:              6.472ns (Levels of Logic = 5)
+  Source:            input<3> (PAD)
+  Destination:       count_mem_6 (FF)
+  Destination Clock: clk falling
+
+  Data Path: input<3> to count_mem_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             4   0.715   1.074  input_3_IBUF (input_3_IBUF)
-     LUT2:I0->O            3   0.479   1.066  next_state_mux0004<1>31 (N81)
-     LUT4:I0->O            1   0.479   0.740  count_mem_mux0002<1>2_SW1 (N9)
-     LUT4:I2->O            8   0.479   1.091  count_mem_mux0002<1>2 (N13)
-     LUT3:I1->O            2   0.479   0.000  count_mem_mux0002<0>28 (count_mem_mux0002<0>)
-     FDC_1:D                   0.176          count_mem_0
+     LUT2:I0->O            3   0.479   0.830  next_state_mux0004<1>31 (N74)
+     LUT4:I2->O            3   0.479   0.794  next_state_mux0004<0>_SW0 (N02)
+     LUT4:I3->O            7   0.479   0.906  count_mem_mux0002<1>2 (N9)
+     MUXF5:S->O            1   0.540   0.000  count_mem_mux0002<6> (count_mem_mux0002<6>)
+     FDC_1:D                   0.176          count_mem_6
     ----------------------------------------
-    Total                      6.778ns (2.807ns logic, 3.971ns route)
-                                       (41.4% logic, 58.6% route)
+    Total                      6.472ns (2.868ns logic, 3.604ns route)
+                                       (44.3% logic, 55.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 5043 / 24
 -------------------------------------------------------------------------
-Offset:              7.376ns (Levels of Logic = 2)
-  Source:            gate_s (FF)
-  Destination:       gate_close (PAD)
-  Source Clock:      clk rising
+Offset:              19.019ns (Levels of Logic = 10)
+  Source:            count_mem_5 (FF)
+  Destination:       digit2port<5> (PAD)
+  Source Clock:      clk falling
 
-  Data Path: gate_s to gate_close
+  Data Path: count_mem_5 to digit2port<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q              1   0.626   0.681  gate_s (gate_s)
-     INV:I->O              1   0.479   0.681  gate_close1_INV_0 (gate_close_OBUF)
-     OBUF:I->O                 4.909          gate_close_OBUF (gate_close)
+     FDC_1:C->Q           21   0.626   1.583  count_mem_5 (count_mem_5)
+     LUT4:I0->O            2   0.479   0.915  converter1/add32/adder1/bit0/U1/Mxor_S_Result_SW0 (N47)
+     LUT3:I1->O            9   0.479   1.125  converter1/add32/adder1/bit0/U1/Mxor_S_Result (converter1/add32/adder1/bit0/U2/Mxor_S_Result_and0001)
+     LUT4:I1->O            1   0.479   0.851  converter1/add36/condition56_SW0_SW0 (N104)
+     LUT4:I1->O            1   0.479   0.704  converter1/add36/condition56_SW0 (N96)
+     LUT4:I3->O            3   0.479   1.066  converter1/add36/condition56 (converter1/add36/condition)
+     LUT4:I0->O            6   0.479   1.148  converter1/add36/adder1/bit1/Cout1 (converter1/add36/adder1/c1)
+     LUT3:I0->O            1   0.479   0.000  converter1/add36/adder1/bit2/U2/Mxor_S_Result1 (converter1/add36/adder1/bit2/U2/Mxor_S_Result)
+     MUXF5:I1->O           7   0.314   1.201  converter1/add36/adder1/bit2/U2/Mxor_S_Result_f5 (bcd_full<7>)
+     LUT4:I0->O            2   0.479   0.745  digit2c/Mrom_LED_out41 (digit2c/Mrom_LED_out4)
+     OBUF:I->O                 4.909          digit2port_4_OBUF (digit2port<4>)
     ----------------------------------------
-    Total                      7.376ns (6.014ns logic, 1.362ns route)
-                                       (81.5% logic, 18.5% route)
+    Total                     19.019ns (9.681ns logic, 9.338ns route)
+                                       (50.9% logic, 49.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clockScalers_201'
-  Total number of paths / destination ports: 3080 / 33
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockScalers_20'
+  Total number of paths / destination ports: 11 / 11
 -------------------------------------------------------------------------
-Offset:              13.864ns (Levels of Logic = 7)
-  Source:            count_mem_5_1 (FF)
-  Destination:       digit2port<6> (PAD)
-  Source Clock:      clockScalers_201 falling
+Offset:              6.216ns (Levels of Logic = 1)
+  Source:            shifter1/An_3 (FF)
+  Destination:       sel_single_port<3> (PAD)
+  Source Clock:      clockScalers_20 falling
 
-  Data Path: count_mem_5_1 to digit2port<6>
+  Data Path: shifter1/An_3 to sel_single_port<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC_1:C->Q            7   0.626   1.201  count_mem_5_1 (count_mem_5_1)
-     LUT4:I0->O            1   0.479   0.000  converter1/add34/adder1/bit3/U2/Mxor_S_Result11_F (N139)
-     MUXF5:I0->O           7   0.314   1.076  converter1/add34/adder1/bit3/U2/Mxor_S_Result11 (N11)
-     LUT4:I1->O            6   0.479   0.876  converter1/add33/adder1/bit3/U2/Mxor_S_Result1 (converter1/add3_3<3>)
-     LUT4:I3->O            2   0.479   0.915  converter1/add36/adder1/bit1/U2/Mxor_S_Result61 (converter1/add36/adder1/bit1/U2/Mxor_S_Result61)
-     LUT4_D:I1->O          5   0.479   0.806  converter1/add36/adder1/bit1/U2/Mxor_S_Result115 (bcd_full<6>)
-     LUT4:I3->O            2   0.479   0.745  digit2c/Mrom_LED_out51 (digit2c/Mrom_LED_out5)
-     OBUF:I->O                 4.909          digit2port_5_OBUF (digit2port<5>)
+     FDS_1:C->Q            1   0.626   0.681  shifter1/An_3 (shifter1/An_3)
+     OBUF:I->O                 4.909          sel_single_port_3_OBUF (sel_single_port<3>)
     ----------------------------------------
-    Total                     13.864ns (8.244ns logic, 5.620ns route)
-                                       (59.5% logic, 40.5% route)
+    Total                      6.216ns (5.535ns logic, 0.681ns route)
+                                       (89.0% logic, 11.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.83 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.61 secs
  
 --> 
 
-Total memory usage is 262324 kilobytes
+Total memory usage is 261876 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   18 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

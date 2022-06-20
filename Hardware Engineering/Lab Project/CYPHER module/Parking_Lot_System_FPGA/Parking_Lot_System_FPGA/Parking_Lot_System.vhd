@@ -85,7 +85,7 @@ architecture behavioral of parkingLotSystem is
 			begin
 				if rst = '1' then
 					current_state <= idle;
-				elsif (clockScalers(20) = '1' and clockScalers(20)'event) then
+				elsif (clk = '1' and clk'event) then
 					current_state <= next_state;
 				end if;
 		end process;
@@ -99,10 +99,10 @@ architecture behavioral of parkingLotSystem is
 				end if; 
 		end process;
 
-		stateInput: process(clockScalers(20), current_state, input,space_state, next_state, ready)
+		stateInput: process(clk, current_state, input,space_state, next_state, ready)
 			begin
 			
-			if (clockScalers(20) = '1' and clockScalers(20)'event) then
+			if (clk = '1' and clk'event) then
 				case current_state is
 
 					when idle => 	if input = "0001" then	next_state <= display;
@@ -123,9 +123,9 @@ architecture behavioral of parkingLotSystem is
 		end process;
 		
 
-		indicatorProcess : process(clockScalers(20), current_state, led_s)
+		indicatorProcess : process(clk, current_state, led_s)
 			begin
-				if (clockScalers(20) = '1' and clockScalers(20)'event) then
+				if (clk = '1' and clk'event) then
 					case current_state is
 						when idle => led_s <= '1';	
 			
@@ -149,12 +149,12 @@ architecture behavioral of parkingLotSystem is
 				end if;
 		end process;
 
-		carCounter : process(current_state, input, clockScalers(20), counter_s, rst)
+		carCounter : process(current_state, input, clk, counter_s, rst)
 			variable count_mem : std_logic_vector(7 downto 0);
 			begin
 				
 				if (rst = '1') then count_mem := "00000000";
-				elsif  (clockScalers(20) = '0' and clockScalers(20)'event ) then 
+				elsif  (clk = '0' and clk'event ) then 
 
 					case current_state is
 						when idle => 		if (input="0001")  then	count_mem := count_mem + '1' ;   -- counting up
@@ -171,9 +171,9 @@ architecture behavioral of parkingLotSystem is
 				counter_s<= count_mem;
 		end process;
 		
-		space_checker : process(counter_s, space_state)
+		space_checker : process(counter_s, clk, space_state)
 			begin
-			if (clockScalers(20) = '1' and clockScalers(20)'event) then
+			if (clk = '1' and clk'event) then
 				if counter_s < "11111111"  then space_state <= '1';
 				else space_state <= '0';
 				end if;

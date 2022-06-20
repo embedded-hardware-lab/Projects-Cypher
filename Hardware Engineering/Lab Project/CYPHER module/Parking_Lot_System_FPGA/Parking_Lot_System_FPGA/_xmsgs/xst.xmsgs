@@ -5,18 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd</arg>&quot; line <arg fmt="%d" index="2">87</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;clockScalers&lt;20&gt;&gt;</arg>
-</msg>
-
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/Parking_Lot_System.vhd</arg>&quot; line <arg fmt="%d" index="2">176</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;clockScalers&lt;20&gt;&gt;</arg>
-</msg>
-
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/cypher/Documents/GitHub/Projects-Cypher/Hardware Engineering/Lab Project/CYPHER module/Parking_Lot_System_FPGA/Parking_Lot_System_FPGA/add3.vhd</arg>&quot; line <arg fmt="%d" index="2">32</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;condition&gt;</arg>
-</msg>
-
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Cin</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
@@ -65,6 +53,9 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockScalers_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">parkingLotSystem</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>
