@@ -72,7 +72,7 @@ architecture behavioral of parkingLotSystem is
 
 
 		shifter1 : bcd_shifter port map(	rst => rst,
-											clk => clockScalers(20),
+											clk => clockScalers(18),
 											bcd1 => digit1,
 											bcd2 => digit2,
 											bcd3 => digit3,
@@ -149,12 +149,12 @@ architecture behavioral of parkingLotSystem is
 				end if;
 		end process;
 
-		carCounter : process(current_state, input, clk, counter_s, rst)
+		carCounter : process(current_state, input, clockScalers, counter_s, rst)
 			variable count_mem : std_logic_vector(7 downto 0);
 			begin
 				
 				if (rst = '1') then count_mem := "00000000";
-				elsif  (clk = '0' and clk'event ) then 
+				elsif  (clockScalers(18) = '0' and clockScalers(18)'event ) then 
 
 					case current_state is
 						when idle => 		if (input="0001")  then	count_mem := count_mem + '1' ;   -- counting up
