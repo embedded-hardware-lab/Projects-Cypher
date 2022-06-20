@@ -1,6 +1,7 @@
-
+library ieee;
+use ieee.std_logic_1164.all;
 entity bcd_shifter is
-	port (	rst 	: in std_logic; 
+	port (rst 	: in std_logic; 
 			clk 	: in std_logic; 
 			bcd1 	: in bit_vector (6 downto 0);
 			bcd2 	: in bit_vector (6 downto 0);

@@ -32,6 +32,7 @@ architecture behavioral of parkingLotSystem is
 	
 	signal clockScalers : std_logic_vector(30 downto 0);
 	signal bcd_full : bit_vector(11 downto 0);
+	signal digit3,digit2,digit1 : bit_vector(6 downto 0);
 	
 	
 	component bcd_8_bit is
@@ -61,20 +62,20 @@ architecture behavioral of parkingLotSystem is
 		converter1 : bcd_8_bit port map ( 	input_8_bit => counter_s_bit,
 											bcd => bcd_full );
 
-		digit3 : LED_7segment port map (	input => bcd_full(11 downto 8),
-											LED_out => digit3port);
-		digit2 : LED_7segment port map (	input => bcd_full(7 downto 4),
-											LED_out => digit2port);
-		digit1 : LED_7segment port map (	input => bcd_full(3 downto 0),
-											LED_out => digit1port);
+		digit3c : LED_7segment port map (	input => bcd_full(11 downto 8),
+											LED_out => digit3);
+		digit2c : LED_7segment port map (	input => bcd_full(7 downto 4),
+											LED_out => digit2);
+		digit1c : LED_7segment port map (	input => bcd_full(3 downto 0),
+											LED_out => digit1);
 							
 
 
 		shifter1 : bcd_shifter port map(	rst => rst,
 											clk => clockScalers(20),
-											bcd1 => bcd_full(3 downto 0),
-											bcd2 => bcd_full(7 downto 4),
-											bcd3 => bcd_full(11 downto 8),
+											bcd1 => digit1,
+											bcd2 => digit2,
+											bcd3 => digit3,
 											bcd_out => single_port,
 											sel => sel_single_port);
 											
@@ -185,5 +186,10 @@ architecture behavioral of parkingLotSystem is
 		gate_close <= not gate_s;
 		led_green <= led_s;
 		led_red <= not led_s;
+		
+		
+		digit1port <= digit1;
+		digit2port <= digit2;
+		digit3port <= digit3;
 
 end architecture;
