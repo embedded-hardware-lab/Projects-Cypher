@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Mon Jun 20 22:02:51 2022">
+  <application stringID="par" timeStamp="Mon Jun 20 22:05:15 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -92,7 +92,7 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX0"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="17.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.169000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.175000"/>
             <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.904000"/>
           </row>
           <row stringID="row" value="2">
@@ -100,16 +100,16 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="Local"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="16.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.188000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.721000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.201000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.740000"/>
           </row>
           <row stringID="row" value="3">
-            <item label="Clock Net" stringID="CLOCK_NET" value="clockScalers&lt;0>"/>
+            <item label="Clock Net" stringID="CLOCK_NET" value="clockScalers&lt;1>"/>
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="Local"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="8.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.016000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.996000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.006000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.015000"/>
           </row>
         </table>
       </section>
@@ -771,7 +771,7 @@
           </row>
           <row stringID="row" value="95">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="F15"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;6>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit1port&lt;5>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L22P_2"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -899,7 +899,7 @@
           </row>
           <row stringID="row" value="111">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="G15"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit1port&lt;5>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;2>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L24P_2"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -914,7 +914,7 @@
           </row>
           <row stringID="row" value="112">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="G16"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit1port&lt;2>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;3>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -1007,7 +1007,7 @@
           </row>
           <row stringID="row" value="126">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="H14"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;2>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit1port&lt;6>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L39P_2"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -1022,7 +1022,7 @@
           </row>
           <row stringID="row" value="127">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="H15"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;4>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;1>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L40N_2"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -1037,7 +1037,7 @@
           </row>
           <row stringID="row" value="128">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="H16"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit1port&lt;1>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;6>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L40P_2/VREF_2"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -1150,7 +1150,7 @@
           </row>
           <row stringID="row" value="144">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="J16"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit1port&lt;6>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit1port&lt;1>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L40N_3/VREF_3"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -1284,7 +1284,7 @@
           </row>
           <row stringID="row" value="160">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="K16"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;1>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit1port&lt;2>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L40P_3"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -1364,7 +1364,7 @@
           </row>
           <row stringID="row" value="172">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="L12"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;3>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;0>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L23P_3/VREF_3"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -1379,7 +1379,7 @@
           </row>
           <row stringID="row" value="173">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="L13"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit3port&lt;1>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit3port&lt;0>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L21N_3"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -1394,7 +1394,7 @@
           </row>
           <row stringID="row" value="174">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="L14"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;0>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit3port&lt;1>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L22P_3"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -1550,7 +1550,7 @@
           </row>
           <row stringID="row" value="192">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="M16"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit3port&lt;0>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="digit2port&lt;4>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L20N_3"/>
             <item stringID="Direction" value="OUTPUT"/>

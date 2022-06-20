@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: parkingLotSystem.prj
 
@@ -421,7 +421,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)         | Load  |
 -----------------------------------+-------------------------------+-------+
 clk                                | BUFGP                         | 27    |
-clockScalers_0                     | NONE(count_mem_0)             | 8     |
+clockScalers_1                     | NONE(count_mem_0)             | 8     |
 clockScalers_18                    | NONE(shifter1/current_state_2)| 17    |
 -----------------------------------+-------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -449,23 +449,22 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.401ns (frequency: 227.226MHz)
+  Clock period: 4.640ns (frequency: 215.499MHz)
   Total number of paths / destination ports: 205 / 29
 -------------------------------------------------------------------------
-Delay:               4.401ns (Levels of Logic = 20)
-  Source:            clockScalers_0 (FF)
+Delay:               4.640ns (Levels of Logic = 19)
+  Source:            clockScalers_1 (FF)
   Destination:       clockScalers_18 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: clockScalers_0 to clockScalers_18
+  Data Path: clockScalers_1 to clockScalers_18
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              9   0.626   0.955  clockScalers_0 (clockScalers_0)
-     INV:I->O              1   0.479   0.000  Mcount_clockScalers_lut<0>_INV_0 (Mcount_clockScalers_lut<0>)
-     MUXCY:S->O            1   0.435   0.000  Mcount_clockScalers_cy<0> (Mcount_clockScalers_cy<0>)
-     MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<1> (Mcount_clockScalers_cy<1>)
+     FDC:C->Q              9   0.626   1.250  clockScalers_1 (clockScalers_1)
+     LUT1:I0->O            1   0.479   0.000  Mcount_clockScalers_cy<1>_rt (Mcount_clockScalers_cy<1>_rt)
+     MUXCY:S->O            1   0.435   0.000  Mcount_clockScalers_cy<1> (Mcount_clockScalers_cy<1>)
      MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<2> (Mcount_clockScalers_cy<2>)
      MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<3> (Mcount_clockScalers_cy<3>)
      MUXCY:CI->O           1   0.056   0.000  Mcount_clockScalers_cy<4> (Mcount_clockScalers_cy<4>)
@@ -485,19 +484,19 @@ Delay:               4.401ns (Levels of Logic = 20)
      XORCY:CI->O           1   0.786   0.000  Mcount_clockScalers_xor<18> (Result<18>)
      FDC:D                     0.176          clockScalers_18
     ----------------------------------------
-    Total                      4.401ns (3.446ns logic, 0.955ns route)
-                                       (78.3% logic, 21.7% route)
+    Total                      4.640ns (3.390ns logic, 1.250ns route)
+                                       (73.1% logic, 26.9% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clockScalers_0'
+Timing constraint: Default period analysis for Clock 'clockScalers_1'
   Clock period: 4.945ns (frequency: 202.231MHz)
   Total number of paths / destination ports: 47 / 8
 -------------------------------------------------------------------------
 Delay:               4.945ns (Levels of Logic = 4)
   Source:            count_mem_1 (FF)
   Destination:       count_mem_4 (FF)
-  Source Clock:      clockScalers_0 falling
-  Destination Clock: clockScalers_0 falling
+  Source Clock:      clockScalers_1 falling
+  Destination Clock: clockScalers_1 falling
 
   Data Path: count_mem_1 to count_mem_4
                                 Gate     Net
@@ -557,13 +556,13 @@ Offset:              5.232ns (Levels of Logic = 3)
                                        (49.0% logic, 51.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clockScalers_0'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clockScalers_1'
   Total number of paths / destination ports: 168 / 8
 -------------------------------------------------------------------------
 Offset:              8.162ns (Levels of Logic = 7)
   Source:            input<3> (PAD)
   Destination:       count_mem_4 (FF)
-  Destination Clock: clockScalers_0 falling
+  Destination Clock: clockScalers_1 falling
 
   Data Path: input<3> to count_mem_4
                                 Gate     Net
@@ -602,13 +601,13 @@ Offset:              7.530ns (Levels of Logic = 2)
                                        (79.9% logic, 20.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clockScalers_0'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockScalers_1'
   Total number of paths / destination ports: 5786 / 20
 -------------------------------------------------------------------------
 Offset:              18.393ns (Levels of Logic = 10)
   Source:            count_mem_6 (FF)
   Destination:       digit2port<5> (PAD)
-  Source Clock:      clockScalers_0 falling
+  Source Clock:      clockScalers_1 falling
 
   Data Path: count_mem_6 to digit2port<5>
                                 Gate     Net
@@ -652,11 +651,11 @@ Offset:              6.216ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.31 secs
+Total CPU time to Xst completion: 5.33 secs
  
 --> 
 
-Total memory usage is 262324 kilobytes
+Total memory usage is 261876 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   17 (   0 filtered)

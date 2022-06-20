@@ -188,7 +188,7 @@ architecture behavioral of parkingLotSystem is
 		led_green <= led_s;
 		led_red <= not led_s;
 		
-		counterClk <= clockScalers(0);
+		counterClk <= clockScalers(1);
 		
 		digit1port <= digit1;
 		digit2port <= digit2;
