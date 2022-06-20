@@ -24,10 +24,11 @@ architecture behavioural of add3 is
 												Cin => open, 
 												S => output,
 												Cout => open );
-		
-		
-		fix_value <= 	"0011" WHEN (input(3) or (input(2) and (input(1) or input(0)))) = '1',
-						"0000" WHEN OTHERS;  --blank when not a digit
+		valueB : process (fix_value, input) 
+			if (input(3) or (input(2) and (input(1) or input(0)))) then fix_value <= 	"0011";
+			else fix_value <= 	"0000";
+			end if;
+		end process;
 		
 end architecture;
 
