@@ -31,6 +31,7 @@ architecture behavioral of parkingLotSystem is
 	signal space_state 		: std_logic;
 	
 	signal clockScalers : std_logic_vector(30 downto 0);
+	signal counterClk : std_logic;
 	signal bcd_full : bit_vector(11 downto 0);
 	signal digit3,digit2,digit1 : bit_vector(6 downto 0);
 	
@@ -149,12 +150,12 @@ architecture behavioral of parkingLotSystem is
 				end if;
 		end process;
 
-		carCounter : process(current_state, input, clockScalers, counter_s, rst)
+		carCounter : process(current_state, input, counterClk, counter_s, rst)
 			variable count_mem : std_logic_vector(7 downto 0);
 			begin
 				
 				if (rst = '1') then count_mem := "00000000";
-				elsif  (clockScalers(18) = '0' and clockScalers(18)'event ) then 
+				elsif  (counterClk = '0' and counterClk'event ) then 
 
 					case current_state is
 						when idle => 		if (input="0001")  then	count_mem := count_mem + '1' ;   -- counting up
@@ -187,6 +188,7 @@ architecture behavioral of parkingLotSystem is
 		led_green <= led_s;
 		led_red <= not led_s;
 		
+		counterClk <= clockScalers(5);
 		
 		digit1port <= digit1;
 		digit2port <= digit2;
