@@ -25,6 +25,12 @@ It will be removed from the design.
 It will be removed from the design.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clockScalers_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">parkingLotSystem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">clockScalers_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">parkingLotSystem</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clockScalers_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">parkingLotSystem</arg>&gt;.
 </msg>
 

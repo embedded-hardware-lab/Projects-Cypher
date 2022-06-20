@@ -73,7 +73,7 @@ architecture behavioral of parkingLotSystem is
 
 
 		shifter1 : bcd_shifter port map(	rst => rst,
-											clk => clockScalers(18),
+											clk => clockScalers(16),
 											bcd1 => digit1,
 											bcd2 => digit2,
 											bcd3 => digit3,
@@ -188,7 +188,7 @@ architecture behavioral of parkingLotSystem is
 		led_green <= led_s;
 		led_red <= not led_s;
 		
-		counterClk <= clockScalers(1);
+		counterClk <= clockScalers(0);
 		
 		digit1port <= digit1;
 		digit2port <= digit2;
