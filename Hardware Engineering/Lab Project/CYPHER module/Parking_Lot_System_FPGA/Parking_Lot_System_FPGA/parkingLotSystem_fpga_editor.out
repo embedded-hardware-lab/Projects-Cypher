@@ -1,0 +1,83 @@
+#:C29    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\cypher\Documents\GitHub\Projects-Cypher\Hardware Engineering\Lab Project\CYPHER module\Parking_Lot_System_FPGA\Parking_Lot_System_FPGA
+#Date/Time:
+#:T   Thu Jun 23 10:55:37 2022
+#------------------------------
+	#Reading parkingLotSystem.ncd...
+	#Loading device for application Rf_Device from file '3s1000.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "parkingLotSystem" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
+	#Design creation date: 2022.06.20.20.07.36
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+unselect -all
+	#4
+unselect -all
+	#5
+unselect -all
+	#6
+select comp 'sel_single_port<1>'
+	#comp "sel_single_port<1>",  site "G14",  bonded type = IOB,  pad name = PAD123,  pin name = G14  (RPM grid X123Y149)
+	#7
+unselect -all
+	#8
+select comp 'sel_single_port<1>'
+	#comp "sel_single_port<1>",  site "G14",  bonded type = IOB,  pad name = PAD123,  pin name = G14  (RPM grid X123Y149)
+	#9
+post block
+	#10
+unselect -all
+	#11
+select site 'NOPAD22'
+	#site "NOPAD22",  unbonded type = IOB,  pad name = NOPAD22  (RPM grid X123Y190)
+	#12
+post block
+	#13
+unselect -all
+	#14
+select comp 'sel_single_port<0>'
+	#comp "sel_single_port<0>",  site "D14",  bonded type = IOB,  pad name = PAD110,  pin name = D14  (RPM grid X123Y176)
+	#15
+post block
+	#16
+setattr layer sites view toggle
+	#17
+setattr layer sites view toggle
+	#18
+setattr layer sites view toggle
+	#19
+unselect -all
+	#20
+select comp 'shifter1/An<0>'
+	#comp "shifter1/An<0>",  site "SLICE_X78Y63",  type = SLICEL  (RPM grid X120Y129)
+	#21
+unselect -all
+	#22
+select comp 'shifter1/An<0>'
+	#comp "shifter1/An<0>",  site "SLICE_X78Y63",  type = SLICEL  (RPM grid X120Y129)
+	#23
+post block
+	#24
+setattr layer sites view toggle
+	#25
+unselect -all
+	#26
+select comp 'shifter1/bcd_out<1>'
+	#comp "shifter1/bcd_out<1>",  site "SLICE_X78Y46",  type = SLICEL  (RPM grid X120Y96)
+	#27
+post block
+	#28
+unselect -all
+	#29
+select comp 'input<1>'
+	#comp "input<1>",  site "J13",  bonded type = IOB,  pad name = PAD152,  pin name = J13  (RPM grid X123Y92)
+	#30
+post block
