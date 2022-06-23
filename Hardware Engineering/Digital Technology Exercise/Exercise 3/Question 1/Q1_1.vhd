@@ -1,56 +1,26 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
 
- 
-entity LED_7segment is
-	Port ( 	input : in bit_vector (3 downto 0);
-		LED_out : out bit_vector (6 downto 0));
-end LED_7segment;
- 
-architecture Behavioral of LED_7segment is 
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_textio.all;
+
+entity segment_LED_7 is
+
+		port(A,B,C :in std_logic;
+			Fa,Fb,Fc,Fd,Fe,Ff,Fg: out std_logic);
+end entity;
+
+architecture behavior of segment_LED_7 is
+
+
 begin
- 
-	process(input)
-	begin
- 
-		case input is
-			when "0000" =>
-				LED_out <= "0000001"; --0
-			when "0001" =>
-				LED_out <= "1001111"; --1
-			when "0010" =>
-				LED_out <= "0010010"; --2
-			when "0011" =>
-				LED_out <= "0000110"; --3
-			when "0100" =>
-				LED_out <= "1001100"; --4 
-			when "0101" =>
-				LED_out <= "0100100"; --5
-			when "0110" =>
-				LED_out <= "0100000"; --6
-			when "0111" =>
-				LED_out <= "0001111"; --7
-			when "1000" =>
-				LED_out <= "0000000"; --8
-			when "1001" =>
-				LED_out <= "0000100"; --9
-			when "1010" =>
-				LED_out <= "0001000"; --A
-			when "1011" =>
-				LED_out <= "1100000"; --B
-			when "1100" =>
-				LED_out <= "0110000"; --C
-			when "1101" =>
-				LED_out <= "1000010"; --d
-			when "1110" =>
-				LED_out <= "0110000"; --e
-			when "1111" =>
-				LED_out <= "0111000"; --f
-			when others =>
-				LED_out <= "1111111"; --null
-		end case;
- 
-	end process;
 
-end Behavioral;
+Fa <= ((not A) and (not C)) or B or (A and C);
+Fb <= ((not B) and (not C)) or (not A) or (B and C);
+Fc <= A or (not B) or C;
+Fd <= ((not A) and (not C)) or ((not A) and B) or (B and (not c)) or (A and (not B) and C);
+Fe <= ((not A) and (not C)) or (B and (not C));
+Ff <= ((not B) and (not C)) or (A and (not C)) or (A and (not B));
+Fg <= ((not A) and B) or (A and (not C)) or (A and (not B));
 
+end behavior;
