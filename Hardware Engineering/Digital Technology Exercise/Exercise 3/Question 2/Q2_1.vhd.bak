@@ -4,10 +4,10 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
 entity Adder_display is
-	Port ( 	Aa : in std_logic_vector(3 downto 0); 
-		Bb : in std_logic_vector(3 downto 0); 
+	Port ( 	Aa : in bit_vector(3 downto 0); 
+		Bb : in bit_vector(3 downto 0); 
 		Ccin : in bit; 
-		output : out std_logic_vector (6 downto 0));
+		output : out bit_vector (6 downto 0));
 end Adder_display ;
  
 architecture Behavioral of Adder_display is 
